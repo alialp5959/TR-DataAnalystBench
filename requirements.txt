@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+openpyxl
+pyarrow
+datasets
+huggingface_hub
+tqdm
+pydantic
+jupyter
