@@ -1,0 +1,4873 @@
+﻿id,dataset_version,split,domain,input_format,chart_type,chart_path,question_type,difficulty,unit,question,table_markdown,prompt
+trdab_v01_000001,synthetic_v01,train,transportation,table_only,line,,value_lookup,easy,kişi,2024 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |
+
+Soru:
+2024 yılında yolcu sayısı kaçtır?"
+trdab_v01_000002,synthetic_v01,train,transportation,chart_only,line,charts/synthetic_v01/chart_001_line.png,max_min,easy,kişi,Verilen verideki en düşük yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_001_line.png
+
+Soru:
+Verilen verideki en düşük yolcu sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000003,synthetic_v01,train,transportation,table_and_chart,line,charts/synthetic_v01/chart_001_line.png,comparison,medium,kişi,"2024 yılındaki yolcu sayısı, 2020 yılına göre kaç kişi farklıdır?","| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_001_line.png
+
+Soru:
+2024 yılındaki yolcu sayısı, 2020 yılına göre kaç kişi farklıdır?"
+trdab_v01_000004,synthetic_v01,train,transportation,table_only,line,,percentage_change,medium,percent,2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2020 | 1199382 |
+| 2021 | 1305432 |
+| 2022 | 1412590 |
+| 2023 | 1511623 |
+| 2024 | 1616768 |
+
+Soru:
+2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000006,synthetic_v01,train,economy,table_and_chart,bar,charts/synthetic_v01/chart_002_bar.png,value_lookup,easy,milyon dolar,2018 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_002_bar.png
+
+Soru:
+2018 yılında ihracat değeri kaçtır?"
+trdab_v01_000007,synthetic_v01,train,economy,table_only,bar,,max_min,easy,milyon dolar,Verilen verideki en yüksek ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |
+
+Soru:
+Verilen verideki en yüksek ihracat değeri kaçtır?"
+trdab_v01_000008,synthetic_v01,train,economy,chart_only,bar,charts/synthetic_v01/chart_002_bar.png,comparison,medium,milyon dolar,"2018 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_002_bar.png
+
+Soru:
+2018 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000009,synthetic_v01,train,economy,table_and_chart,bar,charts/synthetic_v01/chart_002_bar.png,percentage_change,medium,percent,2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,"| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_002_bar.png
+
+Soru:
+2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000011,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_003_bar.png,value_lookup,easy,öğrenci,2025 yılında öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_003_bar.png
+
+Soru:
+2025 yılında öğrenci sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000012,synthetic_v01,train,education,table_and_chart,bar,charts/synthetic_v01/chart_003_bar.png,max_min,easy,öğrenci,Verilen verideki en düşük öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_003_bar.png
+
+Soru:
+Verilen verideki en düşük öğrenci sayısı kaçtır?"
+trdab_v01_000013,synthetic_v01,train,education,table_only,bar,,comparison,medium,öğrenci,"2021 yılındaki öğrenci sayısı, 2024 yılına göre kaç öğrenci farklıdır?","| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |
+
+Soru:
+2021 yılındaki öğrenci sayısı, 2024 yılına göre kaç öğrenci farklıdır?"
+trdab_v01_000014,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_003_bar.png,percentage_change,medium,percent,2020 ile 2025 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_003_bar.png
+
+Soru:
+2020 ile 2025 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000016,synthetic_v01,train,tourism,table_only,bar,,value_lookup,easy,kişi,2020 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |
+
+Soru:
+2020 yılında ziyaretçi sayısı kaçtır?"
+trdab_v01_000017,synthetic_v01,train,tourism,chart_only,bar,charts/synthetic_v01/chart_004_bar.png,max_min,easy,kişi,Verilen verideki en yüksek ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_004_bar.png
+
+Soru:
+Verilen verideki en yüksek ziyaretçi sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000018,synthetic_v01,train,tourism,table_and_chart,bar,charts/synthetic_v01/chart_004_bar.png,comparison,medium,kişi,"2022 yılındaki ziyaretçi sayısı, 2020 yılına göre kaç kişi farklıdır?","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_004_bar.png
+
+Soru:
+2022 yılındaki ziyaretçi sayısı, 2020 yılına göre kaç kişi farklıdır?"
+trdab_v01_000019,synthetic_v01,train,tourism,table_only,bar,,percentage_change,medium,percent,2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 931896 |
+| 2019 | 871923 |
+| 2020 | 793286 |
+| 2021 | 741578 |
+| 2022 | 664884 |
+
+Soru:
+2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000021,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_005_bar.png,value_lookup,easy,MWh,2023 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_005_bar.png
+
+Soru:
+2023 yılında elektrik tüketimi kaçtır?"
+trdab_v01_000022,synthetic_v01,train,energy,table_only,bar,,max_min,easy,MWh,Verilen verideki en düşük elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |
+
+Soru:
+Verilen verideki en düşük elektrik tüketimi kaçtır?"
+trdab_v01_000023,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_005_bar.png,comparison,medium,MWh,"2021 yılındaki elektrik tüketimi, 2020 yılına göre kaç MWh farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_005_bar.png
+
+Soru:
+2021 yılındaki elektrik tüketimi, 2020 yılına göre kaç MWh farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000024,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_005_bar.png,percentage_change,medium,percent,2022 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_005_bar.png
+
+Soru:
+2022 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000026,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_006_bar.png,value_lookup,easy,başvuru,2023 yılında hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_006_bar.png
+
+Soru:
+2023 yılında hastane başvuru sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000027,synthetic_v01,train,health,table_and_chart,bar,charts/synthetic_v01/chart_006_bar.png,max_min,easy,başvuru,Verilen verideki en düşük hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_006_bar.png
+
+Soru:
+Verilen verideki en düşük hastane başvuru sayısı kaçtır?"
+trdab_v01_000028,synthetic_v01,train,health,table_only,bar,,comparison,medium,başvuru,"2021 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |
+
+Soru:
+2021 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000029,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_006_bar.png,percentage_change,medium,percent,2019 ile 2020 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_006_bar.png
+
+Soru:
+2019 ile 2020 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000031,synthetic_v01,train,environment,table_only,bar,,value_lookup,easy,ton,2022 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |
+
+Soru:
+2022 yılında geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000032,synthetic_v01,train,environment,chart_only,bar,charts/synthetic_v01/chart_007_bar.png,max_min,easy,ton,Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_007_bar.png
+
+Soru:
+Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000033,synthetic_v01,train,environment,table_and_chart,bar,charts/synthetic_v01/chart_007_bar.png,comparison,medium,ton,"2023 yılındaki geri dönüştürülen atık miktarı, 2021 yılına göre kaç ton farklıdır?","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_007_bar.png
+
+Soru:
+2023 yılındaki geri dönüştürülen atık miktarı, 2021 yılına göre kaç ton farklıdır?"
+trdab_v01_000034,synthetic_v01,train,environment,table_only,bar,,percentage_change,medium,percent,2021 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 8186 |
+| 2019 | 8424 |
+| 2020 | 9056 |
+| 2021 | 9678 |
+| 2022 | 10521 |
+| 2023 | 10881 |
+
+Soru:
+2021 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000036,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_008_bar.png,value_lookup,easy,kullanım,2024 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_008_bar.png
+
+Soru:
+2024 yılında spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000037,synthetic_v01,train,sports,table_only,bar,,max_min,easy,kullanım,Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |
+
+Soru:
+Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000038,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_008_bar.png,comparison,medium,kullanım,"2020 yılındaki spor tesisi kullanım sayısı, 2024 yılına göre kaç kullanım farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_008_bar.png
+
+Soru:
+2020 yılındaki spor tesisi kullanım sayısı, 2024 yılına göre kaç kullanım farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000039,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_008_bar.png,percentage_change,medium,percent,2022 ile 2025 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_008_bar.png
+
+Soru:
+2022 ile 2025 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000041,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_009_line.png,value_lookup,easy,başvuru,2024 yılında belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_009_line.png
+
+Soru:
+2024 yılında belediye hizmet başvurusu kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000042,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_009_line.png,max_min,easy,başvuru,Verilen verideki en düşük belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_009_line.png
+
+Soru:
+Verilen verideki en düşük belediye hizmet başvurusu kaçtır?"
+trdab_v01_000043,synthetic_v01,train,municipality,table_only,line,,comparison,medium,başvuru,"2020 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |
+
+Soru:
+2020 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000044,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_009_line.png,percentage_change,medium,percent,2020 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_009_line.png
+
+Soru:
+2020 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000046,synthetic_v01,train,agriculture,table_only,line,,value_lookup,easy,ton,2023 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |
+
+Soru:
+2023 yılında üretim miktarı kaçtır?"
+trdab_v01_000047,synthetic_v01,train,agriculture,chart_only,line,charts/synthetic_v01/chart_010_line.png,max_min,easy,ton,Verilen verideki en yüksek üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_010_line.png
+
+Soru:
+Verilen verideki en yüksek üretim miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000048,synthetic_v01,train,agriculture,table_and_chart,line,charts/synthetic_v01/chart_010_line.png,comparison,medium,ton,"2022 yılındaki üretim miktarı, 2020 yılına göre kaç ton farklıdır?","| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_010_line.png
+
+Soru:
+2022 yılındaki üretim miktarı, 2020 yılına göre kaç ton farklıdır?"
+trdab_v01_000049,synthetic_v01,train,agriculture,table_only,line,,percentage_change,medium,percent,2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 149140 |
+| 2020 | 160314 |
+| 2021 | 164812 |
+| 2022 | 173368 |
+| 2023 | 185148 |
+
+Soru:
+2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000051,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_011_bar.png,value_lookup,easy,kişi,2019 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_011_bar.png
+
+Soru:
+2019 yılında yolcu sayısı kaçtır?"
+trdab_v01_000052,synthetic_v01,train,transportation,table_only,bar,,max_min,easy,kişi,Verilen verideki en yüksek yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |
+
+Soru:
+Verilen verideki en yüksek yolcu sayısı kaçtır?"
+trdab_v01_000053,synthetic_v01,train,transportation,chart_only,bar,charts/synthetic_v01/chart_011_bar.png,comparison,medium,kişi,"2019 yılındaki yolcu sayısı, 2020 yılına göre kaç kişi farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_011_bar.png
+
+Soru:
+2019 yılındaki yolcu sayısı, 2020 yılına göre kaç kişi farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000054,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_011_bar.png,percentage_change,medium,percent,2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_011_bar.png
+
+Soru:
+2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000056,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_012_line.png,value_lookup,easy,milyon dolar,2024 yılında ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_012_line.png
+
+Soru:
+2024 yılında ihracat değeri kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000057,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_012_line.png,max_min,easy,milyon dolar,Verilen verideki en düşük ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_012_line.png
+
+Soru:
+Verilen verideki en düşük ihracat değeri kaçtır?"
+trdab_v01_000058,synthetic_v01,train,economy,table_only,line,,comparison,medium,milyon dolar,"2023 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?","| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |
+
+Soru:
+2023 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?"
+trdab_v01_000059,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_012_line.png,percentage_change,medium,percent,2021 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_012_line.png
+
+Soru:
+2021 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000061,synthetic_v01,train,education,table_only,bar,,value_lookup,easy,öğrenci,2019 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |
+
+Soru:
+2019 yılında öğrenci sayısı kaçtır?"
+trdab_v01_000062,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_013_bar.png,max_min,easy,öğrenci,Verilen verideki en düşük öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_013_bar.png
+
+Soru:
+Verilen verideki en düşük öğrenci sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000063,synthetic_v01,train,education,table_and_chart,bar,charts/synthetic_v01/chart_013_bar.png,comparison,medium,öğrenci,"2020 yılındaki öğrenci sayısı, 2019 yılına göre kaç öğrenci farklıdır?","| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_013_bar.png
+
+Soru:
+2020 yılındaki öğrenci sayısı, 2019 yılına göre kaç öğrenci farklıdır?"
+trdab_v01_000064,synthetic_v01,train,education,table_only,bar,,percentage_change,medium,percent,2019 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 26526 |
+| 2019 | 22922 |
+| 2020 | 25300 |
+| 2021 | 23165 |
+| 2022 | 25348 |
+
+Soru:
+2019 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000066,synthetic_v01,train,tourism,table_and_chart,bar,charts/synthetic_v01/chart_014_bar.png,value_lookup,easy,kişi,2021 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_014_bar.png
+
+Soru:
+2021 yılında ziyaretçi sayısı kaçtır?"
+trdab_v01_000067,synthetic_v01,train,tourism,table_only,bar,,max_min,easy,kişi,Verilen verideki en düşük ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |
+
+Soru:
+Verilen verideki en düşük ziyaretçi sayısı kaçtır?"
+trdab_v01_000068,synthetic_v01,train,tourism,chart_only,bar,charts/synthetic_v01/chart_014_bar.png,comparison,medium,kişi,"2023 yılındaki ziyaretçi sayısı, 2019 yılına göre kaç kişi farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_014_bar.png
+
+Soru:
+2023 yılındaki ziyaretçi sayısı, 2019 yılına göre kaç kişi farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000069,synthetic_v01,train,tourism,table_and_chart,bar,charts/synthetic_v01/chart_014_bar.png,percentage_change,medium,percent,2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_014_bar.png
+
+Soru:
+2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000071,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_015_bar.png,value_lookup,easy,MWh,2018 yılında elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_015_bar.png
+
+Soru:
+2018 yılında elektrik tüketimi kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000072,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_015_bar.png,max_min,easy,MWh,Verilen verideki en yüksek elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_015_bar.png
+
+Soru:
+Verilen verideki en yüksek elektrik tüketimi kaçtır?"
+trdab_v01_000073,synthetic_v01,train,energy,table_only,bar,,comparison,medium,MWh,"2018 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?","| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |
+
+Soru:
+2018 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?"
+trdab_v01_000074,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_015_bar.png,percentage_change,medium,percent,2018 ile 2022 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_015_bar.png
+
+Soru:
+2018 ile 2022 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000076,synthetic_v01,train,health,table_only,bar,,value_lookup,easy,başvuru,2020 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |
+
+Soru:
+2020 yılında hastane başvuru sayısı kaçtır?"
+trdab_v01_000077,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_016_bar.png,max_min,easy,başvuru,Verilen verideki en düşük hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_016_bar.png
+
+Soru:
+Verilen verideki en düşük hastane başvuru sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000078,synthetic_v01,train,health,table_and_chart,bar,charts/synthetic_v01/chart_016_bar.png,comparison,medium,başvuru,"2021 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_016_bar.png
+
+Soru:
+2021 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000079,synthetic_v01,train,health,table_only,bar,,percentage_change,medium,percent,2019 ile 2024 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2019 | 426680 |
+| 2020 | 414306 |
+| 2021 | 395068 |
+| 2022 | 368481 |
+| 2023 | 347244 |
+| 2024 | 327685 |
+
+Soru:
+2019 ile 2024 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000081,synthetic_v01,train,environment,table_and_chart,bar,charts/synthetic_v01/chart_017_bar.png,value_lookup,easy,ton,2019 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_017_bar.png
+
+Soru:
+2019 yılında geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000082,synthetic_v01,train,environment,table_only,bar,,max_min,easy,ton,Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |
+
+Soru:
+Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000083,synthetic_v01,train,environment,chart_only,bar,charts/synthetic_v01/chart_017_bar.png,comparison,medium,ton,"2023 yılındaki geri dönüştürülen atık miktarı, 2021 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_017_bar.png
+
+Soru:
+2023 yılındaki geri dönüştürülen atık miktarı, 2021 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000084,synthetic_v01,train,environment,table_and_chart,bar,charts/synthetic_v01/chart_017_bar.png,percentage_change,medium,percent,2020 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_017_bar.png
+
+Soru:
+2020 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000086,synthetic_v01,train,sports,chart_only,line,charts/synthetic_v01/chart_018_line.png,value_lookup,easy,kullanım,2025 yılında spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_018_line.png
+
+Soru:
+2025 yılında spor tesisi kullanım sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000087,synthetic_v01,train,sports,table_and_chart,line,charts/synthetic_v01/chart_018_line.png,max_min,easy,kullanım,Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_018_line.png
+
+Soru:
+Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000088,synthetic_v01,train,sports,table_only,line,,comparison,medium,kullanım,"2023 yılındaki spor tesisi kullanım sayısı, 2024 yılına göre kaç kullanım farklıdır?","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |
+
+Soru:
+2023 yılındaki spor tesisi kullanım sayısı, 2024 yılına göre kaç kullanım farklıdır?"
+trdab_v01_000089,synthetic_v01,train,sports,chart_only,line,charts/synthetic_v01/chart_018_line.png,percentage_change,medium,percent,2020 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_018_line.png
+
+Soru:
+2020 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000091,synthetic_v01,train,municipality,table_only,bar,,value_lookup,easy,başvuru,2019 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |
+
+Soru:
+2019 yılında belediye hizmet başvurusu kaçtır?"
+trdab_v01_000092,synthetic_v01,train,municipality,chart_only,bar,charts/synthetic_v01/chart_019_bar.png,max_min,easy,başvuru,Verilen verideki en düşük belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_019_bar.png
+
+Soru:
+Verilen verideki en düşük belediye hizmet başvurusu kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000093,synthetic_v01,train,municipality,table_and_chart,bar,charts/synthetic_v01/chart_019_bar.png,comparison,medium,başvuru,"2021 yılındaki belediye hizmet başvurusu, 2022 yılına göre kaç başvuru farklıdır?","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_019_bar.png
+
+Soru:
+2021 yılındaki belediye hizmet başvurusu, 2022 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000094,synthetic_v01,train,municipality,table_only,bar,,percentage_change,medium,percent,2018 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 97380 |
+| 2019 | 92414 |
+| 2020 | 88966 |
+| 2021 | 85958 |
+| 2022 | 78535 |
+| 2023 | 75809 |
+
+Soru:
+2018 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000096,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_020_bar.png,value_lookup,easy,ton,2022 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_020_bar.png
+
+Soru:
+2022 yılında üretim miktarı kaçtır?"
+trdab_v01_000097,synthetic_v01,train,agriculture,table_only,bar,,max_min,easy,ton,Verilen verideki en düşük üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |
+
+Soru:
+Verilen verideki en düşük üretim miktarı kaçtır?"
+trdab_v01_000098,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_020_bar.png,comparison,medium,ton,"2019 yılındaki üretim miktarı, 2022 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_020_bar.png
+
+Soru:
+2019 yılındaki üretim miktarı, 2022 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000099,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_020_bar.png,percentage_change,medium,percent,2019 ile 2022 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_020_bar.png
+
+Soru:
+2019 ile 2022 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000101,synthetic_v01,train,transportation,chart_only,line,charts/synthetic_v01/chart_021_line.png,value_lookup,easy,kişi,2021 yılında yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_021_line.png
+
+Soru:
+2021 yılında yolcu sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000102,synthetic_v01,train,transportation,table_and_chart,line,charts/synthetic_v01/chart_021_line.png,max_min,easy,kişi,Verilen verideki en yüksek yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_021_line.png
+
+Soru:
+Verilen verideki en yüksek yolcu sayısı kaçtır?"
+trdab_v01_000103,synthetic_v01,train,transportation,table_only,line,,comparison,medium,kişi,"2019 yılındaki yolcu sayısı, 2021 yılına göre kaç kişi farklıdır?","| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |
+
+Soru:
+2019 yılındaki yolcu sayısı, 2021 yılına göre kaç kişi farklıdır?"
+trdab_v01_000104,synthetic_v01,train,transportation,chart_only,line,charts/synthetic_v01/chart_021_line.png,percentage_change,medium,percent,2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_021_line.png
+
+Soru:
+2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000106,synthetic_v01,train,economy,table_only,bar,,value_lookup,easy,milyon dolar,2019 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |
+
+Soru:
+2019 yılında ihracat değeri kaçtır?"
+trdab_v01_000107,synthetic_v01,train,economy,chart_only,bar,charts/synthetic_v01/chart_022_bar.png,max_min,easy,milyon dolar,Verilen verideki en düşük ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_022_bar.png
+
+Soru:
+Verilen verideki en düşük ihracat değeri kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000108,synthetic_v01,train,economy,table_and_chart,bar,charts/synthetic_v01/chart_022_bar.png,comparison,medium,milyon dolar,"2023 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?","| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_022_bar.png
+
+Soru:
+2023 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?"
+trdab_v01_000109,synthetic_v01,train,economy,table_only,bar,,percentage_change,medium,percent,2022 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 177 |
+| 2020 | 192 |
+| 2021 | 220 |
+| 2022 | 231 |
+| 2023 | 252 |
+| 2024 | 269 |
+
+Soru:
+2022 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000111,synthetic_v01,train,education,table_and_chart,line,charts/synthetic_v01/chart_023_line.png,value_lookup,easy,öğrenci,2023 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_023_line.png
+
+Soru:
+2023 yılında öğrenci sayısı kaçtır?"
+trdab_v01_000112,synthetic_v01,train,education,table_only,line,,max_min,easy,öğrenci,Verilen verideki en düşük öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |
+
+Soru:
+Verilen verideki en düşük öğrenci sayısı kaçtır?"
+trdab_v01_000113,synthetic_v01,train,education,chart_only,line,charts/synthetic_v01/chart_023_line.png,comparison,medium,öğrenci,"2023 yılındaki öğrenci sayısı, 2021 yılına göre kaç öğrenci farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_023_line.png
+
+Soru:
+2023 yılındaki öğrenci sayısı, 2021 yılına göre kaç öğrenci farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000114,synthetic_v01,train,education,table_and_chart,line,charts/synthetic_v01/chart_023_line.png,percentage_change,medium,percent,2019 ile 2022 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_023_line.png
+
+Soru:
+2019 ile 2022 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000116,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_024_line.png,value_lookup,easy,kişi,2021 yılında ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_024_line.png
+
+Soru:
+2021 yılında ziyaretçi sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000117,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_024_line.png,max_min,easy,kişi,Verilen verideki en düşük ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_024_line.png
+
+Soru:
+Verilen verideki en düşük ziyaretçi sayısı kaçtır?"
+trdab_v01_000118,synthetic_v01,train,tourism,table_only,line,,comparison,medium,kişi,"2021 yılındaki ziyaretçi sayısı, 2019 yılına göre kaç kişi farklıdır?","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |
+
+Soru:
+2021 yılındaki ziyaretçi sayısı, 2019 yılına göre kaç kişi farklıdır?"
+trdab_v01_000119,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_024_line.png,percentage_change,medium,percent,2021 ile 2023 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_024_line.png
+
+Soru:
+2021 ile 2023 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000121,synthetic_v01,train,energy,table_only,bar,,value_lookup,easy,MWh,2024 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |
+
+Soru:
+2024 yılında elektrik tüketimi kaçtır?"
+trdab_v01_000122,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_025_bar.png,max_min,easy,MWh,Verilen verideki en yüksek elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_025_bar.png
+
+Soru:
+Verilen verideki en yüksek elektrik tüketimi kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000123,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_025_bar.png,comparison,medium,MWh,"2024 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?","| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_025_bar.png
+
+Soru:
+2024 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?"
+trdab_v01_000124,synthetic_v01,train,energy,table_only,bar,,percentage_change,medium,percent,2021 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 98038 |
+| 2021 | 84751 |
+| 2022 | 93784 |
+| 2023 | 83678 |
+| 2024 | 94553 |
+
+Soru:
+2021 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000126,synthetic_v01,train,health,table_and_chart,line,charts/synthetic_v01/chart_026_line.png,value_lookup,easy,başvuru,2025 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_026_line.png
+
+Soru:
+2025 yılında hastane başvuru sayısı kaçtır?"
+trdab_v01_000127,synthetic_v01,train,health,table_only,line,,max_min,easy,başvuru,Verilen verideki en yüksek hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |
+
+Soru:
+Verilen verideki en yüksek hastane başvuru sayısı kaçtır?"
+trdab_v01_000128,synthetic_v01,train,health,chart_only,line,charts/synthetic_v01/chart_026_line.png,comparison,medium,başvuru,"2024 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_026_line.png
+
+Soru:
+2024 yılındaki hastane başvuru sayısı, 2022 yılına göre kaç başvuru farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000129,synthetic_v01,train,health,table_and_chart,line,charts/synthetic_v01/chart_026_line.png,percentage_change,medium,percent,2024 ile 2025 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_026_line.png
+
+Soru:
+2024 ile 2025 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000131,synthetic_v01,train,environment,chart_only,line,charts/synthetic_v01/chart_027_line.png,value_lookup,easy,ton,2019 yılında geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_027_line.png
+
+Soru:
+2019 yılında geri dönüştürülen atık miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000132,synthetic_v01,train,environment,table_and_chart,line,charts/synthetic_v01/chart_027_line.png,max_min,easy,ton,Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_027_line.png
+
+Soru:
+Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000133,synthetic_v01,train,environment,table_only,line,,comparison,medium,ton,"2019 yılındaki geri dönüştürülen atık miktarı, 2022 yılına göre kaç ton farklıdır?","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |
+
+Soru:
+2019 yılındaki geri dönüştürülen atık miktarı, 2022 yılına göre kaç ton farklıdır?"
+trdab_v01_000134,synthetic_v01,train,environment,chart_only,line,charts/synthetic_v01/chart_027_line.png,percentage_change,medium,percent,2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_027_line.png
+
+Soru:
+2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000136,synthetic_v01,train,sports,table_only,bar,,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |
+
+Soru:
+2020 yılında spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000137,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_028_bar.png,max_min,easy,kullanım,Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_028_bar.png
+
+Soru:
+Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000138,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_028_bar.png,comparison,medium,kullanım,"2023 yılındaki spor tesisi kullanım sayısı, 2020 yılına göre kaç kullanım farklıdır?","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_028_bar.png
+
+Soru:
+2023 yılındaki spor tesisi kullanım sayısı, 2020 yılına göre kaç kullanım farklıdır?"
+trdab_v01_000139,synthetic_v01,train,sports,table_only,bar,,percentage_change,medium,percent,2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49555 |
+| 2021 | 44268 |
+| 2022 | 51661 |
+| 2023 | 38204 |
+| 2024 | 48770 |
+
+Soru:
+2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000141,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_029_line.png,value_lookup,easy,başvuru,2025 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_029_line.png
+
+Soru:
+2025 yılında belediye hizmet başvurusu kaçtır?"
+trdab_v01_000142,synthetic_v01,train,municipality,table_only,line,,max_min,easy,başvuru,Verilen verideki en düşük belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |
+
+Soru:
+Verilen verideki en düşük belediye hizmet başvurusu kaçtır?"
+trdab_v01_000143,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_029_line.png,comparison,medium,başvuru,"2022 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_029_line.png
+
+Soru:
+2022 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000144,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_029_line.png,percentage_change,medium,percent,2021 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_029_line.png
+
+Soru:
+2021 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000146,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_030_bar.png,value_lookup,easy,ton,2023 yılında üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_030_bar.png
+
+Soru:
+2023 yılında üretim miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000147,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_030_bar.png,max_min,easy,ton,Verilen verideki en düşük üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_030_bar.png
+
+Soru:
+Verilen verideki en düşük üretim miktarı kaçtır?"
+trdab_v01_000148,synthetic_v01,train,agriculture,table_only,bar,,comparison,medium,ton,"2023 yılındaki üretim miktarı, 2024 yılına göre kaç ton farklıdır?","| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |
+
+Soru:
+2023 yılındaki üretim miktarı, 2024 yılına göre kaç ton farklıdır?"
+trdab_v01_000149,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_030_bar.png,percentage_change,medium,percent,2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_030_bar.png
+
+Soru:
+2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000151,synthetic_v01,train,transportation,table_only,bar,,value_lookup,easy,kişi,2021 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |
+
+Soru:
+2021 yılında yolcu sayısı kaçtır?"
+trdab_v01_000152,synthetic_v01,train,transportation,chart_only,bar,charts/synthetic_v01/chart_031_bar.png,max_min,easy,kişi,Verilen verideki en yüksek yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_031_bar.png
+
+Soru:
+Verilen verideki en yüksek yolcu sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000153,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_031_bar.png,comparison,medium,kişi,"2019 yılındaki yolcu sayısı, 2021 yılına göre kaç kişi farklıdır?","| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_031_bar.png
+
+Soru:
+2019 yılındaki yolcu sayısı, 2021 yılına göre kaç kişi farklıdır?"
+trdab_v01_000154,synthetic_v01,train,transportation,table_only,bar,,percentage_change,medium,percent,2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1825894 |
+| 2019 | 1763191 |
+| 2020 | 1665852 |
+| 2021 | 1494106 |
+| 2022 | 1429439 |
+| 2023 | 1312473 |
+
+Soru:
+2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000156,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_032_line.png,value_lookup,easy,milyon dolar,2022 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_032_line.png
+
+Soru:
+2022 yılında ihracat değeri kaçtır?"
+trdab_v01_000157,synthetic_v01,train,economy,table_only,line,,max_min,easy,milyon dolar,Verilen verideki en yüksek ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |
+
+Soru:
+Verilen verideki en yüksek ihracat değeri kaçtır?"
+trdab_v01_000158,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_032_line.png,comparison,medium,milyon dolar,"2019 yılındaki ihracat değeri, 2023 yılına göre kaç milyon dolar farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_032_line.png
+
+Soru:
+2019 yılındaki ihracat değeri, 2023 yılına göre kaç milyon dolar farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000159,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_032_line.png,percentage_change,medium,percent,2019 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_032_line.png
+
+Soru:
+2019 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000161,synthetic_v01,train,education,chart_only,line,charts/synthetic_v01/chart_033_line.png,value_lookup,easy,öğrenci,2021 yılında öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_033_line.png
+
+Soru:
+2021 yılında öğrenci sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000162,synthetic_v01,train,education,table_and_chart,line,charts/synthetic_v01/chart_033_line.png,max_min,easy,öğrenci,Verilen verideki en düşük öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_033_line.png
+
+Soru:
+Verilen verideki en düşük öğrenci sayısı kaçtır?"
+trdab_v01_000163,synthetic_v01,train,education,table_only,line,,comparison,medium,öğrenci,"2021 yılındaki öğrenci sayısı, 2020 yılına göre kaç öğrenci farklıdır?","| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |
+
+Soru:
+2021 yılındaki öğrenci sayısı, 2020 yılına göre kaç öğrenci farklıdır?"
+trdab_v01_000164,synthetic_v01,train,education,chart_only,line,charts/synthetic_v01/chart_033_line.png,percentage_change,medium,percent,2020 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_033_line.png
+
+Soru:
+2020 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000166,synthetic_v01,train,tourism,table_only,line,,value_lookup,easy,kişi,2019 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |
+
+Soru:
+2019 yılında ziyaretçi sayısı kaçtır?"
+trdab_v01_000167,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_034_line.png,max_min,easy,kişi,Verilen verideki en yüksek ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_034_line.png
+
+Soru:
+Verilen verideki en yüksek ziyaretçi sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000168,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_034_line.png,comparison,medium,kişi,"2023 yılındaki ziyaretçi sayısı, 2020 yılına göre kaç kişi farklıdır?","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_034_line.png
+
+Soru:
+2023 yılındaki ziyaretçi sayısı, 2020 yılına göre kaç kişi farklıdır?"
+trdab_v01_000169,synthetic_v01,train,tourism,table_only,line,,percentage_change,medium,percent,2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 927937 |
+| 2020 | 892018 |
+| 2021 | 790080 |
+| 2022 | 739602 |
+| 2023 | 661361 |
+
+Soru:
+2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000171,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_035_bar.png,value_lookup,easy,MWh,2020 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_035_bar.png
+
+Soru:
+2020 yılında elektrik tüketimi kaçtır?"
+trdab_v01_000172,synthetic_v01,train,energy,table_only,bar,,max_min,easy,MWh,Verilen verideki en yüksek elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |
+
+Soru:
+Verilen verideki en yüksek elektrik tüketimi kaçtır?"
+trdab_v01_000173,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_035_bar.png,comparison,medium,MWh,"2018 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_035_bar.png
+
+Soru:
+2018 yılındaki elektrik tüketimi, 2022 yılına göre kaç MWh farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000174,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_035_bar.png,percentage_change,medium,percent,2019 ile 2020 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_035_bar.png
+
+Soru:
+2019 ile 2020 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000176,synthetic_v01,train,health,chart_only,line,charts/synthetic_v01/chart_036_line.png,value_lookup,easy,başvuru,2018 yılında hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_036_line.png
+
+Soru:
+2018 yılında hastane başvuru sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000177,synthetic_v01,train,health,table_and_chart,line,charts/synthetic_v01/chart_036_line.png,max_min,easy,başvuru,Verilen verideki en yüksek hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_036_line.png
+
+Soru:
+Verilen verideki en yüksek hastane başvuru sayısı kaçtır?"
+trdab_v01_000178,synthetic_v01,train,health,table_only,line,,comparison,medium,başvuru,"2020 yılındaki hastane başvuru sayısı, 2018 yılına göre kaç başvuru farklıdır?","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |
+
+Soru:
+2020 yılındaki hastane başvuru sayısı, 2018 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000179,synthetic_v01,train,health,chart_only,line,charts/synthetic_v01/chart_036_line.png,percentage_change,medium,percent,2018 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_036_line.png
+
+Soru:
+2018 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000181,synthetic_v01,train,environment,table_only,bar,,value_lookup,easy,ton,2020 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |
+
+Soru:
+2020 yılında geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000182,synthetic_v01,train,environment,chart_only,bar,charts/synthetic_v01/chart_037_bar.png,max_min,easy,ton,Verilen verideki en düşük geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_037_bar.png
+
+Soru:
+Verilen verideki en düşük geri dönüştürülen atık miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000183,synthetic_v01,train,environment,table_and_chart,bar,charts/synthetic_v01/chart_037_bar.png,comparison,medium,ton,"2020 yılındaki geri dönüştürülen atık miktarı, 2023 yılına göre kaç ton farklıdır?","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_037_bar.png
+
+Soru:
+2020 yılındaki geri dönüştürülen atık miktarı, 2023 yılına göre kaç ton farklıdır?"
+trdab_v01_000184,synthetic_v01,train,environment,table_only,bar,,percentage_change,medium,percent,2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2020 | 11072 |
+| 2021 | 10419 |
+| 2022 | 9938 |
+| 2023 | 9189 |
+| 2024 | 8435 |
+
+Soru:
+2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000186,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_038_bar.png,value_lookup,easy,kullanım,2022 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_038_bar.png
+
+Soru:
+2022 yılında spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000187,synthetic_v01,train,sports,table_only,bar,,max_min,easy,kullanım,Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |
+
+Soru:
+Verilen verideki en yüksek spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000188,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_038_bar.png,comparison,medium,kullanım,"2022 yılındaki spor tesisi kullanım sayısı, 2023 yılına göre kaç kullanım farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_038_bar.png
+
+Soru:
+2022 yılındaki spor tesisi kullanım sayısı, 2023 yılına göre kaç kullanım farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000189,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_038_bar.png,percentage_change,medium,percent,2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_038_bar.png
+
+Soru:
+2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000191,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_039_line.png,value_lookup,easy,başvuru,2022 yılında belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_039_line.png
+
+Soru:
+2022 yılında belediye hizmet başvurusu kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000192,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_039_line.png,max_min,easy,başvuru,Verilen verideki en yüksek belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_039_line.png
+
+Soru:
+Verilen verideki en yüksek belediye hizmet başvurusu kaçtır?"
+trdab_v01_000193,synthetic_v01,train,municipality,table_only,line,,comparison,medium,başvuru,"2019 yılındaki belediye hizmet başvurusu, 2018 yılına göre kaç başvuru farklıdır?","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |
+
+Soru:
+2019 yılındaki belediye hizmet başvurusu, 2018 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000194,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_039_line.png,percentage_change,medium,percent,2021 ile 2023 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_039_line.png
+
+Soru:
+2021 ile 2023 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000196,synthetic_v01,train,agriculture,table_only,bar,,value_lookup,easy,ton,2021 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |
+
+Soru:
+2021 yılında üretim miktarı kaçtır?"
+trdab_v01_000197,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_040_bar.png,max_min,easy,ton,Verilen verideki en düşük üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_040_bar.png
+
+Soru:
+Verilen verideki en düşük üretim miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000198,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_040_bar.png,comparison,medium,ton,"2023 yılındaki üretim miktarı, 2021 yılına göre kaç ton farklıdır?","| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_040_bar.png
+
+Soru:
+2023 yılındaki üretim miktarı, 2021 yılına göre kaç ton farklıdır?"
+trdab_v01_000199,synthetic_v01,train,agriculture,table_only,bar,,percentage_change,medium,percent,2020 ile 2021 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2019 | 167150 |
+| 2020 | 144544 |
+| 2021 | 161969 |
+| 2022 | 142836 |
+| 2023 | 168405 |
+
+Soru:
+2020 ile 2021 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000201,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_041_bar.png,value_lookup,easy,kişi,2020 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_041_bar.png
+
+Soru:
+2020 yılında yolcu sayısı kaçtır?"
+trdab_v01_000202,synthetic_v01,train,transportation,table_only,bar,,max_min,easy,kişi,Verilen verideki en düşük yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |
+
+Soru:
+Verilen verideki en düşük yolcu sayısı kaçtır?"
+trdab_v01_000203,synthetic_v01,train,transportation,chart_only,bar,charts/synthetic_v01/chart_041_bar.png,comparison,medium,kişi,"2019 yılındaki yolcu sayısı, 2018 yılına göre kaç kişi farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_041_bar.png
+
+Soru:
+2019 yılındaki yolcu sayısı, 2018 yılına göre kaç kişi farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000204,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_041_bar.png,percentage_change,medium,percent,2019 ile 2020 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_041_bar.png
+
+Soru:
+2019 ile 2020 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000206,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_042_line.png,value_lookup,easy,milyon dolar,2019 yılında ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_042_line.png
+
+Soru:
+2019 yılında ihracat değeri kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000207,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_042_line.png,max_min,easy,milyon dolar,Verilen verideki en düşük ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_042_line.png
+
+Soru:
+Verilen verideki en düşük ihracat değeri kaçtır?"
+trdab_v01_000208,synthetic_v01,train,economy,table_only,line,,comparison,medium,milyon dolar,"2022 yılındaki ihracat değeri, 2020 yılına göre kaç milyon dolar farklıdır?","| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |
+
+Soru:
+2022 yılındaki ihracat değeri, 2020 yılına göre kaç milyon dolar farklıdır?"
+trdab_v01_000209,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_042_line.png,percentage_change,medium,percent,2019 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_042_line.png
+
+Soru:
+2019 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000211,synthetic_v01,train,education,table_only,bar,,value_lookup,easy,öğrenci,2020 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |
+
+Soru:
+2020 yılında öğrenci sayısı kaçtır?"
+trdab_v01_000212,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_043_bar.png,max_min,easy,öğrenci,Verilen verideki en yüksek öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_043_bar.png
+
+Soru:
+Verilen verideki en yüksek öğrenci sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000213,synthetic_v01,train,education,table_and_chart,bar,charts/synthetic_v01/chart_043_bar.png,comparison,medium,öğrenci,"2025 yılındaki öğrenci sayısı, 2023 yılına göre kaç öğrenci farklıdır?","| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_043_bar.png
+
+Soru:
+2025 yılındaki öğrenci sayısı, 2023 yılına göre kaç öğrenci farklıdır?"
+trdab_v01_000214,synthetic_v01,train,education,table_only,bar,,percentage_change,medium,percent,2020 ile 2024 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 31724 |
+| 2021 | 30585 |
+| 2022 | 29382 |
+| 2023 | 28122 |
+| 2024 | 26886 |
+| 2025 | 25992 |
+
+Soru:
+2020 ile 2024 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000216,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_044_line.png,value_lookup,easy,kişi,2024 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_044_line.png
+
+Soru:
+2024 yılında ziyaretçi sayısı kaçtır?"
+trdab_v01_000217,synthetic_v01,train,tourism,table_only,line,,max_min,easy,kişi,Verilen verideki en düşük ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |
+
+Soru:
+Verilen verideki en düşük ziyaretçi sayısı kaçtır?"
+trdab_v01_000218,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_044_line.png,comparison,medium,kişi,"2021 yılındaki ziyaretçi sayısı, 2024 yılına göre kaç kişi farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_044_line.png
+
+Soru:
+2021 yılındaki ziyaretçi sayısı, 2024 yılına göre kaç kişi farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000219,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_044_line.png,percentage_change,medium,percent,2023 ile 2024 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_044_line.png
+
+Soru:
+2023 ile 2024 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000221,synthetic_v01,train,energy,chart_only,line,charts/synthetic_v01/chart_045_line.png,value_lookup,easy,MWh,2020 yılında elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_045_line.png
+
+Soru:
+2020 yılında elektrik tüketimi kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000222,synthetic_v01,train,energy,table_and_chart,line,charts/synthetic_v01/chart_045_line.png,max_min,easy,MWh,Verilen verideki en yüksek elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_045_line.png
+
+Soru:
+Verilen verideki en yüksek elektrik tüketimi kaçtır?"
+trdab_v01_000223,synthetic_v01,train,energy,table_only,line,,comparison,medium,MWh,"2019 yılındaki elektrik tüketimi, 2021 yılına göre kaç MWh farklıdır?","| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |
+
+Soru:
+2019 yılındaki elektrik tüketimi, 2021 yılına göre kaç MWh farklıdır?"
+trdab_v01_000224,synthetic_v01,train,energy,chart_only,line,charts/synthetic_v01/chart_045_line.png,percentage_change,medium,percent,2020 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_045_line.png
+
+Soru:
+2020 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000226,synthetic_v01,train,health,table_only,bar,,value_lookup,easy,başvuru,2020 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |
+
+Soru:
+2020 yılında hastane başvuru sayısı kaçtır?"
+trdab_v01_000227,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_046_bar.png,max_min,easy,başvuru,Verilen verideki en yüksek hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_046_bar.png
+
+Soru:
+Verilen verideki en yüksek hastane başvuru sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000228,synthetic_v01,train,health,table_and_chart,bar,charts/synthetic_v01/chart_046_bar.png,comparison,medium,başvuru,"2020 yılındaki hastane başvuru sayısı, 2019 yılına göre kaç başvuru farklıdır?","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_046_bar.png
+
+Soru:
+2020 yılındaki hastane başvuru sayısı, 2019 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000229,synthetic_v01,train,health,table_only,bar,,percentage_change,medium,percent,2020 ile 2021 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 303377 |
+| 2019 | 330027 |
+| 2020 | 350715 |
+| 2021 | 374628 |
+| 2022 | 393063 |
+
+Soru:
+2020 ile 2021 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000231,synthetic_v01,train,environment,table_and_chart,line,charts/synthetic_v01/chart_047_line.png,value_lookup,easy,ton,2022 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_047_line.png
+
+Soru:
+2022 yılında geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000232,synthetic_v01,train,environment,table_only,line,,max_min,easy,ton,Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |
+
+Soru:
+Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000233,synthetic_v01,train,environment,chart_only,line,charts/synthetic_v01/chart_047_line.png,comparison,medium,ton,"2020 yılındaki geri dönüştürülen atık miktarı, 2019 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_047_line.png
+
+Soru:
+2020 yılındaki geri dönüştürülen atık miktarı, 2019 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000234,synthetic_v01,train,environment,table_and_chart,line,charts/synthetic_v01/chart_047_line.png,percentage_change,medium,percent,2018 ile 2019 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_047_line.png
+
+Soru:
+2018 ile 2019 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000236,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_048_bar.png,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_048_bar.png
+
+Soru:
+2020 yılında spor tesisi kullanım sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000237,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_048_bar.png,max_min,easy,kullanım,Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_048_bar.png
+
+Soru:
+Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000238,synthetic_v01,train,sports,table_only,bar,,comparison,medium,kullanım,"2018 yılındaki spor tesisi kullanım sayısı, 2021 yılına göre kaç kullanım farklıdır?","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |
+
+Soru:
+2018 yılındaki spor tesisi kullanım sayısı, 2021 yılına göre kaç kullanım farklıdır?"
+trdab_v01_000239,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_048_bar.png,percentage_change,medium,percent,2018 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_048_bar.png
+
+Soru:
+2018 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000241,synthetic_v01,validation,municipality,table_only,bar,,value_lookup,easy,başvuru,2019 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |
+
+Soru:
+2019 yılında belediye hizmet başvurusu kaçtır?"
+trdab_v01_000242,synthetic_v01,validation,municipality,chart_only,bar,charts/synthetic_v01/chart_049_bar.png,max_min,easy,başvuru,Verilen verideki en düşük belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_049_bar.png
+
+Soru:
+Verilen verideki en düşük belediye hizmet başvurusu kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000243,synthetic_v01,validation,municipality,table_and_chart,bar,charts/synthetic_v01/chart_049_bar.png,comparison,medium,başvuru,"2022 yılındaki belediye hizmet başvurusu, 2021 yılına göre kaç başvuru farklıdır?","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_049_bar.png
+
+Soru:
+2022 yılındaki belediye hizmet başvurusu, 2021 yılına göre kaç başvuru farklıdır?"
+trdab_v01_000244,synthetic_v01,validation,municipality,table_only,bar,,percentage_change,medium,percent,2021 ile 2024 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 69848 |
+| 2020 | 58797 |
+| 2021 | 78267 |
+| 2022 | 67875 |
+| 2023 | 77526 |
+| 2024 | 62478 |
+
+Soru:
+2021 ile 2024 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000246,synthetic_v01,validation,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_050_bar.png,value_lookup,easy,ton,2024 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_050_bar.png
+
+Soru:
+2024 yılında üretim miktarı kaçtır?"
+trdab_v01_000247,synthetic_v01,validation,agriculture,table_only,bar,,max_min,easy,ton,Verilen verideki en yüksek üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |
+
+Soru:
+Verilen verideki en yüksek üretim miktarı kaçtır?"
+trdab_v01_000248,synthetic_v01,validation,agriculture,chart_only,bar,charts/synthetic_v01/chart_050_bar.png,comparison,medium,ton,"2020 yılındaki üretim miktarı, 2023 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_050_bar.png
+
+Soru:
+2020 yılındaki üretim miktarı, 2023 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000249,synthetic_v01,validation,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_050_bar.png,percentage_change,medium,percent,2022 ile 2024 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,"| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_050_bar.png
+
+Soru:
+2022 ile 2024 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000251,synthetic_v01,validation,transportation,chart_only,line,charts/synthetic_v01/chart_051_line.png,value_lookup,easy,kişi,2020 yılında yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_051_line.png
+
+Soru:
+2020 yılında yolcu sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000252,synthetic_v01,validation,transportation,table_and_chart,line,charts/synthetic_v01/chart_051_line.png,max_min,easy,kişi,Verilen verideki en düşük yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_051_line.png
+
+Soru:
+Verilen verideki en düşük yolcu sayısı kaçtır?"
+trdab_v01_000253,synthetic_v01,validation,transportation,table_only,line,,comparison,medium,kişi,"2022 yılındaki yolcu sayısı, 2023 yılına göre kaç kişi farklıdır?","| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |
+
+Soru:
+2022 yılındaki yolcu sayısı, 2023 yılına göre kaç kişi farklıdır?"
+trdab_v01_000254,synthetic_v01,validation,transportation,chart_only,line,charts/synthetic_v01/chart_051_line.png,percentage_change,medium,percent,2019 ile 2022 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_051_line.png
+
+Soru:
+2019 ile 2022 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000256,synthetic_v01,validation,economy,table_only,line,,value_lookup,easy,milyon dolar,2023 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |
+
+Soru:
+2023 yılında ihracat değeri kaçtır?"
+trdab_v01_000257,synthetic_v01,validation,economy,chart_only,line,charts/synthetic_v01/chart_052_line.png,max_min,easy,milyon dolar,Verilen verideki en yüksek ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_052_line.png
+
+Soru:
+Verilen verideki en yüksek ihracat değeri kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000258,synthetic_v01,validation,economy,table_and_chart,line,charts/synthetic_v01/chart_052_line.png,comparison,medium,milyon dolar,"2020 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?","| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_052_line.png
+
+Soru:
+2020 yılındaki ihracat değeri, 2021 yılına göre kaç milyon dolar farklıdır?"
+trdab_v01_000259,synthetic_v01,validation,economy,table_only,line,,percentage_change,medium,percent,2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?,"| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 194 |
+| 2019 | 150 |
+| 2020 | 183 |
+| 2021 | 128 |
+| 2022 | 192 |
+| 2023 | 180 |
+
+Soru:
+2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000261,synthetic_v01,validation,education,table_and_chart,line,charts/synthetic_v01/chart_053_line.png,value_lookup,easy,öğrenci,2019 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_053_line.png
+
+Soru:
+2019 yılında öğrenci sayısı kaçtır?"
+trdab_v01_000262,synthetic_v01,validation,education,table_only,line,,max_min,easy,öğrenci,Verilen verideki en düşük öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |
+
+Soru:
+Verilen verideki en düşük öğrenci sayısı kaçtır?"
+trdab_v01_000263,synthetic_v01,validation,education,chart_only,line,charts/synthetic_v01/chart_053_line.png,comparison,medium,öğrenci,"2021 yılındaki öğrenci sayısı, 2022 yılına göre kaç öğrenci farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_053_line.png
+
+Soru:
+2021 yılındaki öğrenci sayısı, 2022 yılına göre kaç öğrenci farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000264,synthetic_v01,validation,education,table_and_chart,line,charts/synthetic_v01/chart_053_line.png,percentage_change,medium,percent,2021 ile 2023 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_053_line.png
+
+Soru:
+2021 ile 2023 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000266,synthetic_v01,validation,tourism,chart_only,bar,charts/synthetic_v01/chart_054_bar.png,value_lookup,easy,kişi,2023 yılında ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_054_bar.png
+
+Soru:
+2023 yılında ziyaretçi sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000267,synthetic_v01,validation,tourism,table_and_chart,bar,charts/synthetic_v01/chart_054_bar.png,max_min,easy,kişi,Verilen verideki en düşük ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_054_bar.png
+
+Soru:
+Verilen verideki en düşük ziyaretçi sayısı kaçtır?"
+trdab_v01_000268,synthetic_v01,validation,tourism,table_only,bar,,comparison,medium,kişi,"2019 yılındaki ziyaretçi sayısı, 2021 yılına göre kaç kişi farklıdır?","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |
+
+Soru:
+2019 yılındaki ziyaretçi sayısı, 2021 yılına göre kaç kişi farklıdır?"
+trdab_v01_000269,synthetic_v01,validation,tourism,chart_only,bar,charts/synthetic_v01/chart_054_bar.png,percentage_change,medium,percent,2018 ile 2021 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_054_bar.png
+
+Soru:
+2018 ile 2021 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000271,synthetic_v01,test,energy,table_only,line,,value_lookup,easy,MWh,2021 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |
+
+Soru:
+2021 yılında elektrik tüketimi kaçtır?"
+trdab_v01_000272,synthetic_v01,test,energy,chart_only,line,charts/synthetic_v01/chart_055_line.png,max_min,easy,MWh,Verilen verideki en yüksek elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_055_line.png
+
+Soru:
+Verilen verideki en yüksek elektrik tüketimi kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000273,synthetic_v01,test,energy,table_and_chart,line,charts/synthetic_v01/chart_055_line.png,comparison,medium,MWh,"2021 yılındaki elektrik tüketimi, 2018 yılına göre kaç MWh farklıdır?","| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_055_line.png
+
+Soru:
+2021 yılındaki elektrik tüketimi, 2018 yılına göre kaç MWh farklıdır?"
+trdab_v01_000274,synthetic_v01,test,energy,table_only,line,,percentage_change,medium,percent,2020 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?,"| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90303 |
+| 2019 | 93408 |
+| 2020 | 99654 |
+| 2021 | 103871 |
+| 2022 | 106562 |
+| 2023 | 113959 |
+
+Soru:
+2020 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000276,synthetic_v01,test,health,table_and_chart,line,charts/synthetic_v01/chart_056_line.png,value_lookup,easy,başvuru,2025 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_056_line.png
+
+Soru:
+2025 yılında hastane başvuru sayısı kaçtır?"
+trdab_v01_000277,synthetic_v01,test,health,table_only,line,,max_min,easy,başvuru,Verilen verideki en düşük hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |
+
+Soru:
+Verilen verideki en düşük hastane başvuru sayısı kaçtır?"
+trdab_v01_000278,synthetic_v01,test,health,chart_only,line,charts/synthetic_v01/chart_056_line.png,comparison,medium,başvuru,"2025 yılındaki hastane başvuru sayısı, 2020 yılına göre kaç başvuru farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_056_line.png
+
+Soru:
+2025 yılındaki hastane başvuru sayısı, 2020 yılına göre kaç başvuru farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000279,synthetic_v01,test,health,table_and_chart,line,charts/synthetic_v01/chart_056_line.png,percentage_change,medium,percent,2020 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_056_line.png
+
+Soru:
+2020 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000281,synthetic_v01,test,environment,chart_only,line,charts/synthetic_v01/chart_057_line.png,value_lookup,easy,ton,2020 yılında geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_057_line.png
+
+Soru:
+2020 yılında geri dönüştürülen atık miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000282,synthetic_v01,test,environment,table_and_chart,line,charts/synthetic_v01/chart_057_line.png,max_min,easy,ton,Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_057_line.png
+
+Soru:
+Verilen verideki en yüksek geri dönüştürülen atık miktarı kaçtır?"
+trdab_v01_000283,synthetic_v01,test,environment,table_only,line,,comparison,medium,ton,"2023 yılındaki geri dönüştürülen atık miktarı, 2019 yılına göre kaç ton farklıdır?","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |
+
+Soru:
+2023 yılındaki geri dönüştürülen atık miktarı, 2019 yılına göre kaç ton farklıdır?"
+trdab_v01_000284,synthetic_v01,test,environment,chart_only,line,charts/synthetic_v01/chart_057_line.png,percentage_change,medium,percent,2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_057_line.png
+
+Soru:
+2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000286,synthetic_v01,test,sports,table_only,bar,,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |
+
+Soru:
+2020 yılında spor tesisi kullanım sayısı kaçtır?"
+trdab_v01_000287,synthetic_v01,test,sports,chart_only,bar,charts/synthetic_v01/chart_058_bar.png,max_min,easy,kullanım,Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_058_bar.png
+
+Soru:
+Verilen verideki en düşük spor tesisi kullanım sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000288,synthetic_v01,test,sports,table_and_chart,bar,charts/synthetic_v01/chart_058_bar.png,comparison,medium,kullanım,"2021 yılındaki spor tesisi kullanım sayısı, 2022 yılına göre kaç kullanım farklıdır?","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_058_bar.png
+
+Soru:
+2021 yılındaki spor tesisi kullanım sayısı, 2022 yılına göre kaç kullanım farklıdır?"
+trdab_v01_000289,synthetic_v01,test,sports,table_only,bar,,percentage_change,medium,percent,2020 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?,"| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 60520 |
+| 2021 | 57685 |
+| 2022 | 55422 |
+| 2023 | 51374 |
+| 2024 | 49016 |
+
+Soru:
+2020 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000291,synthetic_v01,test,municipality,table_and_chart,line,charts/synthetic_v01/chart_059_line.png,value_lookup,easy,başvuru,2023 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_059_line.png
+
+Soru:
+2023 yılında belediye hizmet başvurusu kaçtır?"
+trdab_v01_000292,synthetic_v01,test,municipality,table_only,line,,max_min,easy,başvuru,Verilen verideki en yüksek belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |
+
+Soru:
+Verilen verideki en yüksek belediye hizmet başvurusu kaçtır?"
+trdab_v01_000293,synthetic_v01,test,municipality,chart_only,line,charts/synthetic_v01/chart_059_line.png,comparison,medium,başvuru,"2022 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_059_line.png
+
+Soru:
+2022 yılındaki belediye hizmet başvurusu, 2023 yılına göre kaç başvuru farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000294,synthetic_v01,test,municipality,table_and_chart,line,charts/synthetic_v01/chart_059_line.png,percentage_change,medium,percent,2020 ile 2021 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?,"| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_059_line.png
+
+Soru:
+2020 ile 2021 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir?"
+trdab_v01_000296,synthetic_v01,test,agriculture,chart_only,line,charts/synthetic_v01/chart_060_line.png,value_lookup,easy,ton,2025 yılında üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_060_line.png
+
+Soru:
+2025 yılında üretim miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000297,synthetic_v01,test,agriculture,table_and_chart,line,charts/synthetic_v01/chart_060_line.png,max_min,easy,ton,Verilen verideki en yüksek üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_060_line.png
+
+Soru:
+Verilen verideki en yüksek üretim miktarı kaçtır?"
+trdab_v01_000298,synthetic_v01,test,agriculture,table_only,line,,comparison,medium,ton,"2020 yılındaki üretim miktarı, 2025 yılına göre kaç ton farklıdır?","| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |
+
+Soru:
+2020 yılındaki üretim miktarı, 2025 yılına göre kaç ton farklıdır?"
+trdab_v01_000299,synthetic_v01,test,agriculture,chart_only,line,charts/synthetic_v01/chart_060_line.png,percentage_change,medium,percent,2022 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Yüzde işareti, birim, açıklama veya ekstra metin yazma. Örnek cevap formatı: 8.8
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_060_line.png
+
+Soru:
+2022 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."

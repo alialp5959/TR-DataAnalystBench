@@ -282,6 +282,7 @@ def validate_answer_consistency(example: dict, index: int) -> list[str]:
     question_type = example.get("question_type")
     answer_type = example.get("answer_type")
     numeric_answer = example.get("numeric_answer")
+    question = str(example.get("question", ""))
 
     if question_type == "trend_summary":
         if answer_type != "text":
@@ -290,19 +291,63 @@ def validate_answer_consistency(example: dict, index: int) -> list[str]:
         if numeric_answer is not None:
             errors.append(f"Example {index}: trend_summary should have numeric_answer None")
 
-    else:
-        if answer_type not in {"numeric", "numeric_with_label"}:
-            errors.append(f"Example {index}: {question_type} should have numeric or numeric_with_label answer_type")
+        return errors
 
-        if numeric_answer is None:
-            errors.append(f"Example {index}: {question_type} should have a numeric_answer")
+    if answer_type not in {"numeric", "numeric_with_label"}:
+        errors.append(f"Example {index}: {question_type} should have numeric or numeric_with_label answer_type")
 
-        if numeric_answer is not None and not isinstance(numeric_answer, (int, float)):
-            errors.append(f"Example {index}: numeric_answer should be int or float")
+    if numeric_answer is None:
+        errors.append(f"Example {index}: {question_type} should have a numeric_answer")
+        return errors
+
+    if not isinstance(numeric_answer, (int, float)):
+        errors.append(f"Example {index}: numeric_answer should be int or float")
+        return errors
+
+    rows = example.get("table", {}).get("rows", [])
+
+    if question_type == "max_min":
+        values = [row[1] for row in rows if isinstance(row, list) and len(row) >= 2]
+
+        if not values:
+            errors.append(f"Example {index}: max_min cannot be checked because table values are missing")
+        else:
+            if "hangi yıldadır" in question:
+                errors.append(
+                    f"Example {index}: max_min question asks for a year, but numeric scoring expects a value"
+                )
+
+            if "en yüksek" in question:
+                expected_value = max(values)
+                if numeric_answer != expected_value:
+                    errors.append(
+                        f"Example {index}: max_min numeric_answer should be max value {expected_value}, got {numeric_answer}"
+                    )
+
+            elif "en düşük" in question:
+                expected_value = min(values)
+                if numeric_answer != expected_value:
+                    errors.append(
+                        f"Example {index}: max_min numeric_answer should be min value {expected_value}, got {numeric_answer}"
+                    )
+
+            else:
+                errors.append(f"Example {index}: max_min question should mention 'en yüksek' or 'en düşük'")
+
+    if question_type == "comparison":
+        if numeric_answer < 0:
+            errors.append(
+                f"Example {index}: comparison numeric_answer should be an absolute difference, got {numeric_answer}"
+            )
 
     if question_type == "percentage_change":
         if example.get("unit") != "percent":
             errors.append(f"Example {index}: percentage_change should have unit 'percent'")
+
+        if numeric_answer < 0:
+            errors.append(
+                f"Example {index}: percentage_change numeric_answer should be a non-negative magnitude, got {numeric_answer}"
+            )
 
     return errors
 

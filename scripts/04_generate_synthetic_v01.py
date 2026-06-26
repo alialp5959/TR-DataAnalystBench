@@ -180,7 +180,12 @@ def create_values(topic: dict, num_years: int, trend_mode: str) -> list[int]:
 
         else:
             direction = 1 if i % 2 == 0 else -1
-            value = base + direction * random.randint(0, step * 2) + i * random.randint(-step // 4, step // 4) + noise
+            value = (
+                base
+                + direction * random.randint(0, step * 2)
+                + i * random.randint(-step // 4, step // 4)
+                + noise
+            )
 
         value = max(int(value), 1)
         values.append(value)
@@ -199,7 +204,7 @@ def create_table(topic: dict, table_id: int) -> dict:
     rows = [[year, value] for year, value in zip(years, values)]
 
     table = {
-        "columns": ["Yıl", topic["metric"].title()],
+        "columns": ["Yıl", topic["metric"]],
         "rows": rows,
     }
 
@@ -225,19 +230,42 @@ def generate_chart(table: dict, topic: dict, chart_type: str, output_path: Path)
     years = [row[0] for row in table["rows"]]
     values = [row[1] for row in table["rows"]]
 
-    plt.figure(figsize=(7, 4))
+    plt.figure(figsize=(8, 4.8))
 
     if chart_type == "line":
         plt.plot(years, values, marker="o")
+
+        for year, value in zip(years, values):
+            plt.annotate(
+                format_number_tr(value),
+                (year, value),
+                textcoords="offset points",
+                xytext=(0, 8),
+                ha="center",
+                fontsize=8,
+            )
+
     elif chart_type == "bar":
-        plt.bar(years, values)
+        bars = plt.bar(years, values)
+
+        for bar, value in zip(bars, values):
+            plt.text(
+                bar.get_x() + bar.get_width() / 2,
+                bar.get_height(),
+                format_number_tr(value),
+                ha="center",
+                va="bottom",
+                fontsize=8,
+            )
+
     else:
         raise ValueError(f"Unsupported chart type: {chart_type}")
 
-    plt.title(f"{topic['metric'].title()} ({years[0]}-{years[-1]})")
+    plt.title(f"{topic['metric']} ({years[0]}-{years[-1]})")
     plt.xlabel("Yıl")
-    plt.ylabel(f"{topic['metric'].title()} ({topic['unit']})")
+    plt.ylabel(f"{topic['metric']} ({topic['unit']})")
     plt.grid(True, alpha=0.3, axis="y")
+    plt.margins(y=0.18)
     plt.tight_layout()
     plt.savefig(output_path, dpi=150)
     plt.close()
@@ -265,7 +293,7 @@ def base_example(
         "question_type": question_type,
         "difficulty": difficulty,
         "table": table_info["table"],
-        "target_column": topic["metric"].title(),
+        "target_column": topic["metric"],
         "unit": topic["unit"],
         "split": split,
     }
@@ -317,18 +345,18 @@ def build_max_min(
 
     if ask_max:
         selected_year, selected_value = max(rows, key=lambda row: row[1])
-        question = f"Tabloda {topic['metric']} en yüksek hangi yıldadır?"
+        question = f"Verilen verideki en yüksek {topic['metric']} kaçtır?"
         answer = (
-            f"{topic['metric'].capitalize()} en yüksek {selected_year} yılındadır. "
-            f"Bu yıldaki değer {format_number_tr(selected_value)} {topic['unit']} olarak verilmiştir."
+            f"En yüksek {topic['metric']} {format_number_tr(selected_value)} "
+            f"{topic['unit']} olarak verilmiştir. Bu değer {selected_year} yılında görülmüştür."
         )
         calculation = f"Maksimum değer: {selected_value}, yıl: {selected_year}"
     else:
         selected_year, selected_value = min(rows, key=lambda row: row[1])
-        question = f"Tabloda {topic['metric']} en düşük hangi yıldadır?"
+        question = f"Verilen verideki en düşük {topic['metric']} kaçtır?"
         answer = (
-            f"{topic['metric'].capitalize()} en düşük {selected_year} yılındadır. "
-            f"Bu yıldaki değer {format_number_tr(selected_value)} {topic['unit']} olarak verilmiştir."
+            f"En düşük {topic['metric']} {format_number_tr(selected_value)} "
+            f"{topic['unit']} olarak verilmiştir. Bu değer {selected_year} yılında görülmüştür."
         )
         calculation = f"Minimum değer: {selected_value}, yıl: {selected_year}"
 
@@ -394,9 +422,9 @@ def build_comparison(
             "question": f"{year_b} yılındaki {topic['metric']}, {year_a} yılına göre kaç {topic['unit']} farklıdır?",
             "answer": f"{year_b} yılındaki {topic['metric']}, {year_a} yılına göre {format_number_tr(abs_diff)} {topic['unit']} {direction}.",
             "answer_type": "numeric",
-            "numeric_answer": diff,
-            "calculation": f"{value_b} - {value_a} = {diff}",
-            "expected_reasoning": "İki yılın değerleri bulunup ikinci yıldan birinci yıl çıkarılmalıdır.",
+            "numeric_answer": abs_diff,
+            "calculation": f"|{value_b} - {value_a}| = {abs_diff}",
+            "expected_reasoning": "İki yılın değerleri bulunup aralarındaki mutlak fark hesaplanmalıdır.",
         }
     )
 
@@ -418,6 +446,7 @@ def build_percentage_change(
 
     pct_change = ((end_value - start_value) / start_value) * 100
     pct_rounded = round(pct_change, 1)
+    pct_magnitude = abs(pct_rounded)
 
     if pct_change > 0:
         direction = "artmıştır"
@@ -438,12 +467,12 @@ def build_percentage_change(
 
     example.update(
         {
-            "question": f"{start_year}'den {end_year}'e {topic['metric']} yaklaşık yüzde kaç değişmiştir?",
-            "answer": f"{start_year}'den {end_year}'e {topic['metric']} yaklaşık %{format_percent_tr(pct_rounded)} {direction}.",
+            "question": f"{start_year} ile {end_year} arasında {topic['metric']} yaklaşık yüzde kaç değişmiştir?",
+            "answer": f"{start_year} ile {end_year} arasında {topic['metric']} yaklaşık %{format_percent_tr(pct_magnitude)} {direction}.",
             "answer_type": "numeric",
-            "numeric_answer": pct_rounded,
-            "calculation": f"(({end_value} - {start_value}) / {start_value}) * 100 = {pct_rounded}",
-            "expected_reasoning": "Başlangıç ve bitiş yıllarındaki değerler bulunup yüzde değişim formülü uygulanmalıdır.",
+            "numeric_answer": pct_magnitude,
+            "calculation": f"abs((({end_value} - {start_value}) / {start_value}) * 100) = {pct_magnitude}",
+            "expected_reasoning": "Başlangıç ve bitiş yıllarındaki değerler bulunup yüzde değişimin büyüklüğü hesaplanmalıdır.",
             "unit": "percent",
         }
     )
@@ -487,19 +516,19 @@ def build_trend_summary(
 
     if trend == "artış eğilimi":
         answer = (
-            f"Tablo genel olarak {topic['metric']} için artış eğilimi göstermektedir. "
+            f"Verilen veri genel olarak {topic['metric']} için artış eğilimi göstermektedir. "
             f"{start_year} yılında {format_number_tr(start_value)} {topic['unit']} olan değer, "
             f"{end_year} yılında {format_number_tr(end_value)} {topic['unit']} seviyesine yükselmiştir."
         )
     elif trend == "azalış eğilimi":
         answer = (
-            f"Tablo genel olarak {topic['metric']} için azalış eğilimi göstermektedir. "
+            f"Verilen veri genel olarak {topic['metric']} için azalış eğilimi göstermektedir. "
             f"{start_year} yılında {format_number_tr(start_value)} {topic['unit']} olan değer, "
             f"{end_year} yılında {format_number_tr(end_value)} {topic['unit']} seviyesine düşmüştür."
         )
     else:
         answer = (
-            f"Tablo {topic['metric']} için dalgalı bir eğilim göstermektedir. "
+            f"Verilen veri {topic['metric']} için dalgalı bir eğilim göstermektedir. "
             f"Yıllar arasında hem artış hem de azalış görüldüğü için tek yönlü güçlü bir eğilim yoktur."
         )
 
@@ -515,7 +544,7 @@ def build_trend_summary(
 
     example.update(
         {
-            "question": f"Bu tabloya göre {topic['metric']} için genel eğilim nedir?",
+            "question": f"Verilen veriye göre {topic['metric']} için genel eğilim nedir?",
             "answer": answer,
             "answer_type": "text",
             "numeric_answer": None,
@@ -554,9 +583,9 @@ def build_example(
 
 
 def save_jsonl(examples: list[dict], path: Path) -> None:
-    with path.open("w", encoding="utf-8") as f:
+    with path.open("w", encoding="utf-8") as file:
         for example in examples:
-            f.write(json.dumps(example, ensure_ascii=False) + "\n")
+            file.write(json.dumps(example, ensure_ascii=False) + "\n")
 
 
 def save_preview_csv(examples: list[dict], path: Path) -> None:

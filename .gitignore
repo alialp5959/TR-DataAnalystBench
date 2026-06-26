@@ -7,5 +7,11 @@ __pycache__/
 .DS_Store
 
 data/raw/
+data/exports/evaluations/
 *.tmp
 *.cache
+# Generated scoring outputs
+data/exports/synthetic_v01_oracle_predictions.csv
+data/exports/synthetic_v01_noisy_baseline_predictions.csv
+data/exports/synthetic_v01_scoring_details.csv
+data/exports/synthetic_v01_scoring_report.json
