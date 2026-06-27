@@ -18,9 +18,10 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 
 ## Highlights
 
-- **1,076 examples** across **five tiers** of increasing realism and difficulty.
+- **1,256 examples** across **six tiers** of increasing realism and difficulty.
 - **Genuine chart reading:** a label-free tier where values must be read off the axes/gridlines, not OCR'd from printed labels.
-- **Contamination-controlled real data:** a tier of real series with the country/years removed and per-series rescaling, so it measures reading rather than recall.
+- **Hard multi-step reasoning:** CAGR, fastest-growth year, longest streak, conditional average, share of total, ratios — tasks that catch specific reasoning errors.
+- **Contamination-controlled real data:** real series with the country/years removed and per-series rescaling, so it measures reading rather than recall.
 - **Hallucination test:** `unanswerable` questions where inventing a number is penalized.
 - **Real-data tier** built from licensed Türkiye open data (World Bank, CDIAC) with full provenance.
 - **Automatic evaluator** with task-aware tolerances + **oracle/noisy baselines** + a **free, no-API manual evaluation kit**.
@@ -35,7 +36,8 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 | `real_pilot` | 108 | 7 | 3 | **Real Türkiye open data** (population, GDP, inflation, CO₂) |
 | `chart_read_v01` | 240 | 5 | 10 | **Label-free chart reading** (estimate from axes/gridlines, not OCR) |
 | `real_anon_v01` | 108 | 7 | 3 | **Contamination-controlled** real data (country/years removed, rescaled) |
-| **Total** | **1,076** | | | |
+| `reasoning_v01` | 180 | 6 | 10 | **Hard multi-step reasoning** (CAGR, streaks, conditional average, ratios) |
+| **Total** | **1,256** | | | |
 
 ## Baselines
 
@@ -220,7 +222,9 @@ TR-DataAnalystBench/
 │   ├── 19_generate_chart_read_v01.py       # label-free chart-reading tier
 │   ├── 20_validate_chart_read_v01.py       # chart-reading schema + recomputed-gold checks
 │   ├── 21_generate_real_anon_v01.py        # contamination-controlled real tier
-│   └── 22_validate_real_anon_v01.py        # anonymization + recomputed-gold checks
+│   ├── 22_validate_real_anon_v01.py        # anonymization + recomputed-gold checks
+│   ├── 23_generate_reasoning_v01.py        # hard multi-step reasoning tier
+│   └── 24_validate_reasoning_v01.py        # reasoning schema + recomputed-gold checks
 ├── requirements.txt
 └── README.md
 ```

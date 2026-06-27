@@ -32,3 +32,6 @@ jobs:
 
       - name: Validate real_anon_v01
         run: python scripts/22_validate_real_anon_v01.py
+
+      - name: Validate reasoning_v01
+        run: python scripts/24_validate_reasoning_v01.py

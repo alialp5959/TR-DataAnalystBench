@@ -29,6 +29,7 @@ TIERS = {
     "real_pilot": PROJECT_ROOT / "data" / "processed" / "real_pilot.jsonl",
     "chart_read_v01": PROJECT_ROOT / "data" / "processed" / "chart_read_v01.jsonl",
     "real_anon_v01": PROJECT_ROOT / "data" / "processed" / "real_anon_v01.jsonl",
+    "reasoning_v01": PROJECT_ROOT / "data" / "processed" / "reasoning_v01.jsonl",
 }
 
 CHART_DIRS = {
@@ -72,9 +73,9 @@ def main() -> None:
             )
             split_counts[split] = len(rows)
 
-        # copy charts referenced by this tier
-        chart_src = CHART_DIRS[tier]
-        if chart_src.exists():
+        # copy charts referenced by this tier (table-only tiers have none)
+        chart_src = CHART_DIRS.get(tier)
+        if chart_src is not None and chart_src.exists():
             shutil.copytree(chart_src, RELEASE_DIR / "charts" / tier)
 
         stats["tiers"][tier] = {

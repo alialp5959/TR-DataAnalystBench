@@ -57,6 +57,14 @@ configs:
     path: data/real_anon_v01/validation.jsonl
   - split: test
     path: data/real_anon_v01/test.jsonl
+- config_name: reasoning_v01
+  data_files:
+  - split: train
+    path: data/reasoning_v01/train.jsonl
+  - split: validation
+    path: data/reasoning_v01/validation.jsonl
+  - split: test
+    path: data/reasoning_v01/test.jsonl
 ---
 
 # TR-DataAnalystBench
@@ -77,7 +85,7 @@ Many models are fluent in Turkish yet still fail at numerical reasoning, table
 understanding, and chart interpretation. TR-DataAnalystBench isolates those
 abilities with verifiable gold answers and a transparent scoring contract.
 
-## The suite (1,076 examples, five tiers)
+## The suite (1,256 examples, six tiers)
 
 | Tier | Examples | Tasks | What it targets |
 |---|---:|---:|---|
@@ -86,6 +94,7 @@ abilities with verifiable gold answers and a transparent scoring contract.
 | `real_pilot` | 108 | 7 | **Real Türkiye open data** (population, GDP, consumer inflation, CO₂) with verified gold |
 | `chart_read_v01` | 240 | 5 | **Genuine chart reading**: label-free charts (no printed values); read which year is max/min, compare years, count above a level, estimate a value, read the trend |
 | `real_anon_v01` | 108 | 7 | **Contamination-controlled real data**: real series with the country/years removed and per-series rescaling, so it measures table reading rather than recall |
+| `reasoning_v01` | 180 | 6 | **Hard multi-step reasoning**: CAGR, fastest-growth year, longest increase streak, conditional average, share of total, ratio between two series |
 
 Splits are table-disjoint (the questions sharing a table/chart never cross a
 split boundary).
