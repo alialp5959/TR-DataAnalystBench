@@ -115,6 +115,34 @@ python scripts/08_evaluate_predictions_file.py \
     --prediction-name v02_oracle
 ```
 
+## Dataset: real_pilot (real Türkiye open data)
+
+A first **real-data** tier built from redistributable open data for Türkiye, so the questions are grounded in real figures rather than synthetic ones.
+
+* Sources: World Bank indicators (population, GDP, inflation) via the datahub `datasets` GitHub mirrors. Licenses: ODC-PDDL-1.0 and CC-BY-4.0 (redistributable). Provenance and license per source are recorded in `data/sources_real/provenance.json`, and the raw snapshots are committed for reproducibility.
+* Gold answers are still computed with Python from the real numbers, so the tier stays fully auto-scorable with the same evaluator.
+* Each example carries `source_name`, `source_url`, and `license` for transparency.
+
+```bash
+python scripts/14_fetch_real_sources.py     # cache real sources + provenance (needs network)
+python scripts/15_generate_real_pilot.py    # build real_pilot from the cache
+python scripts/08_evaluate_predictions_file.py \
+    --dataset data/processed/real_pilot.jsonl \
+    --predictions data/exports/real_pilot_oracle_predictions.csv --prediction-name real_pilot_oracle
+```
+
+This is a proof-of-concept (60 examples, 3 indicators); it is designed to scale by adding indicators to the source list in `scripts/14_fetch_real_sources.py`.
+
+## Free manual model evaluation
+
+You do not need an API to get a first real model score. `scripts/16_create_manual_kit.py` produces a paste-friendly worksheet plus an empty prediction template for any split:
+
+```bash
+python scripts/16_create_manual_kit.py --dataset data/processed/real_pilot.jsonl --split test
+```
+
+Paste each prompt into a fresh chat (upload the chart image when one is referenced), write the model's answer into the template CSV, then score it with `scripts/08_evaluate_predictions_file.py`.
+
 ## Repository Structure
 
 ```text
@@ -143,7 +171,10 @@ TR-DataAnalystBench/
 │   ├── 10_create_prompt_pack.py
 │   ├── 11_generate_synthetic_v02.py        # harder tier: dataset + multi-series charts
 │   ├── 12_validate_synthetic_v02.py        # schema + recomputed-gold validation
-│   └── 13_create_v02_eval_assets.py        # v02 prompt packs / template / baselines
+│   ├── 13_create_v02_eval_assets.py        # v02 prompt packs / template / baselines
+│   ├── 14_fetch_real_sources.py            # cache real open data + provenance
+│   ├── 15_generate_real_pilot.py           # real-data tier from cached sources
+│   └── 16_create_manual_kit.py             # paste-friendly kit for free manual eval
 ├── requirements.txt
 └── README.md
 ```
@@ -225,12 +256,15 @@ Done so far:
 * [x] External prediction-file evaluator
 * [x] Harder `synthetic_v02` tier: multi-series tables, distractor columns, multi-step tasks (average / nth-highest / cross-series), unanswerable (abstention) questions, real `hard` labels
 
+* [x] First real-data tier (`real_pilot`) from licensed Türkiye open data, with provenance
+* [x] Free manual evaluation kit (no API required)
+
 Planned next:
 
-1. Label-free chart variants (read values from gridlines, scored with estimation tolerance) for genuine chart-reading rather than label OCR.
-2. A real multimodal evaluation harness that passes chart images to a model.
-3. Baseline model evaluations and a public comparison table.
-4. Move from synthetic tables to real Turkish open-data sources (e.g. TÜİK).
+1. Scale the real-data tier: more indicators/domains and more examples (target ~1000+ with ≥100 per important cell for statistically stable subgroup numbers).
+2. Label-free chart variants (read values from gridlines, scored with estimation tolerance) for genuine chart-reading rather than label OCR.
+3. A real multimodal evaluation harness that passes chart images to a model.
+4. Baseline model evaluations and a public comparison table.
 5. Prepare a Hugging Face dataset release and a public benchmark card.
 
 ## Project Goal

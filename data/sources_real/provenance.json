@@ -1,0 +1,58 @@
+{
+  "country_code": "TUR",
+  "country_label": "Türkiye",
+  "note": "Real open data cached locally for reproducible generation.",
+  "sources": [
+    {
+      "name": "population",
+      "domain": "demografi",
+      "metric": "nüfus",
+      "unit": "kişi",
+      "indicator_source": "World Bank (via datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/population/main/data/population.csv",
+      "license": {
+        "name": "ODC-PDDL-1.0",
+        "path": "http://opendatacommons.org/licenses/pddl/",
+        "title": "Open Data Commons Public Domain Dedication and License v1.0"
+      },
+      "rows": 65,
+      "year_min": 1960,
+      "year_max": 2024,
+      "local_path": "data/sources_real/population.csv"
+    },
+    {
+      "name": "gdp",
+      "domain": "ekonomi",
+      "metric": "gayrisafi yurt içi hasıla",
+      "unit": "dolar",
+      "indicator_source": "World Bank (via datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/gdp/main/data/gdp.csv",
+      "license": {
+        "name": "CC-BY-4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/",
+        "title": "Creative Commons Attribution 4.0"
+      },
+      "rows": 64,
+      "year_min": 1960,
+      "year_max": 2023,
+      "local_path": "data/sources_real/gdp.csv"
+    },
+    {
+      "name": "inflation",
+      "domain": "ekonomi",
+      "metric": "enflasyon oranı",
+      "unit": "yüzde",
+      "indicator_source": "World Bank (via datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/inflation/main/data/inflation-gdp.csv",
+      "license": {
+        "name": "ODC-PDDL-1.0",
+        "path": "http://opendatacommons.org/licenses/pddl/",
+        "title": "Open Data Commons Public Domain Dedication and License v1.0"
+      },
+      "rows": 65,
+      "year_min": 1960,
+      "year_max": 2024,
+      "local_path": "data/sources_real/inflation.csv"
+    }
+  ]
+}

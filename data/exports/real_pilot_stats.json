@@ -1,0 +1,45 @@
+{
+  "dataset_version": "real_pilot",
+  "country": "Türkiye",
+  "total_examples": 60,
+  "unique_charts": 9,
+  "sources": [
+    "population",
+    "gdp",
+    "inflation"
+  ],
+  "licenses": [
+    "CC-BY-4.0",
+    "ODC-PDDL-1.0"
+  ],
+  "question_type_distribution": {
+    "value_lookup": 9,
+    "comparison": 9,
+    "average": 9,
+    "nth_highest": 9,
+    "percentage_change": 6,
+    "trend_summary": 9,
+    "unanswerable": 9
+  },
+  "answer_type_distribution": {
+    "numeric": 33,
+    "numeric_with_label": 9,
+    "text": 9,
+    "abstention": 9
+  },
+  "difficulty_distribution": {
+    "easy": 9,
+    "medium": 24,
+    "hard": 27
+  },
+  "input_format_distribution": {
+    "table_only": 20,
+    "chart_only": 20,
+    "table_and_chart": 20
+  },
+  "split_distribution": {
+    "train": 42,
+    "validation": 6,
+    "test": 12
+  }
+}

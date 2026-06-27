@@ -17,3 +17,4 @@ data/exports/synthetic_v01_scoring_details.csv
 data/exports/synthetic_v01_scoring_report.json
 data/exports/synthetic_v02_oracle_predictions.csv
 data/exports/synthetic_v02_noisy_baseline_predictions.csv
+data/exports/real_pilot_oracle_predictions.csv

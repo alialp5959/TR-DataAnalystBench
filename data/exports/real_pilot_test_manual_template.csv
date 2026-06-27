@@ -1,0 +1,13 @@
+﻿id,input_format,question_type,predicted_numeric_answer,prediction_text
+trdab_real_000049,table_only,value_lookup,,
+trdab_real_000050,chart_only,comparison,,
+trdab_real_000051,table_and_chart,average,,
+trdab_real_000052,table_only,nth_highest,,
+trdab_real_000053,chart_only,trend_summary,,
+trdab_real_000054,table_and_chart,unanswerable,,
+trdab_real_000055,table_only,value_lookup,,
+trdab_real_000056,chart_only,comparison,,
+trdab_real_000057,table_and_chart,average,,
+trdab_real_000058,table_only,nth_highest,,
+trdab_real_000059,chart_only,trend_summary,,
+trdab_real_000060,table_and_chart,unanswerable,,
