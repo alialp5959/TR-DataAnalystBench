@@ -39,11 +39,13 @@ WINDOW_SIZE = 6
 ABSENT_METRIC = {
     "demografi": "işsizlik oranı",
     "ekonomi": "cari açık",
+    "çevre": "orman alanı",
+    "enerji": "elektrik fiyatı",
 }
 
 # Rate-style indicators: skip percentage_change (a percent change of a percent
 # rate is confusing) and treat them accordingly.
-RATE_METRICS = {"enflasyon oranı"}
+RATE_METRICS = {"tüketici enflasyon oranı", "enflasyon oranı"}
 
 INPUT_FORMATS = ["table_only", "chart_only", "table_and_chart"]
 
@@ -314,7 +316,7 @@ def main() -> None:
     table_specs = []
     for source in provenance["sources"]:
         rows = load_source_rows(source["name"])
-        for window in make_windows(rows, count=3):
+        for window in make_windows(rows, count=4):
             table_specs.append((source, window))
 
     examples = []

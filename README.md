@@ -117,21 +117,22 @@ python scripts/08_evaluate_predictions_file.py \
 
 ## Dataset: real_pilot (real Türkiye open data)
 
-A first **real-data** tier built from redistributable open data for Türkiye, so the questions are grounded in real figures rather than synthetic ones.
+A **real-data** tier built from redistributable open data for Türkiye, so the questions are grounded in real figures rather than synthetic ones.
 
-* Sources: World Bank indicators (population, GDP, inflation) via the datahub `datasets` GitHub mirrors. Licenses: ODC-PDDL-1.0 and CC-BY-4.0 (redistributable). Provenance and license per source are recorded in `data/sources_real/provenance.json`, and the raw snapshots are committed for reproducibility.
-* Gold answers are still computed with Python from the real numbers, so the tier stays fully auto-scorable with the same evaluator.
-* Each example carries `source_name`, `source_url`, and `license` for transparency.
+* **108 examples** from 4 indicators across 3 domains: population (demografi), GDP and consumer inflation (ekonomi), and fossil-fuel CO₂ emissions (çevre).
+* Sources are GitHub-hosted World Bank / CDIAC datasets (via the datahub `datasets` mirrors). Licenses: ODC-PDDL-1.0 and CC-BY-4.0 (redistributable). Provenance and license per source are in `data/sources_real/provenance.json`, and the raw snapshots are committed for reproducibility.
+* Gold answers are computed with Python from the real numbers, so the tier stays fully auto-scorable with the same evaluator. Each example carries `source_name`, `source_url`, and `license` for transparency.
 
 ```bash
 python scripts/14_fetch_real_sources.py     # cache real sources + provenance (needs network)
 python scripts/15_generate_real_pilot.py    # build real_pilot from the cache
+python scripts/17_validate_real_pilot.py    # schema + recomputed-gold + license checks
 python scripts/08_evaluate_predictions_file.py \
     --dataset data/processed/real_pilot.jsonl \
     --predictions data/exports/real_pilot_oracle_predictions.csv --prediction-name real_pilot_oracle
 ```
 
-This is a proof-of-concept (60 examples, 3 indicators); it is designed to scale by adding indicators to the source list in `scripts/14_fetch_real_sources.py`.
+It is designed to scale by adding indicators to the source list in `scripts/14_fetch_real_sources.py` (any GitHub-hosted, redistributable dataset with yearly Türkiye values).
 
 ## Free manual model evaluation
 
@@ -174,7 +175,8 @@ TR-DataAnalystBench/
 │   ├── 13_create_v02_eval_assets.py        # v02 prompt packs / template / baselines
 │   ├── 14_fetch_real_sources.py            # cache real open data + provenance
 │   ├── 15_generate_real_pilot.py           # real-data tier from cached sources
-│   └── 16_create_manual_kit.py             # paste-friendly kit for free manual eval
+│   ├── 16_create_manual_kit.py             # paste-friendly kit for free manual eval
+│   └── 17_validate_real_pilot.py           # real-data schema + recomputed-gold checks
 ├── requirements.txt
 └── README.md
 ```
