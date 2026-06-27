@@ -206,6 +206,15 @@ def is_within_tolerance(example: dict, predicted: float) -> bool:
 
     absolute_error = abs(predicted - gold)
 
+    # Per-example tolerance overrides (data-driven). Used e.g. by the
+    # label-free chart-reading tier: exact tasks (which year? / count) set
+    # tolerances to 0, while value-estimation tasks set a relative tolerance.
+    if "numeric_tolerance" in example or "numeric_abs_tolerance" in example:
+        rel = float(example.get("numeric_tolerance", 0.0))
+        abs_tol = float(example.get("numeric_abs_tolerance", 0.0))
+        relative_error = absolute_error / max(abs(gold), 1e-9)
+        return absolute_error <= abs_tol or relative_error <= rel
+
     if example["question_type"] == "percentage_change":
         # Percentage-change questions use ±2 percentage points.
         return absolute_error <= 2.0

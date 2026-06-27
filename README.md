@@ -18,11 +18,11 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 
 ## Highlights
 
-- **728 examples** across **three tiers** of increasing realism and difficulty.
-- **8 task types**, 3 input formats (`table_only`, `chart_only`, `table_and_chart`).
+- **968 examples** across **four tiers** of increasing realism and difficulty.
+- **Genuine chart reading:** a label-free tier where values must be read off the axes/gridlines, not OCR'd from printed labels.
 - **Hallucination test:** `unanswerable` questions where inventing a number is penalized.
 - **Real-data tier** built from licensed Türkiye open data (World Bank, CDIAC) with full provenance.
-- **Automatic evaluator** + **oracle/noisy baselines** + a **free, no-API manual evaluation kit**.
+- **Automatic evaluator** with task-aware tolerances + **oracle/noisy baselines** + a **free, no-API manual evaluation kit**.
 - **CI** revalidates every gold answer on each push.
 
 ## The benchmark suite
@@ -32,7 +32,8 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 | `synthetic_v01` | 300 | 5 | 10 | Easy/medium baseline (single-series tables) |
 | `synthetic_v02` | 320 | 8 | 10 | Harder & discriminative (multi-series, distractors, unanswerable, `hard`) |
 | `real_pilot` | 108 | 7 | 3 | **Real Türkiye open data** (population, GDP, inflation, CO₂) |
-| **Total** | **728** | | | |
+| `chart_read_v01` | 240 | 5 | 10 | **Label-free chart reading** (estimate from axes/gridlines, not OCR) |
+| **Total** | **968** | | | |
 
 ## Baselines
 
@@ -212,7 +213,10 @@ TR-DataAnalystBench/
 │   ├── 14_fetch_real_sources.py            # cache real open data + provenance
 │   ├── 15_generate_real_pilot.py           # real-data tier from cached sources
 │   ├── 16_create_manual_kit.py             # paste-friendly kit for free manual eval
-│   └── 17_validate_real_pilot.py           # real-data schema + recomputed-gold checks
+│   ├── 17_validate_real_pilot.py           # real-data schema + recomputed-gold checks
+│   ├── 18_build_release.py                 # assemble a Hugging Face-uploadable release/
+│   ├── 19_generate_chart_read_v01.py       # label-free chart-reading tier
+│   └── 20_validate_chart_read_v01.py       # chart-reading schema + recomputed-gold checks
 ├── requirements.txt
 └── README.md
 ```

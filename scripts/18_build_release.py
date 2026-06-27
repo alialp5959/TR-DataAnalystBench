@@ -27,12 +27,14 @@ TIERS = {
     "synthetic_v01": PROJECT_ROOT / "data" / "processed" / "synthetic_v01.jsonl",
     "synthetic_v02": PROJECT_ROOT / "data" / "processed" / "synthetic_v02.jsonl",
     "real_pilot": PROJECT_ROOT / "data" / "processed" / "real_pilot.jsonl",
+    "chart_read_v01": PROJECT_ROOT / "data" / "processed" / "chart_read_v01.jsonl",
 }
 
 CHART_DIRS = {
     "synthetic_v01": PROJECT_ROOT / "charts" / "synthetic_v01",
     "synthetic_v02": PROJECT_ROOT / "charts" / "synthetic_v02",
     "real_pilot": PROJECT_ROOT / "charts" / "real_pilot",
+    "chart_read_v01": PROJECT_ROOT / "charts" / "chart_read_v01",
 }
 
 SPLITS = ["train", "validation", "test"]

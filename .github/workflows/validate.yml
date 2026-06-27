@@ -26,3 +26,6 @@ jobs:
 
       - name: Validate real_pilot
         run: python scripts/17_validate_real_pilot.py
+
+      - name: Validate chart_read_v01
+        run: python scripts/20_validate_chart_read_v01.py

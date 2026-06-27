@@ -41,6 +41,14 @@ configs:
     path: data/real_pilot/validation.jsonl
   - split: test
     path: data/real_pilot/test.jsonl
+- config_name: chart_read_v01
+  data_files:
+  - split: train
+    path: data/chart_read_v01/train.jsonl
+  - split: validation
+    path: data/chart_read_v01/validation.jsonl
+  - split: test
+    path: data/chart_read_v01/test.jsonl
 ---
 
 # TR-DataAnalystBench
@@ -61,16 +69,22 @@ Many models are fluent in Turkish yet still fail at numerical reasoning, table
 understanding, and chart interpretation. TR-DataAnalystBench isolates those
 abilities with verifiable gold answers and a transparent scoring contract.
 
-## The suite (728 examples, three tiers)
+## The suite (968 examples, four tiers)
 
 | Tier | Examples | Tasks | What it targets |
 |---|---:|---:|---|
 | `synthetic_v01` | 300 | 5 | Easy/medium baseline: single-series tables, basic lookups/compare/percentage |
 | `synthetic_v02` | 320 | 8 | Harder & discriminative: multi-series tables, distractor columns, average / nth-highest / cross-series, unanswerable questions, real `hard` labels |
 | `real_pilot` | 108 | 7 | **Real Türkiye open data** (population, GDP, consumer inflation, CO₂) with verified gold |
+| `chart_read_v01` | 240 | 5 | **Genuine chart reading**: label-free charts (no printed values); read which year is max/min, compare years, count above a level, estimate a value, read the trend |
 
 Splits are table-disjoint (the questions sharing a table/chart never cross a
 split boundary).
+
+`chart_read_v01` is the only tier whose charts carry **no data labels**, so it
+measures reading values off the axes/gridlines rather than label OCR. Its
+exact-scored tasks (which year? / compare / count / trend) need only the chart's
+shape, while `value_estimate` is scored with an ±8% estimation tolerance.
 
 ## Task types
 
@@ -136,8 +150,10 @@ an API.
 
 ## Limitations
 
-- The synthetic tiers are templated; charts carry printed data labels, so
-  `chart_only` partly measures label OCR rather than pure visual estimation.
+- In the synthetic/real tiers, charts carry printed data labels, so their
+  `chart_only` items partly measure label OCR. The `chart_read_v01` tier
+  removes labels to isolate genuine chart reading; expand it to make visual
+  reading a larger share of the suite.
 - `real_pilot` is a proof-of-concept (108 examples, 4 indicators); it is meant
   to grow.
 - With a few hundred examples, overall rankings are stable but fine-grained
