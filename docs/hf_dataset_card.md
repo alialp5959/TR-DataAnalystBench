@@ -156,9 +156,10 @@ the scoring pipeline.
 
 | System | Tier | Accuracy | Notes |
 |---|---|---:|---|
-| Oracle (gold) | all | 100% | scoring sanity check |
+| Oracle (gold) | all | 100% | scoring sanity check (all six tiers) |
 | Noisy baseline | synthetic_v01 | ~72% | programmatic perturbation reference |
 | Noisy baseline | synthetic_v02 | ~66% | abstention ~45% (catches hallucination) |
+| "Simple-%" error | reasoning_v01 | ~83% | a model that confuses CAGR with simple % change loses exactly the CAGR items |
 | ChatGPT (manual, 12-item sample) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention, missed one borderline trend |
 
 The ChatGPT number is a small, manually collected illustration, not a full
