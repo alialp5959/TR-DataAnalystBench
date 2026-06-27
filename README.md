@@ -1,36 +1,72 @@
 # TR-DataAnalystBench
 
-TR-DataAnalystBench is a Turkish table and chart reasoning benchmark for evaluating whether language models can correctly analyze structured data.
+**A Turkish table & chart reasoning benchmark for language models — with Python-verified gold answers and an automatic evaluator.**
 
-The benchmark focuses on realistic data analysis tasks such as reading tables, interpreting charts, comparing values, calculating percentage changes, and producing short factual trend summaries.
+![validate](https://github.com/alialp5959/TR-DataAnalystBench/actions/workflows/validate.yml/badge.svg)
+&nbsp;![license](https://img.shields.io/badge/code-MIT-blue)
+&nbsp;![data](https://img.shields.io/badge/data-CC--BY--4.0-green)
+&nbsp;![language](https://img.shields.io/badge/language-Turkish-red)
+
+Can a Turkish-capable LLM actually *do data analysis* — read a value from a
+table, pull a number off a chart, find the maximum, compute an average or a
+percentage change, summarize a trend, and **say "I can't" when the data doesn't
+contain the answer**? TR-DataAnalystBench measures exactly that.
+
+Gold answers are **computed and verified with Python**, not guessed by a model,
+so the benchmark is reproducible and auditable. A single evaluator scores three
+kinds of answer — numeric (with tolerance), categorical (trend), and abstention.
+
+## Highlights
+
+- **728 examples** across **three tiers** of increasing realism and difficulty.
+- **8 task types**, 3 input formats (`table_only`, `chart_only`, `table_and_chart`).
+- **Hallucination test:** `unanswerable` questions where inventing a number is penalized.
+- **Real-data tier** built from licensed Türkiye open data (World Bank, CDIAC) with full provenance.
+- **Automatic evaluator** + **oracle/noisy baselines** + a **free, no-API manual evaluation kit**.
+- **CI** revalidates every gold answer on each push.
+
+## The benchmark suite
+
+| Tier | Examples | Tasks | Domains | Focus |
+|---|---:|---:|---:|---|
+| `synthetic_v01` | 300 | 5 | 10 | Easy/medium baseline (single-series tables) |
+| `synthetic_v02` | 320 | 8 | 10 | Harder & discriminative (multi-series, distractors, unanswerable, `hard`) |
+| `real_pilot` | 108 | 7 | 3 | **Real Türkiye open data** (population, GDP, inflation, CO₂) |
+| **Total** | **728** | | | |
+
+## Baselines
+
+| System | Tier | Accuracy | Notes |
+|---|---|---:|---|
+| Oracle (gold) | all | 100% | scoring sanity check |
+| Noisy baseline | synthetic_v01 | ~72% | programmatic reference |
+| Noisy baseline | synthetic_v02 | ~66% | abstention ~45% (catches hallucination) |
+| ChatGPT (manual, 12-item) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention |
+
+> The ChatGPT figure is a small, manually collected illustration — reproduce or
+> extend it with the no-API kit (`scripts/16_create_manual_kit.py`).
+
+## Use on Hugging Face
+
+Build a self-contained, uploadable dataset folder (one config per tier, three
+splits each, charts included):
+
+```bash
+python scripts/18_build_release.py
+huggingface-cli upload <user>/TR-DataAnalystBench release . --repo-type dataset
+```
+
+The dataset card is in [`docs/hf_dataset_card.md`](docs/hf_dataset_card.md).
+Code is MIT-licensed; the datasets are CC-BY-4.0 (see [`LICENSE`](LICENSE) and
+[`CITATION.cff`](CITATION.cff)).
 
 ## Motivation
 
-Many language models can generate fluent Turkish text, but they may still fail at numerical reasoning, table understanding, chart interpretation, and factual data analysis.
-
-TR-DataAnalystBench aims to provide a reproducible Turkish benchmark for evaluating these abilities. The long-term goal is a dataset and evaluation pipeline that can test Turkish-capable LLMs and multimodal models on data-analyst style tasks.
-
-## Current Status
-
-The benchmark ships two synthetic, fully Python-verified versions:
-
-* **`synthetic_v01`** — 300 examples, an easy/medium baseline tier (scripts `04`–`10`).
-* **`synthetic_v02`** — 320 examples, a harder tier (scripts `11`–`13`) that adds multi-series tables, multi-step tasks, and unanswerable (hallucination) questions.
-
-Gold answers are computed with Python (not guessed by a language model), which makes the benchmark reproducible and auditable.
-
-The repository also keeps the earlier 50-example `pilot` (scripts `01`–`03`) for reference.
-
-### What's in the pipeline
-
-* Synthetic table + chart generation
-* Turkish question generation across 5 task types
-* Python-verified gold answers
-* Schema/consistency validation
-* Automatic scoring for **all 300 examples** (240 numeric + 60 trend)
-* An external evaluator that scores a prediction CSV
-* Prompt packs and prediction templates for running a model
-* Oracle and noisy baselines as a scoring sanity check
+Many models are fluent in Turkish yet still fail at numerical reasoning, table
+understanding, and chart interpretation. TR-DataAnalystBench isolates those
+abilities with verifiable gold answers and a transparent scoring contract. The
+repository also keeps the earlier 50-example `pilot` (scripts `01`–`03`) for
+reference.
 
 ## Dataset: synthetic_v01
 
