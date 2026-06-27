@@ -56,13 +56,27 @@ def column_values(table: dict, column_name: str):
     return [row[idx] for row in table["rows"]]
 
 
+TREND_NET_CHANGE_THRESHOLD = 0.05
+
+
 def detect_trend(values: list[int]) -> str:
     increases = sum(1 for a, b in zip(values, values[1:]) if b > a)
     decreases = sum(1 for a, b in zip(values, values[1:]) if b < a)
-    if increases > decreases and values[-1] > values[0]:
+
+    if decreases == 0 and increases > 0:
         return "increasing"
-    if decreases > increases and values[-1] < values[0]:
+    if increases == 0 and decreases > 0:
         return "decreasing"
+
+    net = values[-1] - values[0]
+    net_ratio = abs(net) / max(abs(values[0]), 1)
+
+    if net_ratio >= TREND_NET_CHANGE_THRESHOLD:
+        if net > 0 and increases > decreases:
+            return "increasing"
+        if net < 0 and decreases > increases:
+            return "decreasing"
+
     return "mixed"
 
 

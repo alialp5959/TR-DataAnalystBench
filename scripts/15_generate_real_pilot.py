@@ -80,13 +80,29 @@ def make_windows(rows: list[tuple[int, float]], count: int = 3) -> list[list[tup
     return list(reversed(windows))
 
 
+# Minimum net change (relative to the start value) to call a direction on a
+# non-monotonic series; below this, a noisy/flat series is "mixed" (dalgalı).
+TREND_NET_CHANGE_THRESHOLD = 0.05
+
+
 def detect_trend(values: list[float]) -> str:
     increases = sum(1 for a, b in zip(values, values[1:]) if b > a)
     decreases = sum(1 for a, b in zip(values, values[1:]) if b < a)
-    if increases > decreases and values[-1] > values[0]:
+
+    if decreases == 0 and increases > 0:
         return "increasing"
-    if decreases > increases and values[-1] < values[0]:
+    if increases == 0 and decreases > 0:
         return "decreasing"
+
+    net = values[-1] - values[0]
+    net_ratio = abs(net) / max(abs(values[0]), 1)
+
+    if net_ratio >= TREND_NET_CHANGE_THRESHOLD:
+        if net > 0 and increases > decreases:
+            return "increasing"
+        if net < 0 and decreases > increases:
+            return "decreasing"
+
     return "mixed"
 
 
