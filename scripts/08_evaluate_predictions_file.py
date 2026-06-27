@@ -60,6 +60,30 @@ def get_trend_examples(examples: list[dict]) -> list[dict]:
     ]
 
 
+def get_abstention_examples(examples: list[dict]) -> list[dict]:
+    return [example for example in examples if example.get("answer_type") == "abstention"]
+
+
+ABSTENTION_KEYWORDS = [
+    "veri yok", "cevaplanamaz", "cevaplanamıyor", "cevap verilemez", "bilinmiyor",
+    "bilinemez", "bulunmuyor", "bulunmamaktadır", "mevcut değil", "yok", "n/a", "na",
+]
+
+
+def is_abstention_prediction(value) -> bool:
+    """True if the prediction declines to answer (the correct response to an unanswerable question)."""
+    if value is None:
+        return False
+    if pd.isna(value):
+        return False
+
+    text = str(value).strip().lower()
+    if not text:
+        return False
+
+    return any(keyword in text for keyword in ABSTENTION_KEYWORDS)
+
+
 def normalize_trend_label(value) -> str | None:
     """Map a free-text trend prediction to one of: increasing / decreasing / mixed."""
     if value is None:
@@ -416,10 +440,85 @@ def summarize_trend_group(details: pd.DataFrame, group_column: str) -> dict:
     return summary
 
 
+def evaluate_abstention_predictions(
+    examples: list[dict],
+    predictions: pd.DataFrame,
+    prediction_name: str,
+) -> tuple[dict, pd.DataFrame]:
+    prediction_map = {}
+
+    for _, row in predictions.iterrows():
+        prediction_map[row["id"]] = row
+
+    detail_rows = []
+
+    for example in examples:
+        example_id = example["id"]
+        prediction_row = prediction_map.get(example_id)
+
+        if prediction_row is None:
+            abstained = False
+            missing_prediction = True
+            prediction_value = None
+        else:
+            text = prediction_row.get("prediction_text", None)
+            numeric = prediction_row.get("predicted_numeric_answer", None)
+            abstained = is_abstention_prediction(text) or is_abstention_prediction(numeric)
+            missing_prediction = False
+            prediction_value = text if (text is not None and not pd.isna(text) and str(text).strip()) else numeric
+
+        detail_rows.append(
+            {
+                "prediction_name": prediction_name,
+                "answer_kind": "abstention",
+                "id": example_id,
+                "domain": example["domain"],
+                "input_format": example["input_format"],
+                "chart_type": example["chart_type"],
+                "question_type": example["question_type"],
+                "difficulty": example["difficulty"],
+                "split": example["split"],
+                "question": example["question"],
+                "gold_answer": example["answer"],
+                "prediction_text": None if prediction_value is None else str(prediction_value),
+                "missing_prediction": missing_prediction,
+                # Correct = the model declined to answer an unanswerable question.
+                "correct": abstained,
+            }
+        )
+
+    details = pd.DataFrame(detail_rows)
+
+    report = {
+        "prediction_name": prediction_name,
+        "total_abstention_examples": int(len(details)),
+        "missing_predictions": int(details["missing_prediction"].sum()) if len(details) else 0,
+        "abstention_accuracy": float(details["correct"].mean()) if len(details) else 0.0,
+        "by_input_format": summarize_abstention_group(details, "input_format"),
+        "by_domain": summarize_abstention_group(details, "domain"),
+    }
+
+    return report, details
+
+
+def summarize_abstention_group(details: pd.DataFrame, group_column: str) -> dict:
+    summary = {}
+    if len(details) == 0:
+        return summary
+    for group_value, group_df in details.groupby(group_column):
+        summary[str(group_value)] = {
+            "count": int(len(group_df)),
+            "missing_predictions": int(group_df["missing_prediction"].sum()),
+            "abstention_accuracy": float(group_df["correct"].mean()),
+        }
+    return summary
+
+
 def make_markdown_report(combined: dict) -> str:
     overall = combined["overall"]
     numeric = combined["numeric"]
     trend = combined["trend"]
+    abstention = combined.get("abstention", {"total_abstention_examples": 0})
 
     lines = []
 
@@ -433,6 +532,7 @@ def make_markdown_report(combined: dict) -> str:
     lines.append(f"| Total scorable examples | {overall['total_scorable_examples']} |")
     lines.append(f"| Numeric examples | {overall['numeric_examples']} |")
     lines.append(f"| Trend examples | {overall['trend_examples']} |")
+    lines.append(f"| Abstention examples | {overall.get('abstention_examples', 0)} |")
     lines.append(f"| Correct | {overall['correct']} |")
     lines.append(f"| Overall accuracy | {overall['accuracy']:.2%} |")
     lines.append("")
@@ -528,6 +628,26 @@ def make_markdown_report(combined: dict) -> str:
         for key, value in trend["by_domain"].items():
             lines.append(f"| {key} | {value['count']} | {value['label_accuracy']:.2%} |")
 
+    if abstention.get("total_abstention_examples", 0) > 0:
+        lines.append("")
+        lines.append("## Unanswerable (Abstention) Results")
+        lines.append("")
+        lines.append("_Correct = the model declined to answer a question whose data is not present._")
+        lines.append("")
+        lines.append("| Metric | Value |")
+        lines.append("|---|---:|")
+        lines.append(f"| Total unanswerable examples | {abstention['total_abstention_examples']} |")
+        lines.append(f"| Missing predictions | {abstention['missing_predictions']} |")
+        lines.append(f"| Abstention accuracy | {abstention['abstention_accuracy']:.2%} |")
+
+        lines.append("")
+        lines.append("### Abstention Results by Input Format")
+        lines.append("")
+        lines.append("| Input format | Count | Abstention accuracy |")
+        lines.append("|---|---:|---:|")
+        for key, value in abstention["by_input_format"].items():
+            lines.append(f"| {key} | {value['count']} | {value['abstention_accuracy']:.2%} |")
+
     if numeric["extra_prediction_ids_sample"]:
         lines.append("")
         lines.append("## Extra Prediction IDs Sample")
@@ -612,13 +732,16 @@ def main() -> None:
 
     numeric_examples_all = get_numeric_examples(examples)
     trend_examples_all = get_trend_examples(examples)
+    abstention_examples_all = get_abstention_examples(examples)
 
     if args.split == "all":
         numeric_examples = numeric_examples_all
         trend_examples = trend_examples_all
+        abstention_examples = abstention_examples_all
     else:
         numeric_examples = [e for e in numeric_examples_all if e.get("split") == args.split]
         trend_examples = [e for e in trend_examples_all if e.get("split") == args.split]
+        abstention_examples = [e for e in abstention_examples_all if e.get("split") == args.split]
 
     predictions = load_predictions(predictions_path)
 
@@ -626,9 +749,11 @@ def main() -> None:
     # Each evaluator only sees the prediction rows relevant to its own example ids.
     numeric_ids = {example["id"] for example in numeric_examples}
     trend_ids = {example["id"] for example in trend_examples}
+    abstention_ids = {example["id"] for example in abstention_examples}
 
     numeric_predictions = predictions[predictions["id"].isin(numeric_ids)].copy()
     trend_predictions = predictions[predictions["id"].isin(trend_ids)].copy()
+    abstention_predictions = predictions[predictions["id"].isin(abstention_ids)].copy()
 
     numeric_report, numeric_details = evaluate_predictions(
         examples=numeric_examples,
@@ -642,10 +767,17 @@ def main() -> None:
         prediction_name=prediction_name,
     )
 
+    abstention_report, abstention_details = evaluate_abstention_predictions(
+        examples=abstention_examples,
+        predictions=abstention_predictions,
+        prediction_name=prediction_name,
+    )
+
     correct_numeric = int(numeric_details["correct"].sum()) if len(numeric_details) else 0
     correct_trend = int(trend_details["correct"].sum()) if len(trend_details) else 0
-    total_scorable = len(numeric_examples) + len(trend_examples)
-    total_correct = correct_numeric + correct_trend
+    correct_abstention = int(abstention_details["correct"].sum()) if len(abstention_details) else 0
+    total_scorable = len(numeric_examples) + len(trend_examples) + len(abstention_examples)
+    total_correct = correct_numeric + correct_trend + correct_abstention
 
     combined = {
         "prediction_name": prediction_name,
@@ -654,15 +786,17 @@ def main() -> None:
             "total_scorable_examples": total_scorable,
             "numeric_examples": len(numeric_examples),
             "trend_examples": len(trend_examples),
+            "abstention_examples": len(abstention_examples),
             "correct": total_correct,
             "accuracy": (total_correct / total_scorable) if total_scorable else 0.0,
         },
         "numeric": numeric_report,
         "trend": trend_report,
+        "abstention": abstention_report,
     }
 
-    # Unified per-example details (numeric + trend) sharing a 'correct' column.
-    details = pd.concat([numeric_details, trend_details], ignore_index=True)
+    # Unified per-example details (numeric + trend + abstention) sharing a 'correct' column.
+    details = pd.concat([numeric_details, trend_details, abstention_details], ignore_index=True)
 
     details_path = output_dir / f"{prediction_name}_details.csv"
     report_json_path = output_dir / f"{prediction_name}_report.json"
@@ -684,6 +818,7 @@ def main() -> None:
     print(f"  Total scorable examples: {overall['total_scorable_examples']}")
     print(f"  Numeric examples: {overall['numeric_examples']}")
     print(f"  Trend examples: {overall['trend_examples']}")
+    print(f"  Abstention examples: {overall['abstention_examples']}")
     print(f"  Overall accuracy: {overall['accuracy']:.2%}")
     print()
     print("Numeric:")
@@ -694,6 +829,10 @@ def main() -> None:
     print("Trend (categorical):")
     print(f"  Label accuracy: {trend_report['label_accuracy']:.2%}")
     print(f"  Missing: {trend_report['missing_predictions']}  Invalid: {trend_report['invalid_predictions']}")
+    print()
+    print("Unanswerable (abstention):")
+    print(f"  Abstention accuracy: {abstention_report['abstention_accuracy']:.2%}")
+    print(f"  Missing: {abstention_report['missing_predictions']}")
     print()
     print(f"Details CSV: {details_path}")
     print(f"Report JSON: {report_json_path}")

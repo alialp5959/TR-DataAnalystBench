@@ -1,0 +1,52 @@
+{
+  "dataset_version": "synthetic_v02",
+  "total_examples": 320,
+  "unique_charts": 40,
+  "domain_distribution": {
+    "agriculture": 32,
+    "economy": 32,
+    "education": 32,
+    "energy": 32,
+    "environment": 32,
+    "health": 32,
+    "municipality": 32,
+    "sports": 32,
+    "tourism": 32,
+    "transportation": 32
+  },
+  "input_format_distribution": {
+    "chart_only": 107,
+    "table_and_chart": 106,
+    "table_only": 107
+  },
+  "chart_type_distribution": {
+    "bar": 176,
+    "line": 144
+  },
+  "question_type_distribution": {
+    "average": 40,
+    "comparison": 40,
+    "cross_series_diff": 40,
+    "nth_highest": 40,
+    "percentage_change": 40,
+    "trend_summary": 40,
+    "unanswerable": 40,
+    "value_lookup": 40
+  },
+  "difficulty_distribution": {
+    "easy": 40,
+    "hard": 120,
+    "medium": 160
+  },
+  "split_distribution": {
+    "test": 32,
+    "train": 256,
+    "validation": 32
+  },
+  "answer_type_distribution": {
+    "abstention": 40,
+    "numeric": 200,
+    "numeric_with_label": 40,
+    "text": 40
+  }
+}

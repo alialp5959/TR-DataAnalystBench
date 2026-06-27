@@ -12,7 +12,12 @@ TR-DataAnalystBench aims to provide a reproducible Turkish benchmark for evaluat
 
 ## Current Status
 
-The current benchmark version is **`synthetic_v01`**: a fully synthetic, programmatically verified dataset of **300 examples**. Gold answers are computed with Python (not guessed by a language model), which makes the benchmark reproducible and auditable.
+The benchmark ships two synthetic, fully Python-verified versions:
+
+* **`synthetic_v01`** — 300 examples, an easy/medium baseline tier (scripts `04`–`10`).
+* **`synthetic_v02`** — 320 examples, a harder tier (scripts `11`–`13`) that adds multi-series tables, multi-step tasks, and unanswerable (hallucination) questions.
+
+Gold answers are computed with Python (not guessed by a language model), which makes the benchmark reproducible and auditable.
 
 The repository also keeps the earlier 50-example `pilot` (scripts `01`–`03`) for reference.
 
@@ -75,6 +80,41 @@ transportation, economy, education, tourism, energy, health, environment, sports
 
 Splits are table-disjoint: the 5 questions sharing a table/chart never cross a split boundary.
 
+## Dataset: synthetic_v02 (harder tier)
+
+`synthetic_v02` keeps the same schema and scoring contract as v01 but is designed to be discriminative rather than saturated.
+
+| Property | Value |
+| --- | ---: |
+| Total examples | 320 |
+| Task types | 8 |
+| Difficulty | 40 easy / 160 medium / 120 hard |
+| Tables | multi-series (Year + two metrics) |
+
+What makes it harder:
+
+* **Multi-series tables** — every table has two metric columns, so the model must select the correct series; the other column is a distractor.
+* **Multi-step tasks** — in addition to `value_lookup`, `comparison`, and `percentage_change`, it adds:
+  * `average` — mean of a series across all years
+  * `nth_highest` — the 2nd/3rd highest value of a series
+  * `cross_series_diff` — difference between the two series in a given year
+* **Unanswerable questions** (`unanswerable`) — ask about a year or metric not present in the data. The gold answer is an abstention (`veri yok`); a model that invents a number is marked wrong. This directly measures hallucination resistance. Every prompt carries a global "if it can't be answered, say `veri yok`" instruction, so unanswerable items are indistinguishable from answerable ones.
+* **Trend** (`trend_summary`) — categorical, as in v01.
+
+Scoring kinds: numeric (tolerance), trend (categorical label), and abstention. The evaluator reports overall accuracy plus per-kind accuracy.
+
+```bash
+python scripts/11_generate_synthetic_v02.py     # dataset + multi-series charts
+python scripts/12_validate_synthetic_v02.py     # schema + recomputed-gold checks
+python scripts/13_create_v02_eval_assets.py     # prompt packs, template, baselines
+
+# sanity check: oracle scores 100% across all 320 examples
+python scripts/08_evaluate_predictions_file.py \
+    --dataset data/processed/synthetic_v02.jsonl \
+    --predictions data/exports/synthetic_v02_oracle_predictions.csv \
+    --prediction-name v02_oracle
+```
+
 ## Repository Structure
 
 ```text
@@ -100,10 +140,16 @@ TR-DataAnalystBench/
 │   ├── 07_score_numeric_answers.py        # oracle / noisy baselines (full benchmark)
 │   ├── 08_evaluate_predictions_file.py     # external evaluator (numeric + trend)
 │   ├── 09_create_prediction_templates.py
-│   └── 10_create_prompt_pack.py
+│   ├── 10_create_prompt_pack.py
+│   ├── 11_generate_synthetic_v02.py        # harder tier: dataset + multi-series charts
+│   ├── 12_validate_synthetic_v02.py        # schema + recomputed-gold validation
+│   └── 13_create_v02_eval_assets.py        # v02 prompt packs / template / baselines
 ├── requirements.txt
 └── README.md
 ```
+
+The evaluator `08_evaluate_predictions_file.py` is version-agnostic: pass
+`--dataset data/processed/synthetic_v02.jsonl` to score v02.
 
 ## Setup
 
@@ -177,13 +223,13 @@ Done so far:
 * [x] Automatic scoring for trend (categorical) answers — full benchmark is now scorable
 * [x] Signed percentage-change so direction is evaluated
 * [x] External prediction-file evaluator
+* [x] Harder `synthetic_v02` tier: multi-series tables, distractor columns, multi-step tasks (average / nth-highest / cross-series), unanswerable (abstention) questions, real `hard` labels
 
 Planned next:
 
-1. Increase difficulty and discrimination (label-free chart variants, multi-series
-   tables, distractor columns, harder templates) so the benchmark separates models.
-2. Add a real multimodal evaluation harness that passes chart images to a model.
-3. Run baseline model evaluations and publish a comparison table.
+1. Label-free chart variants (read values from gridlines, scored with estimation tolerance) for genuine chart-reading rather than label OCR.
+2. A real multimodal evaluation harness that passes chart images to a model.
+3. Baseline model evaluations and a public comparison table.
 4. Move from synthetic tables to real Turkish open-data sources (e.g. TÜİK).
 5. Prepare a Hugging Face dataset release and a public benchmark card.
 

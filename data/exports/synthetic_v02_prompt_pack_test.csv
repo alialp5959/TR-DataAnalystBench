@@ -1,0 +1,687 @@
+﻿id,dataset_version,split,domain,input_format,chart_type,chart_path,question_type,difficulty,unit,question,table_markdown,prompt
+trdab_v02_000289,synthetic_v02,test,environment,table_only,bar,,value_lookup,easy,ton,2019 yılında toplam atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |
+
+Soru:
+2019 yılında toplam atık miktarı kaçtır?"
+trdab_v02_000290,synthetic_v02,test,environment,chart_only,bar,charts/synthetic_v02/chart_037_bar.png,comparison,medium,ton,"2020 yılındaki geri dönüştürülen atık miktarı, 2018 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_037_bar.png
+
+Soru:
+2020 yılındaki geri dönüştürülen atık miktarı, 2018 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000291,synthetic_v02,test,environment,table_and_chart,bar,charts/synthetic_v02/chart_037_bar.png,percentage_change,medium,percent,"2019 ile 2020 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Artış için pozitif, azalış için negatif değer ver. Örnek: 8.8 veya -8.8
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_037_bar.png
+
+Soru:
+2019 ile 2020 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v02_000292,synthetic_v02,test,environment,table_only,bar,,cross_series_diff,medium,ton,2019 yılında geri dönüştürülen atık miktarı ile toplam atık miktarı arasındaki fark kaçtır?,"| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |
+
+Soru:
+2019 yılında geri dönüştürülen atık miktarı ile toplam atık miktarı arasındaki fark kaçtır?"
+trdab_v02_000293,synthetic_v02,test,environment,chart_only,bar,charts/synthetic_v02/chart_037_bar.png,average,hard,ton,Tüm yıllar boyunca toplam atık miktarı ortalaması yaklaşık kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_037_bar.png
+
+Soru:
+Tüm yıllar boyunca toplam atık miktarı ortalaması yaklaşık kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000294,synthetic_v02,test,environment,table_and_chart,bar,charts/synthetic_v02/chart_037_bar.png,nth_highest,hard,ton,toplam atık miktarı açısından en yüksek 3. değer kaçtır?,"| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_037_bar.png
+
+Soru:
+toplam atık miktarı açısından en yüksek 3. değer kaçtır?"
+trdab_v02_000295,synthetic_v02,test,environment,table_only,bar,,trend_summary,medium,ton,"Verilen veriye göre toplam atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı.
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı | toplam atık miktarı |
+|---|---|---|
+| 2017 | 8162 | 40432 |
+| 2018 | 8482 | 43376 |
+| 2019 | 9066 | 44797 |
+| 2020 | 9670 | 47285 |
+| 2021 | 10339 | 48479 |
+| 2022 | 10833 | 50623 |
+
+Soru:
+Verilen veriye göre toplam atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
+trdab_v02_000296,synthetic_v02,test,environment,chart_only,bar,charts/synthetic_v02/chart_037_bar.png,unanswerable,hard,ton,2027 yılında toplam atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_037_bar.png
+
+Soru:
+2027 yılında toplam atık miktarı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000297,synthetic_v02,test,sports,table_and_chart,bar,charts/synthetic_v02/chart_038_bar.png,value_lookup,easy,sporcu,2022 yılında lisanslı sporcu sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_038_bar.png
+
+Soru:
+2022 yılında lisanslı sporcu sayısı kaçtır?"
+trdab_v02_000298,synthetic_v02,test,sports,table_only,bar,,comparison,medium,sporcu,"2022 yılındaki lisanslı sporcu sayısı, 2021 yılına göre kaç sporcu farklıdır?","| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Soru:
+2022 yılındaki lisanslı sporcu sayısı, 2021 yılına göre kaç sporcu farklıdır?"
+trdab_v02_000299,synthetic_v02,test,sports,chart_only,bar,charts/synthetic_v02/chart_038_bar.png,percentage_change,medium,percent,"2018 ile 2019 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Artış için pozitif, azalış için negatif değer ver. Örnek: 8.8 veya -8.8
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_038_bar.png
+
+Soru:
+2018 ile 2019 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000300,synthetic_v02,test,sports,table_and_chart,bar,charts/synthetic_v02/chart_038_bar.png,cross_series_diff,medium,kullanım,2021 yılında spor tesisi kullanım sayısı ile lisanslı sporcu sayısı arasındaki fark kaçtır?,"| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_038_bar.png
+
+Soru:
+2021 yılında spor tesisi kullanım sayısı ile lisanslı sporcu sayısı arasındaki fark kaçtır?"
+trdab_v02_000301,synthetic_v02,test,sports,table_only,bar,,average,hard,sporcu,Tüm yıllar boyunca lisanslı sporcu sayısı ortalaması yaklaşık kaçtır?,"| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Soru:
+Tüm yıllar boyunca lisanslı sporcu sayısı ortalaması yaklaşık kaçtır?"
+trdab_v02_000302,synthetic_v02,test,sports,chart_only,bar,charts/synthetic_v02/chart_038_bar.png,nth_highest,hard,sporcu,lisanslı sporcu sayısı açısından en yüksek 3. değer kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_038_bar.png
+
+Soru:
+lisanslı sporcu sayısı açısından en yüksek 3. değer kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000303,synthetic_v02,test,sports,table_and_chart,bar,charts/synthetic_v02/chart_038_bar.png,trend_summary,medium,sporcu,"Verilen veriye göre lisanslı sporcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı.
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_038_bar.png
+
+Soru:
+Verilen veriye göre lisanslı sporcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
+trdab_v02_000304,synthetic_v02,test,sports,table_only,bar,,unanswerable,hard,kullanım,2019 yılında müsabaka sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı | lisanslı sporcu sayısı |
+|---|---|---|
+| 2018 | 45809 | 12085 |
+| 2019 | 47055 | 12856 |
+| 2020 | 51919 | 13864 |
+| 2021 | 54578 | 14164 |
+| 2022 | 57686 | 15041 |
+
+Soru:
+2019 yılında müsabaka sayısı kaçtır?"
+trdab_v02_000305,synthetic_v02,test,municipality,chart_only,line,charts/synthetic_v02/chart_039_line.png,value_lookup,easy,başvuru,2020 yılında çözülen başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+2020 yılında çözülen başvuru sayısı kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000306,synthetic_v02,test,municipality,table_and_chart,line,charts/synthetic_v02/chart_039_line.png,comparison,medium,başvuru,"2019 yılındaki belediye hizmet başvurusu, 2017 yılına göre kaç başvuru farklıdır?","| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+2019 yılındaki belediye hizmet başvurusu, 2017 yılına göre kaç başvuru farklıdır?"
+trdab_v02_000307,synthetic_v02,test,municipality,table_only,line,,percentage_change,medium,percent,"2017 ile 2019 arasında çözülen başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Artış için pozitif, azalış için negatif değer ver. Örnek: 8.8 veya -8.8
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |
+
+Soru:
+2017 ile 2019 arasında çözülen başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v02_000308,synthetic_v02,test,municipality,chart_only,line,charts/synthetic_v02/chart_039_line.png,cross_series_diff,medium,başvuru,2022 yılında belediye hizmet başvurusu ile çözülen başvuru sayısı arasındaki fark kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+2022 yılında belediye hizmet başvurusu ile çözülen başvuru sayısı arasındaki fark kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000309,synthetic_v02,test,municipality,table_and_chart,line,charts/synthetic_v02/chart_039_line.png,average,hard,başvuru,Tüm yıllar boyunca çözülen başvuru sayısı ortalaması yaklaşık kaçtır?,"| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+Tüm yıllar boyunca çözülen başvuru sayısı ortalaması yaklaşık kaçtır?"
+trdab_v02_000310,synthetic_v02,test,municipality,table_only,line,,nth_highest,hard,başvuru,belediye hizmet başvurusu açısından en yüksek 2. değer kaçtır?,"| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |
+
+Soru:
+belediye hizmet başvurusu açısından en yüksek 2. değer kaçtır?"
+trdab_v02_000311,synthetic_v02,test,municipality,chart_only,line,charts/synthetic_v02/chart_039_line.png,trend_summary,medium,başvuru,"Verilen veriye göre çözülen başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı.
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+Verilen veriye göre çözülen başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000312,synthetic_v02,test,municipality,table_and_chart,line,charts/synthetic_v02/chart_039_line.png,unanswerable,hard,başvuru,2022 yılında personel sayısı kaçtır?,"| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu | çözülen başvuru sayısı |
+|---|---|---|
+| 2017 | 95539 | 60755 |
+| 2018 | 93865 | 64423 |
+| 2019 | 88751 | 69881 |
+| 2020 | 84536 | 73071 |
+| 2021 | 80457 | 78655 |
+| 2022 | 74972 | 80838 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_039_line.png
+
+Soru:
+2022 yılında personel sayısı kaçtır?"
+trdab_v02_000313,synthetic_v02,test,agriculture,table_only,line,,value_lookup,easy,hektar,2020 yılında ekili alan kaçtır?,"| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |
+
+Soru:
+2020 yılında ekili alan kaçtır?"
+trdab_v02_000314,synthetic_v02,test,agriculture,chart_only,line,charts/synthetic_v02/chart_040_line.png,comparison,medium,ton,"2019 yılındaki üretim miktarı, 2022 yılına göre kaç ton farklıdır?",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_040_line.png
+
+Soru:
+2019 yılındaki üretim miktarı, 2022 yılına göre kaç ton farklıdır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000315,synthetic_v02,test,agriculture,table_and_chart,line,charts/synthetic_v02/chart_040_line.png,percentage_change,medium,percent,"2019 ile 2020 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal yüzde değişim değerini yaz. Artış için pozitif, azalış için negatif değer ver. Örnek: 8.8 veya -8.8
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_040_line.png
+
+Soru:
+2019 ile 2020 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v02_000316,synthetic_v02,test,agriculture,table_only,line,,cross_series_diff,medium,ton,2022 yılında üretim miktarı ile ekili alan arasındaki fark kaçtır?,"| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |
+
+Soru:
+2022 yılında üretim miktarı ile ekili alan arasındaki fark kaçtır?"
+trdab_v02_000317,synthetic_v02,test,agriculture,chart_only,line,charts/synthetic_v02/chart_040_line.png,average,hard,hektar,Tüm yıllar boyunca ekili alan ortalaması yaklaşık kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_040_line.png
+
+Soru:
+Tüm yıllar boyunca ekili alan ortalaması yaklaşık kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v02_000318,synthetic_v02,test,agriculture,table_and_chart,line,charts/synthetic_v02/chart_040_line.png,nth_highest,hard,hektar,ekili alan açısından en yüksek 3. değer kaçtır?,"| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |
+
+Grafik dosyası:
+charts/synthetic_v02/chart_040_line.png
+
+Soru:
+ekili alan açısından en yüksek 3. değer kaçtır?"
+trdab_v02_000319,synthetic_v02,test,agriculture,table_only,line,,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı.
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+|---|---|---|
+| 2018 | 155732 | 46730 |
+| 2019 | 145059 | 45667 |
+| 2020 | 151450 | 43905 |
+| 2021 | 141941 | 42921 |
+| 2022 | 158692 | 41099 |
+| 2023 | 151148 | 39898 |
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
+trdab_v02_000320,synthetic_v02,test,agriculture,chart_only,line,charts/synthetic_v02/chart_040_line.png,unanswerable,hard,ton,2018 yılında su tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece sayısal değeri yaz. Birim, yıl veya açıklama yazma. Örnek: 12345
+Eğer soru verilen veriden cevaplanamıyorsa (istenen yıl veya veri tabloda/grafikte yoksa) cevap olarak sadece 'veri yok' yaz.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v02/chart_040_line.png
+
+Soru:
+2018 yılında su tüketimi kaçtır?
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
