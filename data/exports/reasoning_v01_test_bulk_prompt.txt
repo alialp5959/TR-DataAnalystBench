@@ -105,7 +105,7 @@ Tablo:
 | 2021 | 79306 | 76430 |
 | 2022 | 74206 | 82357 |
 
-Soru: hizmet başvurusu bir önceki yıla göre en çok hangi yılda artmıştır? Cevap olarak sadece yılı yaz.
+Soru: hizmet başvurusu bir önceki yıla göre en çok hangi yılda azalmıştır? Cevap olarak sadece yılı yaz.
 
 --- Soru 9 ---
 Tablo:

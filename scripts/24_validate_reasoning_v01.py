@@ -65,7 +65,13 @@ def validate(e, i):
             errs.append(f"{i}: cagr {g} != {exp}")
     elif qt == "fastest_change_year":
         deltas = [(years[k], a[k] - a[k - 1]) for k in range(1, n)]
-        exp = max(deltas, key=lambda d: d[1])[0]
+        if "azalmıştır" in e["question"]:
+            exp = min(deltas, key=lambda d: d[1])[0]
+        else:
+            mx = max(deltas, key=lambda d: d[1])
+            if mx[1] <= 0:
+                errs.append(f"{i}: asks for increase but series never increases")
+            exp = mx[0]
         if exp != g:
             errs.append(f"{i}: fastest_change_year {g} != {exp}")
     elif qt == "longest_increase_streak":

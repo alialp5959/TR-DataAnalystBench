@@ -124,15 +124,24 @@ def build(topic, years, a_vals, b_vals, split):
         "calculation": f"(({a_vals[-1]}/{a_vals[0]})^(1/{n-1}) - 1)*100 = {cagr_r}",
         "expected_reasoning": "Bileşik büyüme: (son/ilk)^(1/yıl sayısı) - 1."})
 
-    # fastest year-over-year increase
+    # fastest year-over-year change. If the series never increases, asking for
+    # the biggest "increase" would be ill-posed, so we ask for the biggest
+    # decrease instead — keeping a well-defined year answer.
     deltas = [(years[i], a_vals[i] - a_vals[i - 1]) for i in range(1, n)]
-    fast_year = max(deltas, key=lambda d: d[1])[0]
+    max_d = max(deltas, key=lambda d: d[1])
+    if max_d[1] > 0:
+        direction, fast_year = "artmıştır", max_d[0]
+        verb = "artış"
+    else:
+        min_d = min(deltas, key=lambda d: d[1])
+        direction, fast_year = "azalmıştır", min_d[0]
+        verb = "azalış"
     add("fastest_change_year", {**EXACT,
-        "question": f"{a_metric} bir önceki yıla göre en çok hangi yılda artmıştır? Cevap olarak sadece yılı yaz.",
-        "answer": f"En büyük yıllık artış {fast_year} yılında olmuştur.",
+        "question": f"{a_metric} bir önceki yıla göre en çok hangi yılda {direction}? Cevap olarak sadece yılı yaz.",
+        "answer": f"En büyük yıllık {verb} {fast_year} yılında olmuştur.",
         "answer_type": "numeric", "numeric_answer": fast_year,
-        "calculation": f"yıllık farklar {deltas}, en büyük artış yılı {fast_year}",
-        "expected_reasoning": "Ardışık yıl farkları hesaplanıp en büyük pozitif artışın yılı seçilmelidir."})
+        "calculation": f"yıllık farklar {deltas}, en büyük {verb} yılı {fast_year}",
+        "expected_reasoning": "Ardışık yıl farkları hesaplanıp istenen yönde en büyük değişimin yılı seçilmelidir."})
 
     # longest streak of consecutive increases (in steps)
     best = cur = 0
