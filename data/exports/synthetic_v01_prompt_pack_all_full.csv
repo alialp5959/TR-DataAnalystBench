@@ -80,6 +80,18 @@ Tablo:
 
 Soru:
 2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000005,synthetic_v01,train,transportation,chart_only,line,charts/synthetic_v01/chart_001_line.png,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_001_line.png
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000006,synthetic_v01,train,economy,table_and_chart,bar,charts/synthetic_v01/chart_002_bar.png,value_lookup,easy,milyon dolar,2018 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
 |---|---|
 | 2018 | 211 |
@@ -164,6 +176,28 @@ charts/synthetic_v01/chart_002_bar.png
 
 Soru:
 2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000010,synthetic_v01,train,economy,table_only,bar,,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2018 | 211 |
+| 2019 | 153 |
+| 2020 | 172 |
+| 2021 | 158 |
+| 2022 | 179 |
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000011,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_003_bar.png,value_lookup,easy,öğrenci,2025 yılında öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -239,6 +273,33 @@ Soru:
 2020 ile 2025 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000015,synthetic_v01,train,education,table_and_chart,bar,charts/synthetic_v01/chart_003_bar.png,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2020 | 25104 |
+| 2021 | 26283 |
+| 2022 | 26961 |
+| 2023 | 28321 |
+| 2024 | 29114 |
+| 2025 | 30699 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_003_bar.png
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000016,synthetic_v01,train,tourism,table_only,bar,,value_lookup,easy,kişi,2020 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
 |---|---|
 | 2018 | 931896 |
@@ -320,6 +381,18 @@ Tablo:
 
 Soru:
 2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000020,synthetic_v01,train,tourism,chart_only,bar,charts/synthetic_v01/chart_004_bar.png,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_004_bar.png
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000021,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_005_bar.png,value_lookup,easy,MWh,2023 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
 |---|---|
 | 2020 | 93903 |
@@ -404,6 +477,28 @@ charts/synthetic_v01/chart_005_bar.png
 
 Soru:
 2022 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000025,synthetic_v01,train,energy,table_only,bar,,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2020 | 93903 |
+| 2021 | 87020 |
+| 2022 | 96569 |
+| 2023 | 88132 |
+| 2024 | 88505 |
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000026,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_006_bar.png,value_lookup,easy,başvuru,2023 yılında hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -479,6 +574,33 @@ Soru:
 2019 ile 2020 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000030,synthetic_v01,train,health,table_and_chart,bar,charts/synthetic_v01/chart_006_bar.png,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 433866 |
+| 2019 | 410851 |
+| 2020 | 385674 |
+| 2021 | 367673 |
+| 2022 | 345621 |
+| 2023 | 327374 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_006_bar.png
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000031,synthetic_v01,train,environment,table_only,bar,,value_lookup,easy,ton,2022 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
 |---|---|
 | 2018 | 8186 |
@@ -566,6 +688,18 @@ Tablo:
 
 Soru:
 2021 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000035,synthetic_v01,train,environment,chart_only,bar,charts/synthetic_v01/chart_007_bar.png,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_007_bar.png
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000036,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_008_bar.png,value_lookup,easy,kullanım,2024 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
 |---|---|
 | 2020 | 49553 |
@@ -656,6 +790,30 @@ charts/synthetic_v01/chart_008_bar.png
 
 Soru:
 2022 ile 2025 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000040,synthetic_v01,train,sports,table_only,bar,,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49553 |
+| 2021 | 39118 |
+| 2022 | 52346 |
+| 2023 | 43817 |
+| 2024 | 47525 |
+| 2025 | 41397 |
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000041,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_009_line.png,value_lookup,easy,başvuru,2024 yılında belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -727,6 +885,31 @@ Soru:
 2020 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000045,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_009_line.png,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 69931 |
+| 2021 | 76323 |
+| 2022 | 78661 |
+| 2023 | 85009 |
+| 2024 | 90789 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_009_line.png
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000046,synthetic_v01,train,agriculture,table_only,line,,value_lookup,easy,ton,2023 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
 |---|---|
 | 2019 | 149140 |
@@ -808,6 +991,18 @@ Tablo:
 
 Soru:
 2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000050,synthetic_v01,train,agriculture,chart_only,line,charts/synthetic_v01/chart_010_line.png,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_010_line.png
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000051,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_011_bar.png,value_lookup,easy,kişi,2019 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
 |---|---|
 | 2019 | 1234020 |
@@ -898,6 +1093,30 @@ charts/synthetic_v01/chart_011_bar.png
 
 Soru:
 2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000055,synthetic_v01,train,transportation,table_only,bar,,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1234020 |
+| 2020 | 1299699 |
+| 2021 | 1424191 |
+| 2022 | 1545630 |
+| 2023 | 1652278 |
+| 2024 | 1770756 |
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000056,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_012_line.png,value_lookup,easy,milyon dolar,2024 yılında ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -969,6 +1188,31 @@ Soru:
 2021 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000060,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_012_line.png,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2020 | 177 |
+| 2021 | 180 |
+| 2022 | 177 |
+| 2023 | 137 |
+| 2024 | 201 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_012_line.png
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000061,synthetic_v01,train,education,table_only,bar,,value_lookup,easy,öğrenci,2019 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
 |---|---|
 | 2018 | 26526 |
@@ -1050,6 +1294,18 @@ Tablo:
 
 Soru:
 2019 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000065,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_013_bar.png,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_013_bar.png
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000066,synthetic_v01,train,tourism,table_and_chart,bar,charts/synthetic_v01/chart_014_bar.png,value_lookup,easy,kişi,2021 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
 |---|---|
 | 2018 | 596344 |
@@ -1140,6 +1396,30 @@ charts/synthetic_v01/chart_014_bar.png
 
 Soru:
 2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000070,synthetic_v01,train,tourism,table_only,bar,,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 596344 |
+| 2019 | 514213 |
+| 2020 | 758700 |
+| 2021 | 444571 |
+| 2022 | 617365 |
+| 2023 | 594327 |
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000071,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_015_bar.png,value_lookup,easy,MWh,2018 yılında elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -1211,6 +1491,31 @@ Soru:
 2018 ile 2022 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000075,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_015_bar.png,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 90720 |
+| 2019 | 84015 |
+| 2020 | 91468 |
+| 2021 | 88176 |
+| 2022 | 89245 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_015_bar.png
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000076,synthetic_v01,train,health,table_only,bar,,value_lookup,easy,başvuru,2020 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
 |---|---|
 | 2019 | 426680 |
@@ -1298,6 +1603,18 @@ Tablo:
 
 Soru:
 2019 ile 2024 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000080,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_016_bar.png,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_016_bar.png
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000081,synthetic_v01,train,environment,table_and_chart,bar,charts/synthetic_v01/chart_017_bar.png,value_lookup,easy,ton,2019 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
 |---|---|
 | 2019 | 8075 |
@@ -1382,6 +1699,28 @@ charts/synthetic_v01/chart_017_bar.png
 
 Soru:
 2020 ile 2022 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000085,synthetic_v01,train,environment,table_only,bar,,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8075 |
+| 2020 | 8509 |
+| 2021 | 9259 |
+| 2022 | 9735 |
+| 2023 | 10267 |
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000086,synthetic_v01,train,sports,chart_only,line,charts/synthetic_v01/chart_018_line.png,value_lookup,easy,kullanım,2025 yılında spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -1457,6 +1796,33 @@ Soru:
 2020 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000090,synthetic_v01,train,sports,table_and_chart,line,charts/synthetic_v01/chart_018_line.png,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 49437 |
+| 2021 | 39138 |
+| 2022 | 45522 |
+| 2023 | 39290 |
+| 2024 | 45909 |
+| 2025 | 38428 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_018_line.png
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000091,synthetic_v01,train,municipality,table_only,bar,,value_lookup,easy,başvuru,2019 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
 |---|---|
 | 2018 | 97380 |
@@ -1544,6 +1910,18 @@ Tablo:
 
 Soru:
 2018 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000095,synthetic_v01,train,municipality,chart_only,bar,charts/synthetic_v01/chart_019_bar.png,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_019_bar.png
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000096,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_020_bar.png,value_lookup,easy,ton,2022 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
 |---|---|
 | 2018 | 149568 |
@@ -1628,6 +2006,28 @@ charts/synthetic_v01/chart_020_bar.png
 
 Soru:
 2019 ile 2022 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000100,synthetic_v01,train,agriculture,table_only,bar,,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2018 | 149568 |
+| 2019 | 148481 |
+| 2020 | 150381 |
+| 2021 | 151265 |
+| 2022 | 151931 |
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000101,synthetic_v01,train,transportation,chart_only,line,charts/synthetic_v01/chart_021_line.png,value_lookup,easy,kişi,2021 yılında yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -1703,6 +2103,33 @@ Soru:
 2019 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000105,synthetic_v01,train,transportation,table_and_chart,line,charts/synthetic_v01/chart_021_line.png,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1186843 |
+| 2019 | 1316874 |
+| 2020 | 1437298 |
+| 2021 | 1525861 |
+| 2022 | 1638304 |
+| 2023 | 1734200 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_021_line.png
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000106,synthetic_v01,train,economy,table_only,bar,,value_lookup,easy,milyon dolar,2019 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
 |---|---|
 | 2019 | 177 |
@@ -1790,6 +2217,18 @@ Tablo:
 
 Soru:
 2022 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000110,synthetic_v01,train,economy,chart_only,bar,charts/synthetic_v01/chart_022_bar.png,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_022_bar.png
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000111,synthetic_v01,train,education,table_and_chart,line,charts/synthetic_v01/chart_023_line.png,value_lookup,easy,öğrenci,2023 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
 |---|---|
 | 2019 | 24901 |
@@ -1874,6 +2313,28 @@ charts/synthetic_v01/chart_023_line.png
 
 Soru:
 2019 ile 2022 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000115,synthetic_v01,train,education,table_only,line,,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 24901 |
+| 2020 | 25916 |
+| 2021 | 27428 |
+| 2022 | 28205 |
+| 2023 | 29073 |
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000116,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_024_line.png,value_lookup,easy,kişi,2021 yılında ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -1945,6 +2406,31 @@ Soru:
 2021 ile 2023 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000120,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_024_line.png,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2019 | 929575 |
+| 2020 | 903117 |
+| 2021 | 815244 |
+| 2022 | 716777 |
+| 2023 | 680740 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_024_line.png
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000121,synthetic_v01,train,energy,table_only,bar,,value_lookup,easy,MWh,2024 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
 |---|---|
 | 2020 | 98038 |
@@ -2026,6 +2512,18 @@ Tablo:
 
 Soru:
 2021 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000125,synthetic_v01,train,energy,chart_only,bar,charts/synthetic_v01/chart_025_bar.png,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_025_bar.png
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000126,synthetic_v01,train,health,table_and_chart,line,charts/synthetic_v01/chart_026_line.png,value_lookup,easy,başvuru,2025 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
 |---|---|
 | 2020 | 430572 |
@@ -2116,6 +2614,30 @@ charts/synthetic_v01/chart_026_line.png
 
 Soru:
 2024 ile 2025 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000130,synthetic_v01,train,health,table_only,line,,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 430572 |
+| 2021 | 410578 |
+| 2022 | 394403 |
+| 2023 | 366835 |
+| 2024 | 351709 |
+| 2025 | 331086 |
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000131,synthetic_v01,train,environment,chart_only,line,charts/synthetic_v01/chart_027_line.png,value_lookup,easy,ton,2019 yılında geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -2187,6 +2709,31 @@ Soru:
 2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000135,synthetic_v01,train,environment,table_and_chart,line,charts/synthetic_v01/chart_027_line.png,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 8144 |
+| 2020 | 8558 |
+| 2021 | 9115 |
+| 2022 | 9701 |
+| 2023 | 10275 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_027_line.png
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000136,synthetic_v01,train,sports,table_only,bar,,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
 |---|---|
 | 2020 | 49555 |
@@ -2268,6 +2815,18 @@ Tablo:
 
 Soru:
 2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000140,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_028_bar.png,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_028_bar.png
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000141,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_029_line.png,value_lookup,easy,başvuru,2025 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
 |---|---|
 | 2020 | 99709 |
@@ -2358,6 +2917,30 @@ charts/synthetic_v01/chart_029_line.png
 
 Soru:
 2021 ile 2022 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000145,synthetic_v01,train,municipality,table_only,line,,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2020 | 99709 |
+| 2021 | 95346 |
+| 2022 | 89667 |
+| 2023 | 84547 |
+| 2024 | 80244 |
+| 2025 | 75026 |
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000146,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_030_bar.png,value_lookup,easy,ton,2023 yılında üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -2433,6 +3016,33 @@ Soru:
 2020 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000150,synthetic_v01,train,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_030_bar.png,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 158124 |
+| 2021 | 138234 |
+| 2022 | 161385 |
+| 2023 | 145975 |
+| 2024 | 160027 |
+| 2025 | 133413 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_030_bar.png
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000151,synthetic_v01,train,transportation,table_only,bar,,value_lookup,easy,kişi,2021 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
 |---|---|
 | 2018 | 1825894 |
@@ -2520,6 +3130,18 @@ Tablo:
 
 Soru:
 2020 ile 2021 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000155,synthetic_v01,train,transportation,chart_only,bar,charts/synthetic_v01/chart_031_bar.png,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_031_bar.png
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000156,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_032_line.png,value_lookup,easy,milyon dolar,2022 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
 |---|---|
 | 2019 | 269 |
@@ -2604,6 +3226,28 @@ charts/synthetic_v01/chart_032_line.png
 
 Soru:
 2019 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000160,synthetic_v01,train,economy,table_only,line,,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 269 |
+| 2020 | 256 |
+| 2021 | 238 |
+| 2022 | 222 |
+| 2023 | 198 |
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000161,synthetic_v01,train,education,chart_only,line,charts/synthetic_v01/chart_033_line.png,value_lookup,easy,öğrenci,2021 yılında öğrenci sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -2679,6 +3323,33 @@ Soru:
 2020 ile 2021 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000165,synthetic_v01,train,education,table_and_chart,line,charts/synthetic_v01/chart_033_line.png,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2018 | 25106 |
+| 2019 | 25920 |
+| 2020 | 26885 |
+| 2021 | 28200 |
+| 2022 | 29422 |
+| 2023 | 30469 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_033_line.png
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000166,synthetic_v01,train,tourism,table_only,line,,value_lookup,easy,kişi,2019 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
 |---|---|
 | 2019 | 927937 |
@@ -2760,6 +3431,18 @@ Tablo:
 
 Soru:
 2019 ile 2020 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000170,synthetic_v01,train,tourism,chart_only,line,charts/synthetic_v01/chart_034_line.png,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_034_line.png
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000171,synthetic_v01,train,energy,table_and_chart,bar,charts/synthetic_v01/chart_035_bar.png,value_lookup,easy,MWh,2020 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
 |---|---|
 | 2018 | 113742 |
@@ -2844,6 +3527,28 @@ charts/synthetic_v01/chart_035_bar.png
 
 Soru:
 2019 ile 2020 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000175,synthetic_v01,train,energy,table_only,bar,,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2018 | 113742 |
+| 2019 | 106968 |
+| 2020 | 104310 |
+| 2021 | 98392 |
+| 2022 | 94904 |
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000176,synthetic_v01,train,health,chart_only,line,charts/synthetic_v01/chart_036_line.png,value_lookup,easy,başvuru,2018 yılında hastane başvuru sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -2915,6 +3620,31 @@ Soru:
 2018 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000180,synthetic_v01,train,health,table_and_chart,line,charts/synthetic_v01/chart_036_line.png,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2018 | 412767 |
+| 2019 | 394431 |
+| 2020 | 369483 |
+| 2021 | 349832 |
+| 2022 | 335048 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_036_line.png
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000181,synthetic_v01,train,environment,table_only,bar,,value_lookup,easy,ton,2020 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
 |---|---|
 | 2020 | 11072 |
@@ -2996,6 +3726,18 @@ Tablo:
 
 Soru:
 2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000185,synthetic_v01,train,environment,chart_only,bar,charts/synthetic_v01/chart_037_bar.png,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_037_bar.png
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000186,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_038_bar.png,value_lookup,easy,kullanım,2022 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
 |---|---|
 | 2020 | 48127 |
@@ -3086,6 +3828,30 @@ charts/synthetic_v01/chart_038_bar.png
 
 Soru:
 2021 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000190,synthetic_v01,train,sports,table_only,bar,,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2020 | 48127 |
+| 2021 | 40297 |
+| 2022 | 49906 |
+| 2023 | 41499 |
+| 2024 | 47064 |
+| 2025 | 39540 |
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000191,synthetic_v01,train,municipality,chart_only,line,charts/synthetic_v01/chart_039_line.png,value_lookup,easy,başvuru,2022 yılında belediye hizmet başvurusu kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -3161,6 +3927,33 @@ Soru:
 2021 ile 2023 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000195,synthetic_v01,train,municipality,table_and_chart,line,charts/synthetic_v01/chart_039_line.png,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2018 | 98594 |
+| 2019 | 93545 |
+| 2020 | 90041 |
+| 2021 | 85672 |
+| 2022 | 79131 |
+| 2023 | 75476 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_039_line.png
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000196,synthetic_v01,train,agriculture,table_only,bar,,value_lookup,easy,ton,2021 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
 |---|---|
 | 2019 | 167150 |
@@ -3242,6 +4035,18 @@ Tablo:
 
 Soru:
 2020 ile 2021 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000200,synthetic_v01,train,agriculture,chart_only,bar,charts/synthetic_v01/chart_040_bar.png,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_040_bar.png
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000201,synthetic_v01,train,transportation,table_and_chart,bar,charts/synthetic_v01/chart_041_bar.png,value_lookup,easy,kişi,2020 yılında yolcu sayısı kaçtır?,"| Yıl | yolcu sayısı |
 |---|---|
 | 2018 | 1729004 |
@@ -3326,6 +4131,28 @@ charts/synthetic_v01/chart_041_bar.png
 
 Soru:
 2019 ile 2020 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000205,synthetic_v01,train,transportation,table_only,bar,,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2018 | 1729004 |
+| 2019 | 1673570 |
+| 2020 | 1517601 |
+| 2021 | 1408439 |
+| 2022 | 1301695 |
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000206,synthetic_v01,train,economy,chart_only,line,charts/synthetic_v01/chart_042_line.png,value_lookup,easy,milyon dolar,2019 yılında ihracat değeri kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -3397,6 +4224,31 @@ Soru:
 2019 ile 2023 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000210,synthetic_v01,train,economy,table_and_chart,line,charts/synthetic_v01/chart_042_line.png,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ihracat değeri |
+|---|---|
+| 2019 | 264 |
+| 2020 | 257 |
+| 2021 | 236 |
+| 2022 | 212 |
+| 2023 | 196 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_042_line.png
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000211,synthetic_v01,train,education,table_only,bar,,value_lookup,easy,öğrenci,2020 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
 |---|---|
 | 2020 | 31724 |
@@ -3484,6 +4336,18 @@ Tablo:
 
 Soru:
 2020 ile 2024 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000215,synthetic_v01,train,education,chart_only,bar,charts/synthetic_v01/chart_043_bar.png,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_043_bar.png
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000216,synthetic_v01,train,tourism,table_and_chart,line,charts/synthetic_v01/chart_044_line.png,value_lookup,easy,kişi,2024 yılında ziyaretçi sayısı kaçtır?,"| Yıl | ziyaretçi sayısı |
 |---|---|
 | 2020 | 586444 |
@@ -3568,6 +4432,28 @@ charts/synthetic_v01/chart_044_line.png
 
 Soru:
 2023 ile 2024 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000220,synthetic_v01,train,tourism,table_only,line,,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2020 | 586444 |
+| 2021 | 683553 |
+| 2022 | 736579 |
+| 2023 | 792249 |
+| 2024 | 872932 |
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000221,synthetic_v01,train,energy,chart_only,line,charts/synthetic_v01/chart_045_line.png,value_lookup,easy,MWh,2020 yılında elektrik tüketimi kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -3643,6 +4529,33 @@ Soru:
 2020 ile 2024 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000225,synthetic_v01,train,energy,table_and_chart,line,charts/synthetic_v01/chart_045_line.png,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | elektrik tüketimi |
+|---|---|
+| 2019 | 117910 |
+| 2020 | 112756 |
+| 2021 | 107750 |
+| 2022 | 104329 |
+| 2023 | 100043 |
+| 2024 | 93246 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_045_line.png
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000226,synthetic_v01,train,health,table_only,bar,,value_lookup,easy,başvuru,2020 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
 |---|---|
 | 2018 | 303377 |
@@ -3724,6 +4637,18 @@ Tablo:
 
 Soru:
 2020 ile 2021 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000230,synthetic_v01,train,health,chart_only,bar,charts/synthetic_v01/chart_046_bar.png,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_046_bar.png
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000231,synthetic_v01,train,environment,table_and_chart,line,charts/synthetic_v01/chart_047_line.png,value_lookup,easy,ton,2022 yılında geri dönüştürülen atık miktarı kaçtır?,"| Yıl | geri dönüştürülen atık miktarı |
 |---|---|
 | 2018 | 11120 |
@@ -3808,6 +4733,28 @@ charts/synthetic_v01/chart_047_line.png
 
 Soru:
 2018 ile 2019 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000235,synthetic_v01,train,environment,table_only,line,,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2018 | 11120 |
+| 2019 | 10501 |
+| 2020 | 9938 |
+| 2021 | 9101 |
+| 2022 | 8617 |
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000236,synthetic_v01,train,sports,chart_only,bar,charts/synthetic_v01/chart_048_bar.png,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -3879,6 +4826,31 @@ Soru:
 2018 ile 2022 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000240,synthetic_v01,train,sports,table_and_chart,bar,charts/synthetic_v01/chart_048_bar.png,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | spor tesisi kullanım sayısı |
+|---|---|
+| 2018 | 61116 |
+| 2019 | 58532 |
+| 2020 | 54043 |
+| 2021 | 52253 |
+| 2022 | 48379 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_048_bar.png
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000241,synthetic_v01,validation,municipality,table_only,bar,,value_lookup,easy,başvuru,2019 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
 |---|---|
 | 2019 | 69848 |
@@ -3966,6 +4938,18 @@ Tablo:
 
 Soru:
 2021 ile 2024 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000245,synthetic_v01,validation,municipality,chart_only,bar,charts/synthetic_v01/chart_049_bar.png,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_049_bar.png
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000246,synthetic_v01,validation,agriculture,table_and_chart,bar,charts/synthetic_v01/chart_050_bar.png,value_lookup,easy,ton,2024 yılında üretim miktarı kaçtır?,"| Yıl | üretim miktarı |
 |---|---|
 | 2020 | 149868 |
@@ -4050,6 +5034,28 @@ charts/synthetic_v01/chart_050_bar.png
 
 Soru:
 2022 ile 2024 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000250,synthetic_v01,validation,agriculture,table_only,bar,,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 149868 |
+| 2021 | 159039 |
+| 2022 | 168225 |
+| 2023 | 175028 |
+| 2024 | 186594 |
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000251,synthetic_v01,validation,transportation,chart_only,line,charts/synthetic_v01/chart_051_line.png,value_lookup,easy,kişi,2020 yılında yolcu sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -4121,6 +5127,31 @@ Soru:
 2019 ile 2022 arasında yolcu sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000255,synthetic_v01,validation,transportation,table_and_chart,line,charts/synthetic_v01/chart_051_line.png,trend_summary,medium,kişi,"Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | yolcu sayısı |
+|---|---|
+| 2019 | 1780783 |
+| 2020 | 1603484 |
+| 2021 | 1564452 |
+| 2022 | 1443886 |
+| 2023 | 1327499 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_051_line.png
+
+Soru:
+Verilen veriye göre yolcu sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000256,synthetic_v01,validation,economy,table_only,line,,value_lookup,easy,milyon dolar,2023 yılında ihracat değeri kaçtır?,"| Yıl | ihracat değeri |
 |---|---|
 | 2018 | 194 |
@@ -4208,6 +5239,18 @@ Tablo:
 
 Soru:
 2020 ile 2022 arasında ihracat değeri yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000260,synthetic_v01,validation,economy,chart_only,line,charts/synthetic_v01/chart_052_line.png,trend_summary,medium,milyon dolar,"Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_052_line.png
+
+Soru:
+Verilen veriye göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000261,synthetic_v01,validation,education,table_and_chart,line,charts/synthetic_v01/chart_053_line.png,value_lookup,easy,öğrenci,2019 yılında öğrenci sayısı kaçtır?,"| Yıl | öğrenci sayısı |
 |---|---|
 | 2019 | 31483 |
@@ -4298,6 +5341,30 @@ charts/synthetic_v01/chart_053_line.png
 
 Soru:
 2021 ile 2023 arasında öğrenci sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000265,synthetic_v01,validation,education,table_only,line,,trend_summary,medium,öğrenci,"Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | öğrenci sayısı |
+|---|---|
+| 2019 | 31483 |
+| 2020 | 30601 |
+| 2021 | 29598 |
+| 2022 | 28082 |
+| 2023 | 27226 |
+| 2024 | 25929 |
+
+Soru:
+Verilen veriye göre öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000266,synthetic_v01,validation,tourism,chart_only,bar,charts/synthetic_v01/chart_054_bar.png,value_lookup,easy,kişi,2023 yılında ziyaretçi sayısı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -4373,6 +5440,33 @@ Soru:
 2018 ile 2021 arasında ziyaretçi sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000270,synthetic_v01,validation,tourism,table_and_chart,bar,charts/synthetic_v01/chart_054_bar.png,trend_summary,medium,kişi,"Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | ziyaretçi sayısı |
+|---|---|
+| 2018 | 724589 |
+| 2019 | 484082 |
+| 2020 | 722018 |
+| 2021 | 542751 |
+| 2022 | 705757 |
+| 2023 | 608906 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_054_bar.png
+
+Soru:
+Verilen veriye göre ziyaretçi sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000271,synthetic_v01,test,energy,table_only,line,,value_lookup,easy,MWh,2021 yılında elektrik tüketimi kaçtır?,"| Yıl | elektrik tüketimi |
 |---|---|
 | 2018 | 90303 |
@@ -4460,6 +5554,18 @@ Tablo:
 
 Soru:
 2020 ile 2023 arasında elektrik tüketimi yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000275,synthetic_v01,test,energy,chart_only,line,charts/synthetic_v01/chart_055_line.png,trend_summary,medium,MWh,"Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_055_line.png
+
+Soru:
+Verilen veriye göre elektrik tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000276,synthetic_v01,test,health,table_and_chart,line,charts/synthetic_v01/chart_056_line.png,value_lookup,easy,başvuru,2025 yılında hastane başvuru sayısı kaçtır?,"| Yıl | hastane başvuru sayısı |
 |---|---|
 | 2020 | 326181 |
@@ -4550,6 +5656,30 @@ charts/synthetic_v01/chart_056_line.png
 
 Soru:
 2020 ile 2022 arasında hastane başvuru sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000280,synthetic_v01,test,health,table_only,line,,trend_summary,medium,başvuru,"Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | hastane başvuru sayısı |
+|---|---|
+| 2020 | 326181 |
+| 2021 | 291802 |
+| 2022 | 306792 |
+| 2023 | 284528 |
+| 2024 | 329932 |
+| 2025 | 309705 |
+
+Soru:
+Verilen veriye göre hastane başvuru sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000281,synthetic_v01,test,environment,chart_only,line,charts/synthetic_v01/chart_057_line.png,value_lookup,easy,ton,2020 yılında geri dönüştürülen atık miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -4625,6 +5755,33 @@ Soru:
 2022 ile 2023 arasında geri dönüştürülen atık miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000285,synthetic_v01,test,environment,table_and_chart,line,charts/synthetic_v01/chart_057_line.png,trend_summary,medium,ton,"Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | geri dönüştürülen atık miktarı |
+|---|---|
+| 2019 | 11620 |
+| 2020 | 10874 |
+| 2021 | 10325 |
+| 2022 | 9871 |
+| 2023 | 9210 |
+| 2024 | 8689 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_057_line.png
+
+Soru:
+Verilen veriye göre geri dönüştürülen atık miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000286,synthetic_v01,test,sports,table_only,bar,,value_lookup,easy,kullanım,2020 yılında spor tesisi kullanım sayısı kaçtır?,"| Yıl | spor tesisi kullanım sayısı |
 |---|---|
 | 2020 | 60520 |
@@ -4706,6 +5863,18 @@ Tablo:
 
 Soru:
 2020 ile 2023 arasında spor tesisi kullanım sayısı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000290,synthetic_v01,test,sports,chart_only,bar,charts/synthetic_v01/chart_058_bar.png,trend_summary,medium,kullanım,"Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece grafik
+
+Grafik dosyası:
+charts/synthetic_v01/chart_058_bar.png
+
+Soru:
+Verilen veriye göre spor tesisi kullanım sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
 trdab_v01_000291,synthetic_v01,test,municipality,table_and_chart,line,charts/synthetic_v01/chart_059_line.png,value_lookup,easy,başvuru,2023 yılında belediye hizmet başvurusu kaçtır?,"| Yıl | belediye hizmet başvurusu |
 |---|---|
 | 2019 | 74234 |
@@ -4796,6 +5965,30 @@ charts/synthetic_v01/chart_059_line.png
 
 Soru:
 2020 ile 2021 arasında belediye hizmet başvurusu yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+trdab_v01_000295,synthetic_v01,test,municipality,table_only,line,,trend_summary,medium,başvuru,"Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: sadece tablo
+
+Tablo:
+| Yıl | belediye hizmet başvurusu |
+|---|---|
+| 2019 | 74234 |
+| 2020 | 66749 |
+| 2021 | 71668 |
+| 2022 | 61402 |
+| 2023 | 75637 |
+| 2024 | 61625 |
+
+Soru:
+Verilen veriye göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
 trdab_v01_000296,synthetic_v01,test,agriculture,chart_only,line,charts/synthetic_v01/chart_060_line.png,value_lookup,easy,ton,2025 yılında üretim miktarı kaçtır?,,"Aşağıdaki Türkçe veri analizi sorusunu cevapla.
 Cevap olarak sadece sayısal değeri yaz. Birim, yıl, açıklama veya ekstra metin yazma. Örnek cevap formatı: 12345
 
@@ -4871,3 +6064,30 @@ Soru:
 2022 ile 2023 arasında üretim miktarı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.
 
 Not: Bu örnekte tablo verilmemiştir. Cevabı grafik görselinden çıkar."
+trdab_v01_000300,synthetic_v01,test,agriculture,table_and_chart,line,charts/synthetic_v01/chart_060_line.png,trend_summary,medium,ton,"Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.","| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |","Aşağıdaki Türkçe veri analizi sorusunu cevapla.
+Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. Açıklama, sayı veya ekstra metin yazma.
+
+Girdi türü: tablo ve grafik
+
+Tablo:
+| Yıl | üretim miktarı |
+|---|---|
+| 2020 | 152382 |
+| 2021 | 157224 |
+| 2022 | 169253 |
+| 2023 | 174720 |
+| 2024 | 186719 |
+| 2025 | 195067 |
+
+Grafik dosyası:
+charts/synthetic_v01/chart_060_line.png
+
+Soru:
+Verilen veriye göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."

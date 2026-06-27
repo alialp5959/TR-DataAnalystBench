@@ -53,6 +53,46 @@ def get_numeric_examples(examples: list[dict]) -> list[dict]:
     return numeric_examples
 
 
+def get_trend_examples(examples: list[dict]) -> list[dict]:
+    return [
+        example
+        for example in examples
+        if example.get("question_type") == "trend_summary"
+        and example.get("trend_class") is not None
+    ]
+
+
+# Makine-okunur trend sınıfı -> Türkçe tek kelime (oracle/noisy üretimi için).
+TREND_CLASS_TO_WORD = {
+    "increasing": "artış",
+    "decreasing": "azalış",
+    "mixed": "dalgalı",
+}
+
+TREND_WORDS = list(TREND_CLASS_TO_WORD.values())
+
+
+def normalize_trend_label(text) -> str | None:
+    if text is None:
+        return None
+
+    text = str(text).strip().lower()
+
+    if not text:
+        return None
+
+    if any(k in text for k in ["dalgal", "karış", "karis", "mixed"]):
+        return "mixed"
+
+    if any(k in text for k in ["azal", "düş", "dus", "decreas"]):
+        return "decreasing"
+
+    if any(k in text for k in ["art", "yüksel", "yuksel", "increas"]):
+        return "increasing"
+
+    return None
+
+
 def create_oracle_predictions(examples: list[dict]) -> pd.DataFrame:
     rows = []
 
@@ -118,6 +158,76 @@ def create_noisy_baseline_predictions(examples: list[dict]) -> pd.DataFrame:
         )
 
     return pd.DataFrame(rows)
+
+
+def create_oracle_trend_predictions(examples: list[dict]) -> pd.DataFrame:
+    rows = []
+
+    for example in examples:
+        word = TREND_CLASS_TO_WORD[example["trend_class"]]
+
+        rows.append(
+            {
+                "id": example["id"],
+                "predicted_numeric_answer": "",
+                "prediction_text": word,
+                "prediction_source": "oracle",
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
+def create_noisy_trend_predictions(examples: list[dict]) -> pd.DataFrame:
+    rows = []
+
+    for example in examples:
+        gold_word = TREND_CLASS_TO_WORD[example["trend_class"]]
+
+        if random.random() < 0.7:
+            word = gold_word
+        else:
+            other_words = [w for w in TREND_WORDS if w != gold_word]
+            word = random.choice(other_words)
+
+        rows.append(
+            {
+                "id": example["id"],
+                "predicted_numeric_answer": "",
+                "prediction_text": word,
+                "prediction_source": "noisy_baseline",
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
+def evaluate_trend(examples: list[dict], predictions: pd.DataFrame, prediction_name: str) -> tuple[dict, int]:
+    prediction_map = {row["id"]: row for _, row in predictions.iterrows()}
+
+    correct = 0
+
+    for example in examples:
+        prediction_row = prediction_map.get(example["id"])
+
+        if prediction_row is None:
+            continue
+
+        predicted_label = normalize_trend_label(prediction_row.get("prediction_text"))
+
+        if predicted_label == example["trend_class"]:
+            correct += 1
+
+    total = len(examples)
+    accuracy = correct / total if total else 0.0
+
+    report = {
+        "prediction_name": prediction_name,
+        "total_trend_examples": total,
+        "label_accuracy": accuracy,
+    }
+
+    return report, correct
 
 
 def is_exact_match(gold: float, predicted: float) -> bool:
@@ -256,9 +366,17 @@ def main() -> None:
 
     examples = load_jsonl(DATASET_PATH)
     numeric_examples = get_numeric_examples(examples)
+    trend_examples = get_trend_examples(examples)
 
-    oracle_predictions = create_oracle_predictions(numeric_examples)
-    noisy_predictions = create_noisy_baseline_predictions(numeric_examples)
+    # Oracle/noisy predictions cover the full benchmark (numeric + trend).
+    oracle_predictions = pd.concat(
+        [create_oracle_predictions(numeric_examples), create_oracle_trend_predictions(trend_examples)],
+        ignore_index=True,
+    )
+    noisy_predictions = pd.concat(
+        [create_noisy_baseline_predictions(numeric_examples), create_noisy_trend_predictions(trend_examples)],
+        ignore_index=True,
+    )
 
     oracle_predictions.to_csv(ORACLE_PREDICTIONS_PATH, index=False, encoding="utf-8-sig")
     noisy_predictions.to_csv(NOISY_PREDICTIONS_PATH, index=False, encoding="utf-8-sig")
@@ -275,17 +393,39 @@ def main() -> None:
         prediction_name="noisy_baseline",
     )
 
+    oracle_trend_report, oracle_trend_correct = evaluate_trend(
+        trend_examples, oracle_predictions, "oracle"
+    )
+    noisy_trend_report, noisy_trend_correct = evaluate_trend(
+        trend_examples, noisy_predictions, "noisy_baseline"
+    )
+
     all_details = pd.concat([oracle_details, noisy_details], ignore_index=True)
     all_details.to_csv(SCORING_DETAILS_PATH, index=False, encoding="utf-8-sig")
+
+    total_scorable = len(numeric_examples) + len(trend_examples)
+
+    def overall_accuracy(numeric_report: dict, trend_correct: int) -> float:
+        numeric_correct = numeric_report["tolerance_accuracy"] * len(numeric_examples)
+        return (numeric_correct + trend_correct) / total_scorable if total_scorable else 0.0
 
     full_report = {
         "dataset_path": str(DATASET_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
         "total_dataset_examples": len(examples),
         "total_numeric_examples": len(numeric_examples),
-        "excluded_text_examples": len(examples) - len(numeric_examples),
+        "total_trend_examples": len(trend_examples),
+        "total_scorable_examples": total_scorable,
         "reports": {
-            "oracle": oracle_report,
-            "noisy_baseline": noisy_report,
+            "oracle": {
+                "numeric": oracle_report,
+                "trend": oracle_trend_report,
+                "overall_accuracy": overall_accuracy(oracle_report, oracle_trend_correct),
+            },
+            "noisy_baseline": {
+                "numeric": noisy_report,
+                "trend": noisy_trend_report,
+                "overall_accuracy": overall_accuracy(noisy_report, noisy_trend_correct),
+            },
         },
         "output_files": {
             "oracle_predictions": str(ORACLE_PREDICTIONS_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
@@ -297,18 +437,21 @@ def main() -> None:
 
     save_json(full_report, SCORING_REPORT_PATH)
 
-    print("Numeric scoring completed successfully.")
+    print("Benchmark scoring completed successfully.")
     print(f"Total dataset examples: {len(examples)}")
     print(f"Numeric examples scored: {len(numeric_examples)}")
-    print(f"Text examples excluded: {len(examples) - len(numeric_examples)}")
+    print(f"Trend examples scored: {len(trend_examples)}")
+    print(f"Total scorable examples: {total_scorable}")
     print()
     print("Oracle results:")
-    print(f"  Exact accuracy: {oracle_report['exact_accuracy']:.2%}")
-    print(f"  Tolerance accuracy: {oracle_report['tolerance_accuracy']:.2%}")
+    print(f"  Numeric tolerance accuracy: {oracle_report['tolerance_accuracy']:.2%}")
+    print(f"  Trend label accuracy: {oracle_trend_report['label_accuracy']:.2%}")
+    print(f"  Overall accuracy: {overall_accuracy(oracle_report, oracle_trend_correct):.2%}")
     print()
     print("Noisy baseline results:")
-    print(f"  Exact accuracy: {noisy_report['exact_accuracy']:.2%}")
-    print(f"  Tolerance accuracy: {noisy_report['tolerance_accuracy']:.2%}")
+    print(f"  Numeric tolerance accuracy: {noisy_report['tolerance_accuracy']:.2%}")
+    print(f"  Trend label accuracy: {noisy_trend_report['label_accuracy']:.2%}")
+    print(f"  Overall accuracy: {overall_accuracy(noisy_report, noisy_trend_correct):.2%}")
     print()
     print(f"Oracle predictions: {ORACLE_PREDICTIONS_PATH}")
     print(f"Noisy predictions: {NOISY_PREDICTIONS_PATH}")

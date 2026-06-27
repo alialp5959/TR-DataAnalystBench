@@ -263,8 +263,19 @@ The validation checks:
 - Table structure
 - Chart file existence
 - Numeric answer consistency
+- Signed percentage-change direction consistency
+- Trend class consistency (increasing / decreasing / mixed)
 - Known suspicious Turkish typos
 - Expected dataset size and distribution
+
+## Scoring
+
+All 300 examples are automatically scorable:
+
+- 240 numeric examples (`value_lookup`, `max_min`, `comparison`, `percentage_change`) are scored with tolerance. `percentage_change` gold answers are signed, so direction is evaluated.
+- 60 `trend_summary` examples are scored as a 3-class categorization (`increasing` / `decreasing` / `mixed`) via the `trend_class` field.
+
+Use `scripts/08_evaluate_predictions_file.py` to score a prediction CSV. Running it on the generated oracle predictions yields 100% overall accuracy.
 
 ## Stats JSON
 
@@ -284,13 +295,11 @@ The next major step is to move from synthetic tables to real open-data sources.
 
 ## Next Steps
 
-1. Improve Turkish wording diversity.
-2. Add more question templates.
-3. Add chart-only evaluation support.
-4. Add automatic numeric scoring.
-5. Add real open-data sources.
-6. Add baseline model evaluation.
-7. Prepare a Hugging Face dataset release.
+1. Increase difficulty and discrimination (label-free chart variants, multi-series tables, distractor columns, harder templates).
+2. Add a multimodal evaluation harness that passes chart images to a model.
+3. Add baseline model evaluation and a comparison table.
+4. Move from synthetic tables to real Turkish open-data sources.
+5. Prepare a Hugging Face dataset release.
 """
 
     REPORT_PATH.write_text(report, encoding="utf-8")

@@ -467,12 +467,17 @@ def build_percentage_change(
 
     example.update(
         {
-            "question": f"{start_year} ile {end_year} arasında {topic['metric']} yaklaşık yüzde kaç değişmiştir?",
+            # Soru yön bilgisini de istiyor: artış pozitif, azalış negatif.
+            "question": (
+                f"{start_year} ile {end_year} arasında {topic['metric']} yaklaşık yüzde kaç "
+                f"değişmiştir? Artış için pozitif, azalış için negatif değer ver."
+            ),
             "answer": f"{start_year} ile {end_year} arasında {topic['metric']} yaklaşık %{format_percent_tr(pct_magnitude)} {direction}.",
             "answer_type": "numeric",
-            "numeric_answer": pct_magnitude,
-            "calculation": f"abs((({end_value} - {start_value}) / {start_value}) * 100) = {pct_magnitude}",
-            "expected_reasoning": "Başlangıç ve bitiş yıllarındaki değerler bulunup yüzde değişimin büyüklüğü hesaplanmalıdır.",
+            # Gold işaretli (signed) tutulur ki yön de ölçülebilsin.
+            "numeric_answer": pct_rounded,
+            "calculation": f"(({end_value} - {start_value}) / {start_value}) * 100 = {pct_rounded}",
+            "expected_reasoning": "Başlangıç ve bitiş yıllarındaki değerler bulunup yüzde değişim (yön dahil) hesaplanmalıdır.",
             "unit": "percent",
         }
     )
@@ -514,6 +519,14 @@ def build_trend_summary(
 
     trend = detect_trend(rows)
 
+    # Otomatik (kategorik) skorlama için makine-okunur sınıf etiketi.
+    trend_class_map = {
+        "artış eğilimi": "increasing",
+        "azalış eğilimi": "decreasing",
+        "dalgalı eğilim": "mixed",
+    }
+    trend_class = trend_class_map[trend]
+
     if trend == "artış eğilimi":
         answer = (
             f"Verilen veri genel olarak {topic['metric']} için artış eğilimi göstermektedir. "
@@ -544,10 +557,14 @@ def build_trend_summary(
 
     example.update(
         {
-            "question": f"Verilen veriye göre {topic['metric']} için genel eğilim nedir?",
+            "question": (
+                f"Verilen veriye göre {topic['metric']} için genel eğilim nedir? "
+                f"Cevabı tek kelimeyle ver: artış, azalış veya dalgalı."
+            ),
             "answer": answer,
             "answer_type": "text",
             "numeric_answer": None,
+            "trend_class": trend_class,
             "calculation": f"Başlangıç değeri: {start_value}, bitiş değeri: {end_value}, tespit edilen eğilim: {trend}",
             "expected_reasoning": "Başlangıç, bitiş ve ara yıllardaki değişim yönleri birlikte incelenmelidir.",
         }
