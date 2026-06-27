@@ -49,6 +49,14 @@ configs:
     path: data/chart_read_v01/validation.jsonl
   - split: test
     path: data/chart_read_v01/test.jsonl
+- config_name: real_anon_v01
+  data_files:
+  - split: train
+    path: data/real_anon_v01/train.jsonl
+  - split: validation
+    path: data/real_anon_v01/validation.jsonl
+  - split: test
+    path: data/real_anon_v01/test.jsonl
 ---
 
 # TR-DataAnalystBench
@@ -69,7 +77,7 @@ Many models are fluent in Turkish yet still fail at numerical reasoning, table
 understanding, and chart interpretation. TR-DataAnalystBench isolates those
 abilities with verifiable gold answers and a transparent scoring contract.
 
-## The suite (968 examples, four tiers)
+## The suite (1,076 examples, five tiers)
 
 | Tier | Examples | Tasks | What it targets |
 |---|---:|---:|---|
@@ -77,6 +85,7 @@ abilities with verifiable gold answers and a transparent scoring contract.
 | `synthetic_v02` | 320 | 8 | Harder & discriminative: multi-series tables, distractor columns, average / nth-highest / cross-series, unanswerable questions, real `hard` labels |
 | `real_pilot` | 108 | 7 | **Real Türkiye open data** (population, GDP, consumer inflation, CO₂) with verified gold |
 | `chart_read_v01` | 240 | 5 | **Genuine chart reading**: label-free charts (no printed values); read which year is max/min, compare years, count above a level, estimate a value, read the trend |
+| `real_anon_v01` | 108 | 7 | **Contamination-controlled real data**: real series with the country/years removed and per-series rescaling, so it measures table reading rather than recall |
 
 Splits are table-disjoint (the questions sharing a table/chart never cross a
 split boundary).
@@ -154,8 +163,10 @@ an API.
   `chart_only` items partly measure label OCR. The `chart_read_v01` tier
   removes labels to isolate genuine chart reading; expand it to make visual
   reading a larger share of the suite.
-- `real_pilot` is a proof-of-concept (108 examples, 4 indicators); it is meant
-  to grow.
+- `real_pilot` uses real, well-known figures, so it can partly reward recall
+  rather than table reading; the `real_anon_v01` tier controls for this by
+  removing the country/years and rescaling each series. Both are kept so users
+  can compare authentic-value vs contamination-controlled settings.
 - With a few hundred examples, overall rankings are stable but fine-grained
   per-subgroup numbers carry meaningful confidence intervals.
 - Trends are labeled by a deterministic rule (monotonic, or net change ≥5% with

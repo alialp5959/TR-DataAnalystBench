@@ -29,3 +29,6 @@ jobs:
 
       - name: Validate chart_read_v01
         run: python scripts/20_validate_chart_read_v01.py
+
+      - name: Validate real_anon_v01
+        run: python scripts/22_validate_real_anon_v01.py
