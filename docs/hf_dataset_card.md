@@ -161,6 +161,7 @@ the scoring pipeline.
 | Noisy baseline | synthetic_v02 | ~66% | abstention ~45% (catches hallucination) |
 | "Simple-%" error | reasoning_v01 | ~83% | a model that confuses CAGR with simple % change loses exactly the CAGR items |
 | ChatGPT (manual, 12-item sample) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention, missed one borderline trend |
+| ChatGPT (manual, bulk, 18-item) | reasoning_v01 test | ~100% | every well-formed item correct (incl. CAGR); even flagged a malformed question, which led to a gold fix — frontier models are strong at numeric reasoning, so discrimination should come from chart reading and traps |
 
 The ChatGPT number is a small, manually collected illustration, not a full
 leaderboard entry. The repository includes a free **manual evaluation kit**
