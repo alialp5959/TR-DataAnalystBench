@@ -14,6 +14,14 @@ TEST_JSONL_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_test_numeric.jsonl"
 ALL_CSV_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_all_numeric.csv"
 TEST_CSV_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_test_numeric.csv"
 
+# Full packs cover every scorable example (numeric + trend), so a model can
+# answer the whole benchmark from a single file.
+ALL_FULL_JSONL_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_all_full.jsonl"
+TEST_FULL_JSONL_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_test_full.jsonl"
+
+ALL_FULL_CSV_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_all_full.csv"
+TEST_FULL_CSV_PATH = EXPORTS_DIR / "synthetic_v01_prompt_pack_test_full.csv"
+
 
 def load_jsonl(path: Path) -> list[dict]:
     examples = []
@@ -43,6 +51,14 @@ def is_numeric_example(example: dict) -> bool:
     return True
 
 
+def is_trend_example(example: dict) -> bool:
+    return example.get("question_type") == "trend_summary"
+
+
+def is_scorable_example(example: dict) -> bool:
+    return is_numeric_example(example) or is_trend_example(example)
+
+
 def table_to_markdown(table: dict) -> str:
     columns = table["columns"]
     rows = table["rows"]
@@ -58,11 +74,18 @@ def table_to_markdown(table: dict) -> str:
 
 
 def get_output_instruction(example: dict) -> str:
+    if example["question_type"] == "trend_summary":
+        return (
+            "Cevap olarak sadece eğilimi tek kelimeyle yaz: artış, azalış veya dalgalı. "
+            "Açıklama, sayı veya ekstra metin yazma."
+        )
+
     if example["question_type"] == "percentage_change":
         return (
             "Cevap olarak sadece sayısal yüzde değişim değerini yaz. "
+            "Artış için pozitif, azalış için negatif değer ver. "
             "Yüzde işareti, birim, açıklama veya ekstra metin yazma. "
-            "Örnek cevap formatı: 8.8"
+            "Örnek cevap formatı: 8.8 veya -8.8"
         )
 
     return (
@@ -144,11 +167,11 @@ def build_prompt(example: dict) -> tuple[str, str, str]:
     return prompt, table_markdown, chart_path
 
 
-def create_prompt_pack_rows(examples: list[dict]) -> list[dict]:
+def create_prompt_pack_rows(examples: list[dict], predicate=is_numeric_example) -> list[dict]:
     rows = []
 
     for example in examples:
-        if not is_numeric_example(example):
+        if not predicate(example):
             continue
 
         prompt, table_markdown, chart_path = build_prompt(example)
@@ -236,10 +259,13 @@ def main() -> None:
 
     examples = load_jsonl(DATASET_PATH)
 
-    all_rows = create_prompt_pack_rows(examples)
+    all_rows = create_prompt_pack_rows(examples, predicate=is_numeric_example)
     test_rows = [row for row in all_rows if row["split"] == "test"]
 
-    errors = validate_no_gold_leakage(all_rows)
+    all_full_rows = create_prompt_pack_rows(examples, predicate=is_scorable_example)
+    test_full_rows = [row for row in all_full_rows if row["split"] == "test"]
+
+    errors = validate_no_gold_leakage(all_rows) + validate_no_gold_leakage(all_full_rows)
 
     if errors:
         print("Prompt pack validation failed.")
@@ -259,6 +285,12 @@ def main() -> None:
     save_csv(all_rows, ALL_CSV_PATH)
     save_csv(test_rows, TEST_CSV_PATH)
 
+    save_jsonl(all_full_rows, ALL_FULL_JSONL_PATH)
+    save_jsonl(test_full_rows, TEST_FULL_JSONL_PATH)
+
+    save_csv(all_full_rows, ALL_FULL_CSV_PATH)
+    save_csv(test_full_rows, TEST_FULL_CSV_PATH)
+
     input_format_counts = {}
     question_type_counts = {}
 
@@ -269,6 +301,8 @@ def main() -> None:
     print("Prompt packs created successfully.")
     print(f"All numeric prompt rows: {len(all_rows)}")
     print(f"Test numeric prompt rows: {len(test_rows)}")
+    print(f"All full prompt rows (numeric + trend): {len(all_full_rows)}")
+    print(f"Test full prompt rows (numeric + trend): {len(test_full_rows)}")
 
     print("\nInput format distribution:")
     for key in sorted(input_format_counts):
@@ -282,6 +316,10 @@ def main() -> None:
     print(f"Test JSONL prompt pack: {TEST_JSONL_PATH}")
     print(f"All CSV prompt pack: {ALL_CSV_PATH}")
     print(f"Test CSV prompt pack: {TEST_CSV_PATH}")
+    print(f"All full JSONL prompt pack: {ALL_FULL_JSONL_PATH}")
+    print(f"Test full JSONL prompt pack: {TEST_FULL_JSONL_PATH}")
+    print(f"All full CSV prompt pack: {ALL_FULL_CSV_PATH}")
+    print(f"Test full CSV prompt pack: {TEST_FULL_CSV_PATH}")
 
 
 if __name__ == "__main__":

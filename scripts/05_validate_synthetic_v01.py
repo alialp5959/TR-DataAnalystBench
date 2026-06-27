@@ -291,6 +291,23 @@ def validate_answer_consistency(example: dict, index: int) -> list[str]:
         if numeric_answer is not None:
             errors.append(f"Example {index}: trend_summary should have numeric_answer None")
 
+        trend_class = example.get("trend_class")
+        allowed_trend_classes = {"increasing", "decreasing", "mixed"}
+
+        if trend_class not in allowed_trend_classes:
+            errors.append(
+                f"Example {index}: trend_summary should have trend_class in {sorted(allowed_trend_classes)}, "
+                f"got '{trend_class}'"
+            )
+        else:
+            answer = str(example.get("answer", ""))
+            if trend_class == "increasing" and "artış" not in answer:
+                errors.append(f"Example {index}: trend_class 'increasing' but answer text does not mention 'artış'")
+            if trend_class == "decreasing" and "azalış" not in answer:
+                errors.append(f"Example {index}: trend_class 'decreasing' but answer text does not mention 'azalış'")
+            if trend_class == "mixed" and "dalgalı" not in answer:
+                errors.append(f"Example {index}: trend_class 'mixed' but answer text does not mention 'dalgalı'")
+
         return errors
 
     if answer_type not in {"numeric", "numeric_with_label"}:
@@ -344,9 +361,22 @@ def validate_answer_consistency(example: dict, index: int) -> list[str]:
         if example.get("unit") != "percent":
             errors.append(f"Example {index}: percentage_change should have unit 'percent'")
 
-        if numeric_answer < 0:
+        # Gold artık işaretli (signed): yön, cevap metnindeki ifadeyle tutarlı olmalı.
+        answer = str(example.get("answer", ""))
+
+        if "artmıştır" in answer and numeric_answer < 0:
             errors.append(
-                f"Example {index}: percentage_change numeric_answer should be a non-negative magnitude, got {numeric_answer}"
+                f"Example {index}: percentage_change says 'artmıştır' but numeric_answer is negative ({numeric_answer})"
+            )
+
+        if "azalmıştır" in answer and numeric_answer > 0:
+            errors.append(
+                f"Example {index}: percentage_change says 'azalmıştır' but numeric_answer is positive ({numeric_answer})"
+            )
+
+        if "değişmemiştir" in answer and numeric_answer != 0:
+            errors.append(
+                f"Example {index}: percentage_change says 'değişmemiştir' but numeric_answer is not zero ({numeric_answer})"
             )
 
     return errors
