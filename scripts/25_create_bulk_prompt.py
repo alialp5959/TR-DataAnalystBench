@@ -31,7 +31,7 @@ def table_md(table: dict) -> str:
     return "\n".join(lines)
 
 
-HEADER = """Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu kullanarak cevapla.
+HEADER = """Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu ve/veya grafiği kullanarak cevapla. Grafikli sorularda ilgili GÖRSEL numarası belirtilmiştir; o görselden değerleri eksen ve gridline'lardan oku (grafiklerde sayı yazılı değildir).
 
 ÇOK ÖNEMLİ — ÇIKTI FORMATI:
 - Her soru için TEK satır dön: `numara) cevap`
@@ -53,28 +53,45 @@ def main() -> None:
 
     examples = load_jsonl(args.dataset)
     items = [e for e in examples if e.get("split") == args.split]
-    text_items = [e for e in items if e.get("input_format", "table_only") == "table_only"]
+    if not items:
+        raise SystemExit(f"No items in split '{args.split}'.")
 
-    skipped = len(items) - len(text_items)
-    if not text_items:
-        raise SystemExit(f"No table_only items in split '{args.split}' — this tier needs images, not bulk-testable.")
+    # Assign a stable "GÖRSEL-N" label to each unique chart referenced.
+    chart_labels = {}
+    for e in items:
+        cp = e.get("chart_path")
+        if cp and e.get("input_format") in ("chart_only", "table_and_chart") and cp not in chart_labels:
+            chart_labels[cp] = f"GÖRSEL-{len(chart_labels) + 1}"
 
-    version = text_items[0].get("dataset_version", args.dataset.stem)
+    version = items[0].get("dataset_version", args.dataset.stem)
     stem = f"{version}_{args.split}_bulk"
     prompt_path = EXPORTS_DIR / f"{stem}_prompt.txt"
     ids_path = EXPORTS_DIR / f"{stem}_ids.json"
+    charts_path = EXPORTS_DIR / f"{stem}_charts.json"
 
     blocks = [HEADER]
-    for i, e in enumerate(text_items, start=1):
-        blocks.append(f"\n--- Soru {i} ---\nTablo:\n{table_md(e['table'])}\n\nSoru: {e['question']}")
+    for i, e in enumerate(items, start=1):
+        parts = [f"\n--- Soru {i} ---"]
+        if e.get("input_format") in ("table_only", "table_and_chart"):
+            parts.append(f"Tablo:\n{table_md(e['table'])}")
+        if e.get("input_format") in ("chart_only", "table_and_chart"):
+            parts.append(f"Görsel: {chart_labels[e['chart_path']]}")
+        parts.append(f"Soru: {e['question']}")
+        blocks.append("\n".join(parts))
 
     prompt_path.write_text("\n".join(blocks) + "\n", encoding="utf-8")
-    ids_path.write_text(json.dumps([e["id"] for e in text_items], ensure_ascii=False), encoding="utf-8")
+    ids_path.write_text(json.dumps([e["id"] for e in items], ensure_ascii=False), encoding="utf-8")
+    # label -> chart_path, so the operator knows which images to attach
+    charts_path.write_text(json.dumps({v: k for k, v in chart_labels.items()}, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("Bulk prompt created.")
-    print(f"Questions: {len(text_items)} (skipped {skipped} chart-only items)")
+    print(f"Questions: {len(items)}  Charts to attach: {len(chart_labels)}")
     print(f"Prompt: {prompt_path}")
     print(f"Id order: {ids_path}")
+    if chart_labels:
+        print(f"Charts manifest: {charts_path}")
+        for label, cp in sorted({v: k for k, v in chart_labels.items()}.items()):
+            print(f"  {label} -> {cp}")
 
 
 if __name__ == "__main__":

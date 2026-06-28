@@ -37,10 +37,9 @@ def main() -> None:
     args = parser.parse_args()
 
     examples = load_jsonl(args.dataset)
-    items = [e for e in examples if e.get("split") == args.split
-             and e.get("input_format", "table_only") == "table_only"]
+    items = [e for e in examples if e.get("split") == args.split]
     if not items:
-        raise SystemExit("No table_only items for this split.")
+        raise SystemExit("No items for this split.")
 
     text = args.response.read_text(encoding="utf-8")
     answers = {}

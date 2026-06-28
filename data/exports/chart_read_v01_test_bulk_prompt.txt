@@ -1,0 +1,108 @@
+Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu ve/veya grafiği kullanarak cevapla. Grafikli sorularda ilgili GÖRSEL numarası belirtilmiştir; o görselden değerleri eksen ve gridline'lardan oku (grafiklerde sayı yazılı değildir).
+
+ÇOK ÖNEMLİ — ÇIKTI FORMATI:
+- Her soru için TEK satır dön: `numara) cevap`
+- Cevap SADECE sayısal değer olsun (gerekiyorsa ondalık). Birim, yıl etiketi, açıklama YAZMA.
+- Yüzde/oran sorularında artış için pozitif, azalış için negatif değer ver.
+- Eğilim sorusu varsa cevap tek kelime olsun: artış, azalış veya dalgalı.
+- Soru verilen veriden cevaplanamıyorsa sadece: veri yok
+- Başka hiçbir şey yazma; sadece `numara) cevap` satırlarını dön.
+
+SORULAR:
+
+
+--- Soru 1 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre en yüksek geri dönüştürülen atık hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 2 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre en düşük geri dönüştürülen atık hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 3 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2019 ve 2021 yıllarından hangisinde geri dönüştürülen atık daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 4 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre kaç yılda geri dönüştürülen atık 9.400 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 5 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2022 yılında geri dönüştürülen atık yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 6 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre geri dönüştürülen atık için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 7 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre en yüksek spor tesisi kullanımı hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 8 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre en düşük spor tesisi kullanımı hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 9 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2017 ve 2019 yıllarından hangisinde spor tesisi kullanımı daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 10 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre kaç yılda spor tesisi kullanımı 52.000 kullanım değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 11 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2018 yılında spor tesisi kullanımı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 12 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre spor tesisi kullanımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 13 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre en yüksek belediye hizmet başvurusu hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 14 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre en düşük belediye hizmet başvurusu hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 15 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2019 ve 2022 yıllarından hangisinde belediye hizmet başvurusu daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 16 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kaç yılda belediye hizmet başvurusu 70.500 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 17 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2018 yılında belediye hizmet başvurusu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 18 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre belediye hizmet başvurusu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 19 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre en yüksek üretim miktarı hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 20 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre en düşük üretim miktarı hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 21 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre 2024 ve 2019 yıllarından hangisinde üretim miktarı daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 22 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre kaç yılda üretim miktarı 150.000 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 23 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre 2020 yılında üretim miktarı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 24 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
