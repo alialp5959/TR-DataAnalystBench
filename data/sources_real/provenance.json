@@ -1,0 +1,67 @@
+{
+  "country_code": "TUR",
+  "country_label": "Türkiye",
+  "note": "Real open data cached locally for reproducible generation.",
+  "sources": [
+    {
+      "name": "population",
+      "domain": "demografi",
+      "metric": "nüfus",
+      "unit": "kişi",
+      "indicator_source": "World Bank (datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/population/main/data/population.csv",
+      "license": {
+        "name": "ODC-PDDL-1.0"
+      },
+      "rows": 65,
+      "year_min": 1960,
+      "year_max": 2024,
+      "local_path": "data/sources_real/population.csv"
+    },
+    {
+      "name": "gdp",
+      "domain": "ekonomi",
+      "metric": "gayrisafi yurt içi hasıla",
+      "unit": "dolar",
+      "indicator_source": "World Bank (datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/gdp/main/data/gdp.csv",
+      "license": {
+        "name": "CC-BY-4.0"
+      },
+      "rows": 64,
+      "year_min": 1960,
+      "year_max": 2023,
+      "local_path": "data/sources_real/gdp.csv"
+    },
+    {
+      "name": "inflation",
+      "domain": "ekonomi",
+      "metric": "tüketici enflasyon oranı",
+      "unit": "yüzde",
+      "indicator_source": "World Bank consumer price inflation (datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/inflation/main/data/inflation-consumer.csv",
+      "license": {
+        "name": "ODC-PDDL-1.0"
+      },
+      "rows": 63,
+      "year_min": 1961,
+      "year_max": 2023,
+      "local_path": "data/sources_real/inflation.csv"
+    },
+    {
+      "name": "co2",
+      "domain": "çevre",
+      "metric": "fosil yakıt CO2 salımı",
+      "unit": "bin ton karbon",
+      "indicator_source": "CDIAC fossil-fuel CO2 emissions by nation (datahub datasets mirror)",
+      "url": "https://raw.githubusercontent.com/datasets/co2-fossil-by-nation/master/data/fossil-fuel-co2-emissions-by-nation.csv",
+      "license": {
+        "name": "ODC-PDDL-1.0"
+      },
+      "rows": 156,
+      "year_min": 1865,
+      "year_max": 2020,
+      "local_path": "data/sources_real/co2.csv"
+    }
+  ]
+}

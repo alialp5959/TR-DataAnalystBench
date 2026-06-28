@@ -1,0 +1,22 @@
+{
+  "dataset_version": "chart_read_v01",
+  "total_examples": 240,
+  "unique_charts": 40,
+  "all_chart_only_label_free": true,
+  "question_type_distribution": {
+    "max_min_year": 80,
+    "compare_years": 40,
+    "count_above": 40,
+    "value_estimate": 40,
+    "trend_summary": 40
+  },
+  "difficulty_distribution": {
+    "medium": 160,
+    "hard": 80
+  },
+  "split_distribution": {
+    "train": 192,
+    "validation": 24,
+    "test": 24
+  }
+}

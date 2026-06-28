@@ -485,23 +485,33 @@ def build_percentage_change(
     return example
 
 
+# Minimum net change (relative to the start value) required to call a direction
+# on a non-monotonic series. Below this, a noisy/flat series is "dalgalı".
+TREND_NET_CHANGE_THRESHOLD = 0.05
+
+
 def detect_trend(rows: list[list[int]]) -> str:
     values = [row[1] for row in rows]
 
-    increases = 0
-    decreases = 0
+    increases = sum(1 for previous, current in zip(values, values[1:]) if current > previous)
+    decreases = sum(1 for previous, current in zip(values, values[1:]) if current < previous)
 
-    for previous, current in zip(values, values[1:]):
-        if current > previous:
-            increases += 1
-        elif current < previous:
-            decreases += 1
-
-    if increases > decreases and values[-1] > values[0]:
+    # Monotonic series: call the direction even if the change is small.
+    if decreases == 0 and increases > 0:
         return "artış eğilimi"
-
-    if decreases > increases and values[-1] < values[0]:
+    if increases == 0 and decreases > 0:
         return "azalış eğilimi"
+
+    # Non-monotonic: only call a direction if the net change is meaningful and
+    # the dominant step direction agrees with it; otherwise it is fluctuating.
+    net = values[-1] - values[0]
+    net_ratio = abs(net) / max(abs(values[0]), 1)
+
+    if net_ratio >= TREND_NET_CHANGE_THRESHOLD:
+        if net > 0 and increases > decreases:
+            return "artış eğilimi"
+        if net < 0 and decreases > increases:
+            return "azalış eğilimi"
 
     return "dalgalı eğilim"
 

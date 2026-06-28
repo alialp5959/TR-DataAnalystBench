@@ -1,0 +1,228 @@
+Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu kullanarak cevapla.
+
+ÇOK ÖNEMLİ — ÇIKTI FORMATI:
+- Her soru için TEK satır dön: `numara) cevap`
+- Cevap SADECE sayısal değer olsun (gerekiyorsa ondalık). Birim, yıl etiketi, açıklama YAZMA.
+- Yüzde/oran sorularında artış için pozitif, azalış için negatif değer ver.
+- Eğilim sorusu varsa cevap tek kelime olsun: artış, azalış veya dalgalı.
+- Soru verilen veriden cevaplanamıyorsa sadece: veri yok
+- Başka hiçbir şey yazma; sadece `numara) cevap` satırlarını dön.
+
+SORULAR:
+
+
+--- Soru 1 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: tesis kullanımı için 2018-2023 arasındaki bileşik yıllık büyüme oranı (CAGR) yaklaşık yüzde kaçtır? Artış için pozitif, azalış için negatif değer ver.
+
+--- Soru 2 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: tesis kullanımı bir önceki yıla göre en çok hangi yılda artmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 3 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: tesis kullanımı bir önceki yıla göre art arda en fazla kaç kez artmıştır (en uzun kesintisiz artış serisi)? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 4 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: tesis kullanımı değerinin 44.122 kullanım değerinden büyük olduğu yıllardaki ortalama tesis kullanımı kaçtır?
+
+--- Soru 5 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: Tüm yılların toplam tesis kullanımı değeri içinde 2023 yılının payı yaklaşık yüzde kaçtır?
+
+--- Soru 6 ---
+Tablo:
+| Yıl | tesis kullanımı | lisanslı sporcu |
+| 2018 | 47831 | 16818 |
+| 2019 | 43174 | 15865 |
+| 2020 | 48057 | 15311 |
+| 2021 | 38144 | 14408 |
+| 2022 | 46884 | 13506 |
+| 2023 | 44122 | 12830 |
+
+Soru: 2020 yılında tesis kullanımı, lisanslı sporcu'nin yaklaşık kaç katıdır?
+
+--- Soru 7 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: hizmet başvurusu için 2017-2022 arasındaki bileşik yıllık büyüme oranı (CAGR) yaklaşık yüzde kaçtır? Artış için pozitif, azalış için negatif değer ver.
+
+--- Soru 8 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: hizmet başvurusu bir önceki yıla göre en çok hangi yılda azalmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 9 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: hizmet başvurusu bir önceki yıla göre art arda en fazla kaç kez artmıştır (en uzun kesintisiz artış serisi)? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 10 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: hizmet başvurusu değerinin 83.453 başvuru değerinden büyük olduğu yıllardaki ortalama hizmet başvurusu kaçtır?
+
+--- Soru 11 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: Tüm yılların toplam hizmet başvurusu değeri içinde 2021 yılının payı yaklaşık yüzde kaçtır?
+
+--- Soru 12 ---
+Tablo:
+| Yıl | hizmet başvurusu | çözülen başvuru |
+| 2017 | 96405 | 62164 |
+| 2018 | 93601 | 66457 |
+| 2019 | 87911 | 69487 |
+| 2020 | 83453 | 73492 |
+| 2021 | 79306 | 76430 |
+| 2022 | 74206 | 82357 |
+
+Soru: 2021 yılında hizmet başvurusu, çözülen başvuru'nin yaklaşık kaç katıdır?
+
+--- Soru 13 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: üretim miktarı için 2017-2022 arasındaki bileşik yıllık büyüme oranı (CAGR) yaklaşık yüzde kaçtır? Artış için pozitif, azalış için negatif değer ver.
+
+--- Soru 14 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: üretim miktarı bir önceki yıla göre en çok hangi yılda artmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 15 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: üretim miktarı bir önceki yıla göre art arda en fazla kaç kez artmıştır (en uzun kesintisiz artış serisi)? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 16 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: üretim miktarı değerinin 151.004 ton değerinden büyük olduğu yıllardaki ortalama üretim miktarı kaçtır?
+
+--- Soru 17 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: Tüm yılların toplam üretim miktarı değeri içinde 2017 yılının payı yaklaşık yüzde kaçtır?
+
+--- Soru 18 ---
+Tablo:
+| Yıl | üretim miktarı | ekili alan |
+| 2017 | 163726 | 40147 |
+| 2018 | 145952 | 37540 |
+| 2019 | 161692 | 37431 |
+| 2020 | 151004 | 35861 |
+| 2021 | 164544 | 39364 |
+| 2022 | 131713 | 38534 |
+
+Soru: 2018 yılında üretim miktarı, ekili alan'nin yaklaşık kaç katıdır?

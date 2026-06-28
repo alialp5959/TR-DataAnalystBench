@@ -1,0 +1,40 @@
+name: validate
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  validate-datasets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # The dataset validators are pure-stdlib and read the committed data and
+      # charts, so they need no dependencies and no network access. They check
+      # the schema and recompute every gold answer from the table.
+      - name: Validate synthetic_v01
+        run: python scripts/05_validate_synthetic_v01.py
+
+      - name: Validate synthetic_v02
+        run: python scripts/12_validate_synthetic_v02.py
+
+      - name: Validate real_pilot
+        run: python scripts/17_validate_real_pilot.py
+
+      - name: Validate chart_read_v01
+        run: python scripts/20_validate_chart_read_v01.py
+
+      - name: Validate real_anon_v01
+        run: python scripts/22_validate_real_anon_v01.py
+
+      - name: Validate reasoning_v01
+        run: python scripts/24_validate_reasoning_v01.py
+
+      - name: Validate chart_hard_v01
+        run: python scripts/29_validate_chart_hard_v01.py

@@ -1,0 +1,18 @@
+{
+  "dataset_version": "reasoning_v01",
+  "total_examples": 180,
+  "all_table_only": true,
+  "question_type_distribution": {
+    "cagr": 30,
+    "fastest_change_year": 30,
+    "longest_increase_streak": 30,
+    "conditional_average": 30,
+    "share_of_total": 30,
+    "ratio": 30
+  },
+  "split_distribution": {
+    "train": 144,
+    "validation": 18,
+    "test": 18
+  }
+}

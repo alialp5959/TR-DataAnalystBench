@@ -1,0 +1,181 @@
+﻿id,domain,question_type,question,numeric_answer,split
+trdab_chard_000001,transportation,value_estimate,Grafiğe göre 2019 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,1554654.0,train
+trdab_chard_000002,transportation,second_highest_year,Grafiğe göre iç hat yolcu en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2023.0,train
+trdab_chard_000003,transportation,count_above,Grafiğe göre kaç yılda iç hat yolcu 1.549.237 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000004,transportation,closest_compare,Grafiğe göre 2018 ve 2019 yıllarından hangisinde iç hat yolcu daha yüksektir? Cevap olarak sadece yılı yaz.,2019.0,train
+trdab_chard_000005,transportation,cross_closest_year,Grafiğe göre iç hat yolcu ile dış hat yolcu hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2021.0,train
+trdab_chard_000006,transportation,trend_summary,"Grafiğe göre iç hat yolcu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000007,economy,value_estimate,Grafiğe göre 2016 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,229.0,train
+trdab_chard_000008,economy,second_highest_year,Grafiğe göre ihracat değeri en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2022.0,train
+trdab_chard_000009,economy,count_above,Grafiğe göre kaç yılda ihracat değeri 240 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000010,economy,closest_compare,Grafiğe göre 2019 ve 2020 yıllarından hangisinde ihracat değeri daha yüksektir? Cevap olarak sadece yılı yaz.,2019.0,train
+trdab_chard_000011,economy,cross_closest_year,Grafiğe göre ihracat değeri ile ithalat değeri hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000012,economy,trend_summary,"Grafiğe göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000013,education,value_estimate,Grafiğe göre 2016 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,22339.0,train
+trdab_chard_000014,education,second_highest_year,Grafiğe göre kız öğrenci sayısı en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000015,education,count_above,Grafiğe göre kaç yılda kız öğrenci sayısı 24.385 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000016,education,closest_compare,Grafiğe göre 2019 ve 2021 yıllarından hangisinde kız öğrenci sayısı daha yüksektir? Cevap olarak sadece yılı yaz.,2019.0,train
+trdab_chard_000017,education,cross_closest_year,Grafiğe göre kız öğrenci sayısı ile erkek öğrenci sayısı hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000018,education,trend_summary,"Grafiğe göre kız öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000019,tourism,value_estimate,Grafiğe göre 2018 yılında yerli ziyaretçi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,773453.0,train
+trdab_chard_000020,tourism,second_highest_year,Grafiğe göre yerli ziyaretçi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2011.0,train
+trdab_chard_000021,tourism,count_above,Grafiğe göre kaç yılda yerli ziyaretçi 850.000 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000022,tourism,closest_compare,Grafiğe göre 2017 ve 2018 yıllarından hangisinde yerli ziyaretçi daha yüksektir? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000023,tourism,cross_closest_year,Grafiğe göre yerli ziyaretçi ile yabancı ziyaretçi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000024,tourism,trend_summary,"Grafiğe göre yerli ziyaretçi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000025,energy,value_estimate,Grafiğe göre 2020 yılında gündüz tüketimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,95784.0,train
+trdab_chard_000026,energy,second_highest_year,Grafiğe göre gündüz tüketimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000027,energy,count_above,Grafiğe göre kaç yılda gündüz tüketimi 89.000 MWh değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000028,energy,closest_compare,Grafiğe göre 2013 ve 2014 yıllarından hangisinde gündüz tüketimi daha yüksektir? Cevap olarak sadece yılı yaz.,2013.0,train
+trdab_chard_000029,energy,cross_closest_year,Grafiğe göre gündüz tüketimi ile gece tüketimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000030,energy,trend_summary,"Grafiğe göre gündüz tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000031,health,value_estimate,Grafiğe göre 2017 yılında acil başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,335820.0,train
+trdab_chard_000032,health,second_highest_year,Grafiğe göre acil başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000033,health,count_above,Grafiğe göre kaç yılda acil başvuru 304.172 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000034,health,closest_compare,Grafiğe göre 2016 ve 2020 yıllarından hangisinde acil başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000035,health,cross_closest_year,Grafiğe göre acil başvuru ile poliklinik başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000036,health,trend_summary,"Grafiğe göre acil başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000037,environment,value_estimate,Grafiğe göre 2015 yılında geri dönüşüm yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,11778.0,train
+trdab_chard_000038,environment,second_highest_year,Grafiğe göre geri dönüşüm en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2012.0,train
+trdab_chard_000039,environment,count_above,Grafiğe göre kaç yılda geri dönüşüm 11.000 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000040,environment,closest_compare,Grafiğe göre 2014 ve 2015 yıllarından hangisinde geri dönüşüm daha yüksektir? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000041,environment,cross_closest_year,Grafiğe göre geri dönüşüm ile kompost hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2016.0,train
+trdab_chard_000042,environment,trend_summary,"Grafiğe göre geri dönüşüm için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000043,sports,value_estimate,Grafiğe göre 2013 yılında amatör lisans yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,19508.0,train
+trdab_chard_000044,sports,second_highest_year,Grafiğe göre amatör lisans en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2012.0,train
+trdab_chard_000045,sports,count_above,Grafiğe göre kaç yılda amatör lisans 18.000 sporcu değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000046,sports,closest_compare,Grafiğe göre 2019 ve 2020 yıllarından hangisinde amatör lisans daha yüksektir? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000047,sports,cross_closest_year,Grafiğe göre amatör lisans ile yıldız lisans hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000048,sports,trend_summary,"Grafiğe göre amatör lisans için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000049,municipality,value_estimate,Grafiğe göre 2019 yılında açılan başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,68829.0,train
+trdab_chard_000050,municipality,second_highest_year,Grafiğe göre açılan başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000051,municipality,count_above,Grafiğe göre kaç yılda açılan başvuru 68.000 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000052,municipality,closest_compare,Grafiğe göre 2015 ve 2018 yıllarından hangisinde açılan başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000053,municipality,cross_closest_year,Grafiğe göre açılan başvuru ile çözülen başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2011.0,train
+trdab_chard_000054,municipality,trend_summary,"Grafiğe göre açılan başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000055,agriculture,value_estimate,Grafiğe göre 2016 yılında buğday üretimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,189019.0,train
+trdab_chard_000056,agriculture,second_highest_year,Grafiğe göre buğday üretimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000057,agriculture,count_above,Grafiğe göre kaç yılda buğday üretimi 180.000 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000058,agriculture,closest_compare,Grafiğe göre 2014 ve 2015 yıllarından hangisinde buğday üretimi daha yüksektir? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000059,agriculture,cross_closest_year,Grafiğe göre buğday üretimi ile arpa üretimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000060,agriculture,trend_summary,"Grafiğe göre buğday üretimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000061,transportation,value_estimate,Grafiğe göre 2015 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,1389168.0,train
+trdab_chard_000062,transportation,second_highest_year,Grafiğe göre iç hat yolcu en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2022.0,train
+trdab_chard_000063,transportation,count_above,Grafiğe göre kaç yılda iç hat yolcu 1.558.025 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000064,transportation,closest_compare,Grafiğe göre 2017 ve 2018 yıllarından hangisinde iç hat yolcu daha yüksektir? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000065,transportation,cross_closest_year,Grafiğe göre iç hat yolcu ile dış hat yolcu hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000066,transportation,trend_summary,"Grafiğe göre iç hat yolcu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000067,economy,value_estimate,Grafiğe göre 2015 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,203.0,train
+trdab_chard_000068,economy,second_highest_year,Grafiğe göre ihracat değeri en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000069,economy,count_above,Grafiğe göre kaç yılda ihracat değeri 183 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000070,economy,closest_compare,Grafiğe göre 2013 ve 2015 yıllarından hangisinde ihracat değeri daha yüksektir? Cevap olarak sadece yılı yaz.,2013.0,train
+trdab_chard_000071,economy,cross_closest_year,Grafiğe göre ihracat değeri ile ithalat değeri hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000072,economy,trend_summary,"Grafiğe göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000073,education,value_estimate,Grafiğe göre 2016 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,26555.0,train
+trdab_chard_000074,education,second_highest_year,Grafiğe göre kız öğrenci sayısı en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2023.0,train
+trdab_chard_000075,education,count_above,Grafiğe göre kaç yılda kız öğrenci sayısı 31.000 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000076,education,closest_compare,Grafiğe göre 2013 ve 2015 yıllarından hangisinde kız öğrenci sayısı daha yüksektir? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000077,education,cross_closest_year,Grafiğe göre kız öğrenci sayısı ile erkek öğrenci sayısı hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000078,education,trend_summary,"Grafiğe göre kız öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000079,tourism,value_estimate,Grafiğe göre 2017 yılında yerli ziyaretçi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,616916.0,train
+trdab_chard_000080,tourism,second_highest_year,Grafiğe göre yerli ziyaretçi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2013.0,train
+trdab_chard_000081,tourism,count_above,Grafiğe göre kaç yılda yerli ziyaretçi 616.508 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000082,tourism,closest_compare,Grafiğe göre 2017 ve 2019 yıllarından hangisinde yerli ziyaretçi daha yüksektir? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000083,tourism,cross_closest_year,Grafiğe göre yerli ziyaretçi ile yabancı ziyaretçi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000084,tourism,trend_summary,"Grafiğe göre yerli ziyaretçi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000085,energy,value_estimate,Grafiğe göre 2012 yılında gündüz tüketimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,92623.0,train
+trdab_chard_000086,energy,second_highest_year,Grafiğe göre gündüz tüketimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2016.0,train
+trdab_chard_000087,energy,count_above,Grafiğe göre kaç yılda gündüz tüketimi 91.000 MWh değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000088,energy,closest_compare,Grafiğe göre 2011 ve 2017 yıllarından hangisinde gündüz tüketimi daha yüksektir? Cevap olarak sadece yılı yaz.,2011.0,train
+trdab_chard_000089,energy,cross_closest_year,Grafiğe göre gündüz tüketimi ile gece tüketimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2012.0,train
+trdab_chard_000090,energy,trend_summary,"Grafiğe göre gündüz tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000091,health,value_estimate,Grafiğe göre 2018 yılında acil başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,342099.0,train
+trdab_chard_000092,health,second_highest_year,Grafiğe göre acil başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2011.0,train
+trdab_chard_000093,health,count_above,Grafiğe göre kaç yılda acil başvuru 390.000 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000094,health,closest_compare,Grafiğe göre 2018 ve 2019 yıllarından hangisinde acil başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000095,health,cross_closest_year,Grafiğe göre acil başvuru ile poliklinik başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2021.0,train
+trdab_chard_000096,health,trend_summary,"Grafiğe göre acil başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000097,environment,value_estimate,Grafiğe göre 2022 yılında geri dönüşüm yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,6641.0,train
+trdab_chard_000098,environment,second_highest_year,Grafiğe göre geri dönüşüm en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000099,environment,count_above,Grafiğe göre kaç yılda geri dönüşüm 8.200 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000100,environment,closest_compare,Grafiğe göre 2015 ve 2019 yıllarından hangisinde geri dönüşüm daha yüksektir? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000101,environment,cross_closest_year,Grafiğe göre geri dönüşüm ile kompost hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000102,environment,trend_summary,"Grafiğe göre geri dönüşüm için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000103,sports,value_estimate,Grafiğe göre 2016 yılında amatör lisans yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,17329.0,train
+trdab_chard_000104,sports,second_highest_year,Grafiğe göre amatör lisans en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000105,sports,count_above,Grafiğe göre kaç yılda amatör lisans 17.000 sporcu değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000106,sports,closest_compare,Grafiğe göre 2017 ve 2018 yıllarından hangisinde amatör lisans daha yüksektir? Cevap olarak sadece yılı yaz.,2017.0,train
+trdab_chard_000107,sports,cross_closest_year,Grafiğe göre amatör lisans ile yıldız lisans hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000108,sports,trend_summary,"Grafiğe göre amatör lisans için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000109,municipality,value_estimate,Grafiğe göre 2019 yılında açılan başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,101540.0,train
+trdab_chard_000110,municipality,second_highest_year,Grafiğe göre açılan başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2022.0,train
+trdab_chard_000111,municipality,count_above,Grafiğe göre kaç yılda açılan başvuru 87.000 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000112,municipality,closest_compare,Grafiğe göre 2014 ve 2015 yıllarından hangisinde açılan başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000113,municipality,cross_closest_year,Grafiğe göre açılan başvuru ile çözülen başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2016.0,train
+trdab_chard_000114,municipality,trend_summary,"Grafiğe göre açılan başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000115,agriculture,value_estimate,Grafiğe göre 2021 yılında buğday üretimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,200625.0,train
+trdab_chard_000116,agriculture,second_highest_year,Grafiğe göre buğday üretimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2024.0,train
+trdab_chard_000117,agriculture,count_above,Grafiğe göre kaç yılda buğday üretimi 180.000 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000118,agriculture,closest_compare,Grafiğe göre 2020 ve 2021 yıllarından hangisinde buğday üretimi daha yüksektir? Cevap olarak sadece yılı yaz.,2021.0,train
+trdab_chard_000119,agriculture,cross_closest_year,Grafiğe göre buğday üretimi ile arpa üretimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000120,agriculture,trend_summary,"Grafiğe göre buğday üretimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000121,transportation,value_estimate,Grafiğe göre 2019 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,1699053.0,train
+trdab_chard_000122,transportation,second_highest_year,Grafiğe göre iç hat yolcu en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2021.0,train
+trdab_chard_000123,transportation,count_above,Grafiğe göre kaç yılda iç hat yolcu 1.552.819 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000124,transportation,closest_compare,Grafiğe göre 2013 ve 2014 yıllarından hangisinde iç hat yolcu daha yüksektir? Cevap olarak sadece yılı yaz.,2013.0,train
+trdab_chard_000125,transportation,cross_closest_year,Grafiğe göre iç hat yolcu ile dış hat yolcu hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,train
+trdab_chard_000126,transportation,trend_summary,"Grafiğe göre iç hat yolcu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000127,economy,value_estimate,Grafiğe göre 2019 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,255.0,train
+trdab_chard_000128,economy,second_highest_year,Grafiğe göre ihracat değeri en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2024.0,train
+trdab_chard_000129,economy,count_above,Grafiğe göre kaç yılda ihracat değeri 253 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000130,economy,closest_compare,Grafiğe göre 2020 ve 2021 yıllarından hangisinde ihracat değeri daha yüksektir? Cevap olarak sadece yılı yaz.,2021.0,train
+trdab_chard_000131,economy,cross_closest_year,Grafiğe göre ihracat değeri ile ithalat değeri hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2014.0,train
+trdab_chard_000132,economy,trend_summary,"Grafiğe göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000133,education,value_estimate,Grafiğe göre 2016 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,31247.0,train
+trdab_chard_000134,education,second_highest_year,Grafiğe göre kız öğrenci sayısı en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2013.0,train
+trdab_chard_000135,education,count_above,Grafiğe göre kaç yılda kız öğrenci sayısı 31.216 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000136,education,closest_compare,Grafiğe göre 2016 ve 2018 yıllarından hangisinde kız öğrenci sayısı daha yüksektir? Cevap olarak sadece yılı yaz.,2016.0,train
+trdab_chard_000137,education,cross_closest_year,Grafiğe göre kız öğrenci sayısı ile erkek öğrenci sayısı hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2015.0,train
+trdab_chard_000138,education,trend_summary,"Grafiğe göre kız öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000139,tourism,value_estimate,Grafiğe göre 2017 yılında yerli ziyaretçi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,804353.0,train
+trdab_chard_000140,tourism,second_highest_year,Grafiğe göre yerli ziyaretçi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2010.0,train
+trdab_chard_000141,tourism,count_above,Grafiğe göre kaç yılda yerli ziyaretçi 860.000 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,train
+trdab_chard_000142,tourism,closest_compare,Grafiğe göre 2010 ve 2011 yıllarından hangisinde yerli ziyaretçi daha yüksektir? Cevap olarak sadece yılı yaz.,2011.0,train
+trdab_chard_000143,tourism,cross_closest_year,Grafiğe göre yerli ziyaretçi ile yabancı ziyaretçi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2020.0,train
+trdab_chard_000144,tourism,trend_summary,"Grafiğe göre yerli ziyaretçi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,train
+trdab_chard_000145,energy,value_estimate,Grafiğe göre 2016 yılında gündüz tüketimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,102975.0,validation
+trdab_chard_000146,energy,second_highest_year,Grafiğe göre gündüz tüketimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2023.0,validation
+trdab_chard_000147,energy,count_above,Grafiğe göre kaç yılda gündüz tüketimi 110.000 MWh değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,validation
+trdab_chard_000148,energy,closest_compare,Grafiğe göre 2017 ve 2018 yıllarından hangisinde gündüz tüketimi daha yüksektir? Cevap olarak sadece yılı yaz.,2018.0,validation
+trdab_chard_000149,energy,cross_closest_year,Grafiğe göre gündüz tüketimi ile gece tüketimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2015.0,validation
+trdab_chard_000150,energy,trend_summary,"Grafiğe göre gündüz tüketimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,validation
+trdab_chard_000151,health,value_estimate,Grafiğe göre 2019 yılında acil başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,288084.0,validation
+trdab_chard_000152,health,second_highest_year,Grafiğe göre acil başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2018.0,validation
+trdab_chard_000153,health,count_above,Grafiğe göre kaç yılda acil başvuru 292.274 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,validation
+trdab_chard_000154,health,closest_compare,Grafiğe göre 2013 ve 2016 yıllarından hangisinde acil başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2016.0,validation
+trdab_chard_000155,health,cross_closest_year,Grafiğe göre acil başvuru ile poliklinik başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2021.0,validation
+trdab_chard_000156,health,trend_summary,"Grafiğe göre acil başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,validation
+trdab_chard_000157,environment,value_estimate,Grafiğe göre 2019 yılında geri dönüşüm yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,11347.0,validation
+trdab_chard_000158,environment,second_highest_year,Grafiğe göre geri dönüşüm en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2021.0,validation
+trdab_chard_000159,environment,count_above,Grafiğe göre kaç yılda geri dönüşüm 10.474 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,validation
+trdab_chard_000160,environment,closest_compare,Grafiğe göre 2013 ve 2014 yıllarından hangisinde geri dönüşüm daha yüksektir? Cevap olarak sadece yılı yaz.,2014.0,validation
+trdab_chard_000161,environment,cross_closest_year,Grafiğe göre geri dönüşüm ile kompost hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2013.0,validation
+trdab_chard_000162,environment,trend_summary,"Grafiğe göre geri dönüşüm için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,validation
+trdab_chard_000163,sports,value_estimate,Grafiğe göre 2016 yılında amatör lisans yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,17901.0,test
+trdab_chard_000164,sports,second_highest_year,Grafiğe göre amatör lisans en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2012.0,test
+trdab_chard_000165,sports,count_above,Grafiğe göre kaç yılda amatör lisans 17.592 sporcu değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,test
+trdab_chard_000166,sports,closest_compare,Grafiğe göre 2012 ve 2013 yıllarından hangisinde amatör lisans daha yüksektir? Cevap olarak sadece yılı yaz.,2013.0,test
+trdab_chard_000167,sports,cross_closest_year,Grafiğe göre amatör lisans ile yıldız lisans hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2021.0,test
+trdab_chard_000168,sports,trend_summary,"Grafiğe göre amatör lisans için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,test
+trdab_chard_000169,municipality,value_estimate,Grafiğe göre 2016 yılında açılan başvuru yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,82072.0,test
+trdab_chard_000170,municipality,second_highest_year,Grafiğe göre açılan başvuru en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2024.0,test
+trdab_chard_000171,municipality,count_above,Grafiğe göre kaç yılda açılan başvuru 90.000 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,test
+trdab_chard_000172,municipality,closest_compare,Grafiğe göre 2021 ve 2022 yıllarından hangisinde açılan başvuru daha yüksektir? Cevap olarak sadece yılı yaz.,2022.0,test
+trdab_chard_000173,municipality,cross_closest_year,Grafiğe göre açılan başvuru ile çözülen başvuru hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,test
+trdab_chard_000174,municipality,trend_summary,"Grafiğe göre açılan başvuru için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,test
+trdab_chard_000175,agriculture,value_estimate,Grafiğe göre 2018 yılında buğday üretimi yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.,183660.0,test
+trdab_chard_000176,agriculture,second_highest_year,Grafiğe göre buğday üretimi en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.,2012.0,test
+trdab_chard_000177,agriculture,count_above,Grafiğe göre kaç yılda buğday üretimi 191.910 ton değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.,6.0,test
+trdab_chard_000178,agriculture,closest_compare,Grafiğe göre 2016 ve 2017 yıllarından hangisinde buğday üretimi daha yüksektir? Cevap olarak sadece yılı yaz.,2016.0,test
+trdab_chard_000179,agriculture,cross_closest_year,Grafiğe göre buğday üretimi ile arpa üretimi hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.,2018.0,test
+trdab_chard_000180,agriculture,trend_summary,"Grafiğe göre buğday üretimi için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",,test

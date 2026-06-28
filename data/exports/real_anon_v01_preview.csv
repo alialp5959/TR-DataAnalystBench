@@ -1,0 +1,109 @@
+﻿id,domain,question_type,input_format,question,answer,numeric_answer,split,license
+trdab_ranon_000001,demografi,value_lookup,table_only,4. dönemde nüfus kaçtır?,4. dönemde nüfus 65.000.000 kişi.,65000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000002,demografi,comparison,chart_only,Son dönem (6.) ile ilk dönem (1.) arasındaki nüfus farkı kaç kişidır?,Fark 4.000.000 kişi.,4000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000003,demografi,average,table_and_chart,Tüm dönemler boyunca nüfus ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 64.166.666,67 kişi.",64166666.67,train,ODC-PDDL-1.0
+trdab_ranon_000004,demografi,nth_highest,table_only,nüfus açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 65.000.000 kişi (4. dönem).,65000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000005,demografi,percentage_change,chart_only,"İlk dönemden son döneme nüfus yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","nüfus yaklaşık %6,50 artmıştır.",6.5,train,ODC-PDDL-1.0
+trdab_ranon_000006,demografi,trend_summary,table_and_chart,"nüfus için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",nüfus genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000007,demografi,unanswerable,table_only,9. dönemde nüfus kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000008,demografi,value_lookup,chart_only,4. dönemde nüfus kaçtır?,4. dönemde nüfus 61.000.000 kişi.,61000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000009,demografi,comparison,table_and_chart,Son dönem (6.) ile ilk dönem (1.) arasındaki nüfus farkı kaç kişidır?,Fark 4.000.000 kişi.,4000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000010,demografi,average,table_only,Tüm dönemler boyunca nüfus ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 60.833.333,33 kişi.",60833333.33,train,ODC-PDDL-1.0
+trdab_ranon_000011,demografi,nth_highest,chart_only,nüfus açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 62.000.000 kişi (5. dönem).,62000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000012,demografi,percentage_change,table_and_chart,"İlk dönemden son döneme nüfus yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","nüfus yaklaşık %6,80 artmıştır.",6.8,train,ODC-PDDL-1.0
+trdab_ranon_000013,demografi,trend_summary,table_only,"nüfus için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",nüfus genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000014,demografi,unanswerable,chart_only,9. dönemde nüfus kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000015,demografi,value_lookup,table_and_chart,4. dönemde nüfus kaçtır?,4. dönemde nüfus 67.000.000 kişi.,67000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000016,demografi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki nüfus farkı kaç kişidır?,Fark 4.000.000 kişi.,4000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000017,demografi,average,chart_only,Tüm dönemler boyunca nüfus ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 67.000.000 kişi.,67000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000018,demografi,nth_highest,table_and_chart,nüfus açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 68.000.000 kişi (5. dönem).,68000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000019,demografi,percentage_change,table_only,"İlk dönemden son döneme nüfus yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","nüfus yaklaşık %6,20 artmıştır.",6.2,train,ODC-PDDL-1.0
+trdab_ranon_000020,demografi,trend_summary,chart_only,"nüfus için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",nüfus genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000021,demografi,unanswerable,table_and_chart,14. dönemde nüfus kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000022,demografi,value_lookup,table_only,4. dönemde nüfus kaçtır?,4. dönemde nüfus 95.000.000 kişi.,95000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000023,demografi,comparison,chart_only,Son dönem (6.) ile ilk dönem (1.) arasındaki nüfus farkı kaç kişidır?,Fark 3.000.000 kişi.,3000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000024,demografi,average,table_and_chart,Tüm dönemler boyunca nüfus ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 94.500.000 kişi.,94500000.0,train,ODC-PDDL-1.0
+trdab_ranon_000025,demografi,nth_highest,table_only,nüfus açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 96.000.000 kişi (6. dönem).,96000000.0,train,ODC-PDDL-1.0
+trdab_ranon_000026,demografi,percentage_change,chart_only,"İlk dönemden son döneme nüfus yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","nüfus yaklaşık %3,20 artmıştır.",3.2,train,ODC-PDDL-1.0
+trdab_ranon_000027,demografi,trend_summary,table_and_chart,"nüfus için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",nüfus genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000028,demografi,unanswerable,table_only,14. dönemde nüfus kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000029,ekonomi,value_lookup,chart_only,4. dönemde gayrisafi yurt içi hasıla kaçtır?,4. dönemde gayrisafi yurt içi hasıla 310.000.000.000 dolar.,310000000000.0,train,CC-BY-4.0
+trdab_ranon_000030,ekonomi,comparison,table_and_chart,Son dönem (6.) ile ilk dönem (1.) arasındaki gayrisafi yurt içi hasıla farkı kaç dolardır?,Fark 230.000.000.000 dolar.,230000000000.0,train,CC-BY-4.0
+trdab_ranon_000031,ekonomi,average,table_only,Tüm dönemler boyunca gayrisafi yurt içi hasıla ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 321.666.666.666,67 dolar.",321666666666.67,train,CC-BY-4.0
+trdab_ranon_000032,ekonomi,nth_highest,chart_only,gayrisafi yurt içi hasıla açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 410.000.000.000 dolar (5. dönem).,410000000000.0,train,CC-BY-4.0
+trdab_ranon_000033,ekonomi,percentage_change,table_and_chart,"İlk dönemden son döneme gayrisafi yurt içi hasıla yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","gayrisafi yurt içi hasıla yaklaşık %85,20 artmıştır.",85.2,train,CC-BY-4.0
+trdab_ranon_000034,ekonomi,trend_summary,table_only,"gayrisafi yurt içi hasıla için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",gayrisafi yurt içi hasıla genel olarak artış eğilimi göstermektedir.,,train,CC-BY-4.0
+trdab_ranon_000035,ekonomi,unanswerable,chart_only,14. dönemde gayrisafi yurt içi hasıla kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,CC-BY-4.0
+trdab_ranon_000036,ekonomi,value_lookup,table_and_chart,4. dönemde gayrisafi yurt içi hasıla kaçtır?,4. dönemde gayrisafi yurt içi hasıla 680.000.000.000 dolar.,680000000000.0,train,CC-BY-4.0
+trdab_ranon_000037,ekonomi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki gayrisafi yurt içi hasıla farkı kaç dolardır?,Fark 290.000.000.000 dolar.,290000000000.0,train,CC-BY-4.0
+trdab_ranon_000038,ekonomi,average,chart_only,Tüm dönemler boyunca gayrisafi yurt içi hasıla ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 750.000.000.000 dolar.,750000000000.0,train,CC-BY-4.0
+trdab_ranon_000039,ekonomi,nth_highest,table_and_chart,gayrisafi yurt içi hasıla açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 820.000.000.000 dolar (5. dönem).,820000000000.0,train,CC-BY-4.0
+trdab_ranon_000040,ekonomi,percentage_change,table_only,"İlk dönemden son döneme gayrisafi yurt içi hasıla yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","gayrisafi yurt içi hasıla yaklaşık %49,20 artmıştır.",49.2,train,CC-BY-4.0
+trdab_ranon_000041,ekonomi,trend_summary,chart_only,"gayrisafi yurt içi hasıla için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",gayrisafi yurt içi hasıla genel olarak artış eğilimi göstermektedir.,,train,CC-BY-4.0
+trdab_ranon_000042,ekonomi,unanswerable,table_and_chart,3. dönemde cari açık kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü cari açık veride bulunmamaktadır.,,train,CC-BY-4.0
+trdab_ranon_000043,ekonomi,value_lookup,table_only,4. dönemde gayrisafi yurt içi hasıla kaçtır?,4. dönemde gayrisafi yurt içi hasıla 1.000.000.000.000 dolar.,1000000000000.0,train,CC-BY-4.0
+trdab_ranon_000044,ekonomi,comparison,chart_only,Son dönem (6.) ile ilk dönem (1.) arasındaki gayrisafi yurt içi hasıla farkı kaç dolardır?,Fark 100.000.000.000 dolar.,100000000000.0,train,CC-BY-4.0
+trdab_ranon_000045,ekonomi,average,table_and_chart,Tüm dönemler boyunca gayrisafi yurt içi hasıla ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 1.050.000.000.000 dolar.,1050000000000.0,train,CC-BY-4.0
+trdab_ranon_000046,ekonomi,nth_highest,table_only,gayrisafi yurt içi hasıla açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 1.100.000.000.000 dolar (2. dönem).,1100000000000.0,train,CC-BY-4.0
+trdab_ranon_000047,ekonomi,percentage_change,chart_only,"İlk dönemden son döneme gayrisafi yurt içi hasıla yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","gayrisafi yurt içi hasıla yaklaşık %9,10 azalmıştır.",-9.1,train,CC-BY-4.0
+trdab_ranon_000048,ekonomi,trend_summary,table_and_chart,"gayrisafi yurt içi hasıla için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",gayrisafi yurt içi hasıla genel olarak azalış eğilimi göstermektedir.,,train,CC-BY-4.0
+trdab_ranon_000049,ekonomi,unanswerable,table_only,2. dönemde cari açık kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü cari açık veride bulunmamaktadır.,,train,CC-BY-4.0
+trdab_ranon_000050,ekonomi,value_lookup,chart_only,4. dönemde gayrisafi yurt içi hasıla kaçtır?,4. dönemde gayrisafi yurt içi hasıla 650.000.000.000 dolar.,650000000000.0,train,CC-BY-4.0
+trdab_ranon_000051,ekonomi,comparison,table_and_chart,Son dönem (6.) ile ilk dönem (1.) arasındaki gayrisafi yurt içi hasıla farkı kaç dolardır?,Fark 260.000.000.000 dolar.,260000000000.0,train,CC-BY-4.0
+trdab_ranon_000052,ekonomi,average,table_only,Tüm dönemler boyunca gayrisafi yurt içi hasıla ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 673.333.333.333,33 dolar.",673333333333.33,train,CC-BY-4.0
+trdab_ranon_000053,ekonomi,nth_highest,chart_only,gayrisafi yurt içi hasıla açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 720.000.000.000 dolar (5. dönem).,720000000000.0,train,CC-BY-4.0
+trdab_ranon_000054,ekonomi,percentage_change,table_and_chart,"İlk dönemden son döneme gayrisafi yurt içi hasıla yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","gayrisafi yurt içi hasıla yaklaşık %41,90 artmıştır.",41.9,train,CC-BY-4.0
+trdab_ranon_000055,ekonomi,trend_summary,table_only,"gayrisafi yurt içi hasıla için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",gayrisafi yurt içi hasıla genel olarak artış eğilimi göstermektedir.,,train,CC-BY-4.0
+trdab_ranon_000056,ekonomi,unanswerable,chart_only,5. dönemde cari açık kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü cari açık veride bulunmamaktadır.,,train,CC-BY-4.0
+trdab_ranon_000057,ekonomi,value_lookup,table_and_chart,4. dönemde tüketici enflasyon oranı kaçtır?,4. dönemde tüketici enflasyon oranı 21 yüzde.,21.0,train,ODC-PDDL-1.0
+trdab_ranon_000058,ekonomi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki tüketici enflasyon oranı farkı kaç yüzdedır?,"Fark 38,20 yüzde.",38.2,train,ODC-PDDL-1.0
+trdab_ranon_000059,ekonomi,average,chart_only,Tüm dönemler boyunca tüketici enflasyon oranı ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 27,50 yüzde.",27.5,train,ODC-PDDL-1.0
+trdab_ranon_000060,ekonomi,nth_highest,table_and_chart,tüketici enflasyon oranı açısından en yüksek 2. değer kaçtır?,"En yüksek 2. değer 44,60 yüzde (1. dönem).",44.6,train,ODC-PDDL-1.0
+trdab_ranon_000061,ekonomi,trend_summary,table_only,"tüketici enflasyon oranı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",tüketici enflasyon oranı genel olarak azalış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000062,ekonomi,unanswerable,chart_only,5. dönemde cari açık kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü cari açık veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000063,ekonomi,value_lookup,table_and_chart,4. dönemde tüketici enflasyon oranı kaçtır?,4. dönemde tüketici enflasyon oranı 6 yüzde.,6.0,train,ODC-PDDL-1.0
+trdab_ranon_000064,ekonomi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki tüketici enflasyon oranı farkı kaç yüzdedır?,"Fark 1,30 yüzde.",1.3,train,ODC-PDDL-1.0
+trdab_ranon_000065,ekonomi,average,chart_only,Tüm dönemler boyunca tüketici enflasyon oranı ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 8,92 yüzde.",8.92,train,ODC-PDDL-1.0
+trdab_ranon_000066,ekonomi,nth_highest,table_and_chart,tüketici enflasyon oranı açısından en yüksek 2. değer kaçtır?,"En yüksek 2. değer 10,40 yüzde (1. dönem).",10.4,train,ODC-PDDL-1.0
+trdab_ranon_000067,ekonomi,trend_summary,table_only,"tüketici enflasyon oranı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",tüketici enflasyon oranı genel olarak dalgalı eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000068,ekonomi,unanswerable,chart_only,11. dönemde tüketici enflasyon oranı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000069,ekonomi,value_lookup,table_and_chart,4. dönemde tüketici enflasyon oranı kaçtır?,"4. dönemde tüketici enflasyon oranı 7,40 yüzde.",7.4,train,ODC-PDDL-1.0
+trdab_ranon_000070,ekonomi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki tüketici enflasyon oranı farkı kaç yüzdedır?,"Fark 3,30 yüzde.",3.3,train,ODC-PDDL-1.0
+trdab_ranon_000071,ekonomi,average,chart_only,Tüm dönemler boyunca tüketici enflasyon oranı ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 7,55 yüzde.",7.55,train,ODC-PDDL-1.0
+trdab_ranon_000072,ekonomi,nth_highest,table_and_chart,tüketici enflasyon oranı açısından en yüksek 2. değer kaçtır?,"En yüksek 2. değer 7,70 yüzde (5. dönem).",7.7,train,ODC-PDDL-1.0
+trdab_ranon_000073,ekonomi,trend_summary,table_only,"tüketici enflasyon oranı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",tüketici enflasyon oranı genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000074,ekonomi,unanswerable,chart_only,9. dönemde tüketici enflasyon oranı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000075,ekonomi,value_lookup,table_and_chart,4. dönemde tüketici enflasyon oranı kaçtır?,"4. dönemde tüketici enflasyon oranı 27,70 yüzde.",27.7,train,ODC-PDDL-1.0
+trdab_ranon_000076,ekonomi,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki tüketici enflasyon oranı farkı kaç yüzdedır?,"Fark 49,40 yüzde.",49.4,train,ODC-PDDL-1.0
+trdab_ranon_000077,ekonomi,average,chart_only,Tüm dönemler boyunca tüketici enflasyon oranı ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 37,95 yüzde.",37.95,train,ODC-PDDL-1.0
+trdab_ranon_000078,ekonomi,nth_highest,table_and_chart,tüketici enflasyon oranı açısından en yüksek 2. değer kaçtır?,"En yüksek 2. değer 65,20 yüzde (6. dönem).",65.2,train,ODC-PDDL-1.0
+trdab_ranon_000079,ekonomi,trend_summary,table_only,"tüketici enflasyon oranı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",tüketici enflasyon oranı genel olarak artış eğilimi göstermektedir.,,train,ODC-PDDL-1.0
+trdab_ranon_000080,ekonomi,unanswerable,chart_only,14. dönemde tüketici enflasyon oranı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü istenen dönem veride bulunmamaktadır.,,train,ODC-PDDL-1.0
+trdab_ranon_000081,çevre,value_lookup,table_and_chart,4. dönemde fosil yakıt CO2 salımı kaçtır?,4. dönemde fosil yakıt CO2 salımı 44.000 bin ton karbon.,44000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000082,çevre,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki fosil yakıt CO2 salımı farkı kaç bin ton karbondır?,Fark 2.000 bin ton karbon.,2000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000083,çevre,average,chart_only,Tüm dönemler boyunca fosil yakıt CO2 salımı ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 41.000 bin ton karbon.,41000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000084,çevre,nth_highest,table_and_chart,fosil yakıt CO2 salımı açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 42.000 bin ton karbon (6. dönem).,42000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000085,çevre,percentage_change,table_only,"İlk dönemden son döneme fosil yakıt CO2 salımı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.",fosil yakıt CO2 salımı yaklaşık %5 artmıştır.,5.0,validation,ODC-PDDL-1.0
+trdab_ranon_000086,çevre,trend_summary,chart_only,"fosil yakıt CO2 salımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",fosil yakıt CO2 salımı genel olarak artış eğilimi göstermektedir.,,validation,ODC-PDDL-1.0
+trdab_ranon_000087,çevre,unanswerable,table_and_chart,2. dönemde orman alanı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü orman alanı veride bulunmamaktadır.,,validation,ODC-PDDL-1.0
+trdab_ranon_000088,çevre,value_lookup,table_only,4. dönemde fosil yakıt CO2 salımı kaçtır?,4. dönemde fosil yakıt CO2 salımı 75.000 bin ton karbon.,75000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000089,çevre,comparison,chart_only,Son dönem (6.) ile ilk dönem (1.) arasındaki fosil yakıt CO2 salımı farkı kaç bin ton karbondır?,Fark 19.000 bin ton karbon.,19000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000090,çevre,average,table_and_chart,Tüm dönemler boyunca fosil yakıt CO2 salımı ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 72.500 bin ton karbon.,72500.0,validation,ODC-PDDL-1.0
+trdab_ranon_000091,çevre,nth_highest,table_only,fosil yakıt CO2 salımı açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 82.000 bin ton karbon (6. dönem).,82000.0,validation,ODC-PDDL-1.0
+trdab_ranon_000092,çevre,percentage_change,chart_only,"İlk dönemden son döneme fosil yakıt CO2 salımı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","fosil yakıt CO2 salımı yaklaşık %30,20 artmıştır.",30.2,validation,ODC-PDDL-1.0
+trdab_ranon_000093,çevre,trend_summary,table_and_chart,"fosil yakıt CO2 salımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",fosil yakıt CO2 salımı genel olarak artış eğilimi göstermektedir.,,validation,ODC-PDDL-1.0
+trdab_ranon_000094,çevre,unanswerable,table_only,3. dönemde orman alanı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü orman alanı veride bulunmamaktadır.,,validation,ODC-PDDL-1.0
+trdab_ranon_000095,çevre,value_lookup,chart_only,4. dönemde fosil yakıt CO2 salımı kaçtır?,4. dönemde fosil yakıt CO2 salımı 69.000 bin ton karbon.,69000.0,test,ODC-PDDL-1.0
+trdab_ranon_000096,çevre,comparison,table_and_chart,Son dönem (6.) ile ilk dönem (1.) arasındaki fosil yakıt CO2 salımı farkı kaç bin ton karbondır?,Fark 14.000 bin ton karbon.,14000.0,test,ODC-PDDL-1.0
+trdab_ranon_000097,çevre,average,table_only,Tüm dönemler boyunca fosil yakıt CO2 salımı ortalaması yaklaşık kaçtır?,Ortalama yaklaşık 66.500 bin ton karbon.,66500.0,test,ODC-PDDL-1.0
+trdab_ranon_000098,çevre,nth_highest,chart_only,fosil yakıt CO2 salımı açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 69.000 bin ton karbon (4. dönem).,69000.0,test,ODC-PDDL-1.0
+trdab_ranon_000099,çevre,percentage_change,table_and_chart,"İlk dönemden son döneme fosil yakıt CO2 salımı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","fosil yakıt CO2 salımı yaklaşık %23,70 artmıştır.",23.7,test,ODC-PDDL-1.0
+trdab_ranon_000100,çevre,trend_summary,table_only,"fosil yakıt CO2 salımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",fosil yakıt CO2 salımı genel olarak artış eğilimi göstermektedir.,,test,ODC-PDDL-1.0
+trdab_ranon_000101,çevre,unanswerable,chart_only,6. dönemde orman alanı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü orman alanı veride bulunmamaktadır.,,test,ODC-PDDL-1.0
+trdab_ranon_000102,çevre,value_lookup,table_and_chart,4. dönemde fosil yakıt CO2 salımı kaçtır?,4. dönemde fosil yakıt CO2 salımı 88.000 bin ton karbon.,88000.0,test,ODC-PDDL-1.0
+trdab_ranon_000103,çevre,comparison,table_only,Son dönem (6.) ile ilk dönem (1.) arasındaki fosil yakıt CO2 salımı farkı kaç bin ton karbondır?,Fark 9.000 bin ton karbon.,9000.0,test,ODC-PDDL-1.0
+trdab_ranon_000104,çevre,average,chart_only,Tüm dönemler boyunca fosil yakıt CO2 salımı ortalaması yaklaşık kaçtır?,"Ortalama yaklaşık 84.166,67 bin ton karbon.",84166.67,test,ODC-PDDL-1.0
+trdab_ranon_000105,çevre,nth_highest,table_and_chart,fosil yakıt CO2 salımı açısından en yüksek 2. değer kaçtır?,En yüksek 2. değer 88.000 bin ton karbon (4. dönem).,88000.0,test,ODC-PDDL-1.0
+trdab_ranon_000106,çevre,percentage_change,table_only,"İlk dönemden son döneme fosil yakıt CO2 salımı yaklaşık yüzde kaç değişmiştir? Artış için pozitif, azalış için negatif değer ver.","fosil yakıt CO2 salımı yaklaşık %11,80 artmıştır.",11.8,test,ODC-PDDL-1.0
+trdab_ranon_000107,çevre,trend_summary,chart_only,"fosil yakıt CO2 salımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.",fosil yakıt CO2 salımı genel olarak dalgalı eğilimi göstermektedir.,,test,ODC-PDDL-1.0
+trdab_ranon_000108,çevre,unanswerable,table_and_chart,5. dönemde orman alanı kaçtır?,Bu soru verilen veriden cevaplanamaz çünkü orman alanı veride bulunmamaktadır.,,test,ODC-PDDL-1.0

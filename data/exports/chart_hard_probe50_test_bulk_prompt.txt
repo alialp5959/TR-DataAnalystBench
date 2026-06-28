@@ -1,0 +1,216 @@
+Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu ve/veya grafiği kullanarak cevapla. Grafikli sorularda ilgili GÖRSEL numarası belirtilmiştir; o görselden değerleri eksen ve gridline'lardan oku (grafiklerde sayı yazılı değildir).
+
+ÇOK ÖNEMLİ — ÇIKTI FORMATI:
+- Her soru için TEK satır dön: `numara) cevap`
+- Cevap SADECE sayısal değer olsun (gerekiyorsa ondalık). Birim, yıl etiketi, açıklama YAZMA.
+- Yüzde/oran sorularında artış için pozitif, azalış için negatif değer ver.
+- Eğilim sorusu varsa cevap tek kelime olsun: artış, azalış veya dalgalı.
+- Soru verilen veriden cevaplanamıyorsa sadece: veri yok
+- Başka hiçbir şey yazma; sadece `numara) cevap` satırlarını dön.
+
+SORULAR:
+
+
+--- Soru 1 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2016 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 2 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2019 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 3 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2022 yılında iç hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 4 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2017 yılında dış hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 5 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2021 yılında dış hat yolcu yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 6 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu en yüksek ve en düşük yıllar arasındaki fark yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 7 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu en yüksek değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 8 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 9 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu en yüksek 3. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 10 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu en düşük değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 11 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre kaç yılda iç hat yolcu 1.549.237 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 12 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre kaç yılda iç hat yolcu 1.674.059 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 13 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre kaç yılda dış hat yolcu 1.500.000 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 14 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2018 ve 2019 yıllarından hangisinde iç hat yolcu daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 15 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu ile dış hat yolcu hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.
+
+--- Soru 16 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu ile dış hat yolcu hangi yılda birbirinden en uzaktır? Cevap olarak sadece yılı yaz.
+
+--- Soru 17 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre iç hat yolcu için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 18 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2015 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 19 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2018 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 20 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2021 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 21 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2016 yılında ithalat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 22 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2020 yılında ithalat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 23 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri en yüksek ve en düşük yıllar arasındaki fark yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 24 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri en yüksek değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 25 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 26 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri en yüksek 3. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 27 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri en düşük değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 28 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre kaç yılda ihracat değeri 240 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 29 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre kaç yılda ihracat değeri 268 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 30 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre kaç yılda ithalat değeri 234 milyon dolar değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 31 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2019 ve 2020 yıllarından hangisinde ihracat değeri daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 32 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri ile ithalat değeri hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.
+
+--- Soru 33 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri ile ithalat değeri hangi yılda birbirinden en uzaktır? Cevap olarak sadece yılı yaz.
+
+--- Soru 34 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre ihracat değeri için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 35 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2013 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 36 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2016 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 37 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2019 yılında kız öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 38 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2014 yılında erkek öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 39 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2018 yılında erkek öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 40 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı en yüksek ve en düşük yıllar arasındaki fark yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 41 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı en yüksek değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 42 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı en yüksek 2. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 43 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı en yüksek 3. değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 44 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı en düşük değerine hangi yılda ulaşmıştır? Cevap olarak sadece yılı yaz.
+
+--- Soru 45 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kaç yılda kız öğrenci sayısı 24.385 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 46 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kaç yılda kız öğrenci sayısı 25.000 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 47 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kaç yılda erkek öğrenci sayısı 23.847 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 48 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2019 ve 2021 yıllarından hangisinde kız öğrenci sayısı daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 49 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı ile erkek öğrenci sayısı hangi yılda birbirine en yakındır? Cevap olarak sadece yılı yaz.
+
+--- Soru 50 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı ile erkek öğrenci sayısı hangi yılda birbirinden en uzaktır? Cevap olarak sadece yılı yaz.
+
+--- Soru 51 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre kız öğrenci sayısı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.

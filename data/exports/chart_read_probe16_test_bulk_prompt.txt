@@ -1,0 +1,76 @@
+Aşağıda numaralandırılmış Türkçe veri analizi soruları var. Her birini, ilgili tabloyu ve/veya grafiği kullanarak cevapla. Grafikli sorularda ilgili GÖRSEL numarası belirtilmiştir; o görselden değerleri eksen ve gridline'lardan oku (grafiklerde sayı yazılı değildir).
+
+ÇOK ÖNEMLİ — ÇIKTI FORMATI:
+- Her soru için TEK satır dön: `numara) cevap`
+- Cevap SADECE sayısal değer olsun (gerekiyorsa ondalık). Birim, yıl etiketi, açıklama YAZMA.
+- Yüzde/oran sorularında artış için pozitif, azalış için negatif değer ver.
+- Eğilim sorusu varsa cevap tek kelime olsun: artış, azalış veya dalgalı.
+- Soru verilen veriden cevaplanamıyorsa sadece: veri yok
+- Başka hiçbir şey yazma; sadece `numara) cevap` satırlarını dön.
+
+SORULAR:
+
+
+--- Soru 1 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre 2021 yılında yolcu sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 2 ---
+Görsel: GÖRSEL-1
+Soru: Grafiğe göre kaç yılda yolcu sayısı 1.450.000 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 3 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2021 yılında geri dönüştürülen atık yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 4 ---
+Görsel: GÖRSEL-2
+Soru: Grafiğe göre 2020 ve 2021 yıllarından hangisinde geri dönüştürülen atık daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 5 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre 2021 yılında ihracat değeri yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 6 ---
+Görsel: GÖRSEL-3
+Soru: Grafiğe göre en yüksek ihracat değeri hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 7 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre 2021 yılında spor tesisi kullanımı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 8 ---
+Görsel: GÖRSEL-4
+Soru: Grafiğe göre spor tesisi kullanımı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.
+
+--- Soru 9 ---
+Görsel: GÖRSEL-5
+Soru: Grafiğe göre 2020 yılında öğrenci sayısı yaklaşık kaçtır? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 10 ---
+Görsel: GÖRSEL-5
+Soru: Grafiğe göre kaç yılda öğrenci sayısı 27.500 öğrenci değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 11 ---
+Görsel: GÖRSEL-6
+Soru: Grafiğe göre kaç yılda belediye hizmet başvurusu 82.000 başvuru değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 12 ---
+Görsel: GÖRSEL-6
+Soru: Grafiğe göre 2020 ve 2021 yıllarından hangisinde belediye hizmet başvurusu daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 13 ---
+Görsel: GÖRSEL-7
+Soru: Grafiğe göre kaç yılda ziyaretçi sayısı 790.000 kişi değerinin üzerindedir? Cevap olarak sadece sayıyı yaz.
+
+--- Soru 14 ---
+Görsel: GÖRSEL-7
+Soru: Grafiğe göre en düşük ziyaretçi sayısı hangi yılda görülmüştür? Cevap olarak sadece yılı yaz.
+
+--- Soru 15 ---
+Görsel: GÖRSEL-8
+Soru: Grafiğe göre 2019 ve 2021 yıllarından hangisinde üretim miktarı daha yüksektir? Cevap olarak sadece yılı yaz.
+
+--- Soru 16 ---
+Görsel: GÖRSEL-8
+Soru: Grafiğe göre üretim miktarı için genel eğilim nedir? Cevabı tek kelimeyle ver: artış, azalış veya dalgalı.

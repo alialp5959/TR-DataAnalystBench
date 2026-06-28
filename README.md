@@ -1,31 +1,78 @@
 # TR-DataAnalystBench
 
-TR-DataAnalystBench is a Turkish table and chart reasoning benchmark for evaluating whether language models can correctly analyze structured data.
+**A Turkish table & chart reasoning benchmark for language models — with Python-verified gold answers and an automatic evaluator.**
 
-The benchmark focuses on realistic data analysis tasks such as reading tables, interpreting charts, comparing values, calculating percentage changes, and producing short factual trend summaries.
+![validate](https://github.com/alialp5959/TR-DataAnalystBench/actions/workflows/validate.yml/badge.svg)
+&nbsp;![license](https://img.shields.io/badge/code-MIT-blue)
+&nbsp;![data](https://img.shields.io/badge/data-CC--BY--4.0-green)
+&nbsp;![language](https://img.shields.io/badge/language-Turkish-red)
+
+Can a Turkish-capable LLM actually *do data analysis* — read a value from a
+table, pull a number off a chart, find the maximum, compute an average or a
+percentage change, summarize a trend, and **say "I can't" when the data doesn't
+contain the answer**? TR-DataAnalystBench measures exactly that.
+
+Gold answers are **computed and verified with Python**, not guessed by a model,
+so the benchmark is reproducible and auditable. A single evaluator scores three
+kinds of answer — numeric (with tolerance), categorical (trend), and abstention.
+
+## Highlights
+
+- **1,436 examples** across **seven tiers** of increasing realism and difficulty.
+- **Genuine chart reading:** label-free tiers where values must be read off the axes/gridlines, not OCR'd from printed labels — including a deliberately hard, cluttered multi-series tier.
+- **Hard multi-step reasoning:** CAGR, fastest-growth year, longest streak, conditional average, share of total, ratios — tasks that catch specific reasoning errors.
+- **Contamination-controlled real data:** real series with the country/years removed and per-series rescaling, so it measures reading rather than recall.
+- **Hallucination test:** `unanswerable` questions where inventing a number is penalized.
+- **Real-data tier** built from licensed Türkiye open data (World Bank, CDIAC) with full provenance.
+- **Automatic evaluator** with task-aware tolerances + **oracle/noisy baselines** + a **free, no-API manual evaluation kit**.
+- **CI** revalidates every gold answer on each push.
+
+## The benchmark suite
+
+| Tier | Examples | Tasks | Domains | Focus |
+|---|---:|---:|---:|---|
+| `synthetic_v01` | 300 | 5 | 10 | Easy/medium baseline (single-series tables) |
+| `synthetic_v02` | 320 | 8 | 10 | Harder & discriminative (multi-series, distractors, unanswerable, `hard`) |
+| `real_pilot` | 108 | 7 | 3 | **Real Türkiye open data** (population, GDP, inflation, CO₂) |
+| `chart_read_v01` | 240 | 5 | 10 | **Label-free chart reading** (estimate from axes/gridlines, not OCR) |
+| `real_anon_v01` | 108 | 7 | 3 | **Contamination-controlled** real data (country/years removed, rescaled) |
+| `reasoning_v01` | 180 | 6 | 10 | **Hard multi-step reasoning** (CAGR, streaks, conditional average, ratios) |
+| `chart_hard_v01` | 180 | 6 | 10 | **Discriminative chart reading**: cluttered 2-series, 12-year, off-gridline charts; tight ±5% value reading, closest comparisons, cross-series scanning |
+| **Total** | **1,436** | | | |
+
+## Baselines
+
+| System | Tier | Accuracy | Notes |
+|---|---|---:|---|
+| Oracle (gold) | all | 100% | scoring sanity check |
+| Noisy baseline | synthetic_v01 | ~72% | programmatic reference |
+| Noisy baseline | synthetic_v02 | ~66% | abstention ~45% (catches hallucination) |
+| ChatGPT (manual, 12-item) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention |
+
+> The ChatGPT figure is a small, manually collected illustration — reproduce or
+> extend it with the no-API kit (`scripts/16_create_manual_kit.py`).
+
+## Use on Hugging Face
+
+Build a self-contained, uploadable dataset folder (one config per tier, three
+splits each, charts included):
+
+```bash
+python scripts/18_build_release.py
+huggingface-cli upload <user>/TR-DataAnalystBench release . --repo-type dataset
+```
+
+The dataset card is in [`docs/hf_dataset_card.md`](docs/hf_dataset_card.md).
+Code is MIT-licensed; the datasets are CC-BY-4.0 (see [`LICENSE`](LICENSE) and
+[`CITATION.cff`](CITATION.cff)).
 
 ## Motivation
 
-Many language models can generate fluent Turkish text, but they may still fail at numerical reasoning, table understanding, chart interpretation, and factual data analysis.
-
-TR-DataAnalystBench aims to provide a reproducible Turkish benchmark for evaluating these abilities. The long-term goal is a dataset and evaluation pipeline that can test Turkish-capable LLMs and multimodal models on data-analyst style tasks.
-
-## Current Status
-
-The current benchmark version is **`synthetic_v01`**: a fully synthetic, programmatically verified dataset of **300 examples**. Gold answers are computed with Python (not guessed by a language model), which makes the benchmark reproducible and auditable.
-
-The repository also keeps the earlier 50-example `pilot` (scripts `01`–`03`) for reference.
-
-### What's in the pipeline
-
-* Synthetic table + chart generation
-* Turkish question generation across 5 task types
-* Python-verified gold answers
-* Schema/consistency validation
-* Automatic scoring for **all 300 examples** (240 numeric + 60 trend)
-* An external evaluator that scores a prediction CSV
-* Prompt packs and prediction templates for running a model
-* Oracle and noisy baselines as a scoring sanity check
+Many models are fluent in Turkish yet still fail at numerical reasoning, table
+understanding, and chart interpretation. TR-DataAnalystBench isolates those
+abilities with verifiable gold answers and a transparent scoring contract. The
+repository also keeps the earlier 50-example `pilot` (scripts `01`–`03`) for
+reference.
 
 ## Dataset: synthetic_v01
 
@@ -75,6 +122,70 @@ transportation, economy, education, tourism, energy, health, environment, sports
 
 Splits are table-disjoint: the 5 questions sharing a table/chart never cross a split boundary.
 
+## Dataset: synthetic_v02 (harder tier)
+
+`synthetic_v02` keeps the same schema and scoring contract as v01 but is designed to be discriminative rather than saturated.
+
+| Property | Value |
+| --- | ---: |
+| Total examples | 320 |
+| Task types | 8 |
+| Difficulty | 40 easy / 160 medium / 120 hard |
+| Tables | multi-series (Year + two metrics) |
+
+What makes it harder:
+
+* **Multi-series tables** — every table has two metric columns, so the model must select the correct series; the other column is a distractor.
+* **Multi-step tasks** — in addition to `value_lookup`, `comparison`, and `percentage_change`, it adds:
+  * `average` — mean of a series across all years
+  * `nth_highest` — the 2nd/3rd highest value of a series
+  * `cross_series_diff` — difference between the two series in a given year
+* **Unanswerable questions** (`unanswerable`) — ask about a year or metric not present in the data. The gold answer is an abstention (`veri yok`); a model that invents a number is marked wrong. This directly measures hallucination resistance. Every prompt carries a global "if it can't be answered, say `veri yok`" instruction, so unanswerable items are indistinguishable from answerable ones.
+* **Trend** (`trend_summary`) — categorical, as in v01.
+
+Scoring kinds: numeric (tolerance), trend (categorical label), and abstention. The evaluator reports overall accuracy plus per-kind accuracy.
+
+```bash
+python scripts/11_generate_synthetic_v02.py     # dataset + multi-series charts
+python scripts/12_validate_synthetic_v02.py     # schema + recomputed-gold checks
+python scripts/13_create_v02_eval_assets.py     # prompt packs, template, baselines
+
+# sanity check: oracle scores 100% across all 320 examples
+python scripts/08_evaluate_predictions_file.py \
+    --dataset data/processed/synthetic_v02.jsonl \
+    --predictions data/exports/synthetic_v02_oracle_predictions.csv \
+    --prediction-name v02_oracle
+```
+
+## Dataset: real_pilot (real Türkiye open data)
+
+A **real-data** tier built from redistributable open data for Türkiye, so the questions are grounded in real figures rather than synthetic ones.
+
+* **108 examples** from 4 indicators across 3 domains: population (demografi), GDP and consumer inflation (ekonomi), and fossil-fuel CO₂ emissions (çevre).
+* Sources are GitHub-hosted World Bank / CDIAC datasets (via the datahub `datasets` mirrors). Licenses: ODC-PDDL-1.0 and CC-BY-4.0 (redistributable). Provenance and license per source are in `data/sources_real/provenance.json`, and the raw snapshots are committed for reproducibility.
+* Gold answers are computed with Python from the real numbers, so the tier stays fully auto-scorable with the same evaluator. Each example carries `source_name`, `source_url`, and `license` for transparency.
+
+```bash
+python scripts/14_fetch_real_sources.py     # cache real sources + provenance (needs network)
+python scripts/15_generate_real_pilot.py    # build real_pilot from the cache
+python scripts/17_validate_real_pilot.py    # schema + recomputed-gold + license checks
+python scripts/08_evaluate_predictions_file.py \
+    --dataset data/processed/real_pilot.jsonl \
+    --predictions data/exports/real_pilot_oracle_predictions.csv --prediction-name real_pilot_oracle
+```
+
+It is designed to scale by adding indicators to the source list in `scripts/14_fetch_real_sources.py` (any GitHub-hosted, redistributable dataset with yearly Türkiye values).
+
+## Free manual model evaluation
+
+You do not need an API to get a first real model score. `scripts/16_create_manual_kit.py` produces a paste-friendly worksheet plus an empty prediction template for any split:
+
+```bash
+python scripts/16_create_manual_kit.py --dataset data/processed/real_pilot.jsonl --split test
+```
+
+Paste each prompt into a fresh chat (upload the chart image when one is referenced), write the model's answer into the template CSV, then score it with `scripts/08_evaluate_predictions_file.py`.
+
 ## Repository Structure
 
 ```text
@@ -100,10 +211,32 @@ TR-DataAnalystBench/
 │   ├── 07_score_numeric_answers.py        # oracle / noisy baselines (full benchmark)
 │   ├── 08_evaluate_predictions_file.py     # external evaluator (numeric + trend)
 │   ├── 09_create_prediction_templates.py
-│   └── 10_create_prompt_pack.py
+│   ├── 10_create_prompt_pack.py
+│   ├── 11_generate_synthetic_v02.py        # harder tier: dataset + multi-series charts
+│   ├── 12_validate_synthetic_v02.py        # schema + recomputed-gold validation
+│   ├── 13_create_v02_eval_assets.py        # v02 prompt packs / template / baselines
+│   ├── 14_fetch_real_sources.py            # cache real open data + provenance
+│   ├── 15_generate_real_pilot.py           # real-data tier from cached sources
+│   ├── 16_create_manual_kit.py             # paste-friendly kit for free manual eval
+│   ├── 17_validate_real_pilot.py           # real-data schema + recomputed-gold checks
+│   ├── 18_build_release.py                 # assemble a Hugging Face-uploadable release/
+│   ├── 19_generate_chart_read_v01.py       # label-free chart-reading tier
+│   ├── 20_validate_chart_read_v01.py       # chart-reading schema + recomputed-gold checks
+│   ├── 21_generate_real_anon_v01.py        # contamination-controlled real tier
+│   ├── 22_validate_real_anon_v01.py        # anonymization + recomputed-gold checks
+│   ├── 23_generate_reasoning_v01.py        # hard multi-step reasoning tier
+│   ├── 24_validate_reasoning_v01.py        # reasoning schema + recomputed-gold checks
+│   ├── 25_create_bulk_prompt.py            # one-paste bulk prompt (incl. chart tiers)
+│   ├── 26_score_bulk_response.py           # parse + score a pasted model reply
+│   ├── 27_build_chart_probe.py             # curated 16-question chart probe
+│   ├── 28_generate_chart_hard_v01.py       # discriminative hard chart tier
+│   └── 29_validate_chart_hard_v01.py       # hard-chart schema + recomputed-gold checks
 ├── requirements.txt
 └── README.md
 ```
+
+The evaluator `08_evaluate_predictions_file.py` is version-agnostic: pass
+`--dataset data/processed/synthetic_v02.jsonl` to score v02.
 
 ## Setup
 
@@ -177,14 +310,17 @@ Done so far:
 * [x] Automatic scoring for trend (categorical) answers — full benchmark is now scorable
 * [x] Signed percentage-change so direction is evaluated
 * [x] External prediction-file evaluator
+* [x] Harder `synthetic_v02` tier: multi-series tables, distractor columns, multi-step tasks (average / nth-highest / cross-series), unanswerable (abstention) questions, real `hard` labels
+
+* [x] First real-data tier (`real_pilot`) from licensed Türkiye open data, with provenance
+* [x] Free manual evaluation kit (no API required)
 
 Planned next:
 
-1. Increase difficulty and discrimination (label-free chart variants, multi-series
-   tables, distractor columns, harder templates) so the benchmark separates models.
-2. Add a real multimodal evaluation harness that passes chart images to a model.
-3. Run baseline model evaluations and publish a comparison table.
-4. Move from synthetic tables to real Turkish open-data sources (e.g. TÜİK).
+1. Scale the real-data tier: more indicators/domains and more examples (target ~1000+ with ≥100 per important cell for statistically stable subgroup numbers).
+2. Label-free chart variants (read values from gridlines, scored with estimation tolerance) for genuine chart-reading rather than label OCR.
+3. A real multimodal evaluation harness that passes chart images to a model.
+4. Baseline model evaluations and a public comparison table.
 5. Prepare a Hugging Face dataset release and a public benchmark card.
 
 ## Project Goal

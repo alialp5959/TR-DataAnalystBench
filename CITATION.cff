@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "TR-DataAnalystBench: A Turkish Table and Chart Reasoning Benchmark"
+abstract: >-
+  TR-DataAnalystBench is a Turkish-language benchmark for evaluating whether
+  language models can perform data-analyst style reasoning over tables and
+  charts: reading values, finding extrema, comparing years, computing
+  averages and percentage changes, summarizing trends, and abstaining on
+  unanswerable questions. Gold answers are computed and verified with Python,
+  and the benchmark ships an automatic evaluator for numeric, categorical, and
+  abstention tasks.
+type: dataset
+authors:
+  - family-names: "Haraç"
+    given-names: "Ali Alp"
+keywords:
+  - Turkish
+  - benchmark
+  - data analysis
+  - table reasoning
+  - chart reasoning
+  - large language models
+  - evaluation
+version: "0.1.0"
+date-released: "2026-06-27"
+license: CC-BY-4.0
+repository-code: "https://github.com/alialp5959/TR-DataAnalystBench"
