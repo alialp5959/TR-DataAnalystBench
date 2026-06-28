@@ -172,6 +172,7 @@ the scoring pipeline.
 | ChatGPT (manual, 12-item sample) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention, missed one borderline trend |
 | ChatGPT (manual, bulk, 18-item) | reasoning_v01 test | ~100% | every well-formed item correct (incl. CAGR); even flagged a malformed question, which led to a gold fix — frontier models are strong at numeric reasoning |
 | GPT-4o / Gemini / Claude (manual, 16-item) | chart_read probe | 100% / 100% / 100% | all three tied — simple, round-valued label-free charts are not discriminative; this finding motivated `chart_hard_v01` (cluttered, off-gridline) |
+| GPT-4o / Claude / Gemini (manual, 18-item) | chart_hard_v01 test | 100% / 100% / 83% | first separation between frontier models — Gemini missed a 2nd-highest, a count, and a cross-series "closest year" item; the cluttered off-gridline design works |
 
 The ChatGPT number is a small, manually collected illustration, not a full
 leaderboard entry. The repository includes a free **manual evaluation kit**
