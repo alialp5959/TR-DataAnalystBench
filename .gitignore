@@ -22,3 +22,6 @@ data/exports/real_pilot_oracle_predictions.csv
 # Build artifacts
 release/
 data/exports/*_bulk_predictions.csv
+
+# Release build artifacts
+*.zip
