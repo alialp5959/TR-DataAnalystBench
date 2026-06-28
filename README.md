@@ -18,8 +18,8 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 
 ## Highlights
 
-- **1,256 examples** across **six tiers** of increasing realism and difficulty.
-- **Genuine chart reading:** a label-free tier where values must be read off the axes/gridlines, not OCR'd from printed labels.
+- **1,436 examples** across **seven tiers** of increasing realism and difficulty.
+- **Genuine chart reading:** label-free tiers where values must be read off the axes/gridlines, not OCR'd from printed labels — including a deliberately hard, cluttered multi-series tier.
 - **Hard multi-step reasoning:** CAGR, fastest-growth year, longest streak, conditional average, share of total, ratios — tasks that catch specific reasoning errors.
 - **Contamination-controlled real data:** real series with the country/years removed and per-series rescaling, so it measures reading rather than recall.
 - **Hallucination test:** `unanswerable` questions where inventing a number is penalized.
@@ -37,7 +37,8 @@ kinds of answer — numeric (with tolerance), categorical (trend), and abstentio
 | `chart_read_v01` | 240 | 5 | 10 | **Label-free chart reading** (estimate from axes/gridlines, not OCR) |
 | `real_anon_v01` | 108 | 7 | 3 | **Contamination-controlled** real data (country/years removed, rescaled) |
 | `reasoning_v01` | 180 | 6 | 10 | **Hard multi-step reasoning** (CAGR, streaks, conditional average, ratios) |
-| **Total** | **1,256** | | | |
+| `chart_hard_v01` | 180 | 6 | 10 | **Discriminative chart reading**: cluttered 2-series, 12-year, off-gridline charts; tight ±5% value reading, closest comparisons, cross-series scanning |
+| **Total** | **1,436** | | | |
 
 ## Baselines
 
@@ -224,7 +225,12 @@ TR-DataAnalystBench/
 │   ├── 21_generate_real_anon_v01.py        # contamination-controlled real tier
 │   ├── 22_validate_real_anon_v01.py        # anonymization + recomputed-gold checks
 │   ├── 23_generate_reasoning_v01.py        # hard multi-step reasoning tier
-│   └── 24_validate_reasoning_v01.py        # reasoning schema + recomputed-gold checks
+│   ├── 24_validate_reasoning_v01.py        # reasoning schema + recomputed-gold checks
+│   ├── 25_create_bulk_prompt.py            # one-paste bulk prompt (incl. chart tiers)
+│   ├── 26_score_bulk_response.py           # parse + score a pasted model reply
+│   ├── 27_build_chart_probe.py             # curated 16-question chart probe
+│   ├── 28_generate_chart_hard_v01.py       # discriminative hard chart tier
+│   └── 29_validate_chart_hard_v01.py       # hard-chart schema + recomputed-gold checks
 ├── requirements.txt
 └── README.md
 ```

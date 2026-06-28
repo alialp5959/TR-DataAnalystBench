@@ -65,6 +65,14 @@ configs:
     path: data/reasoning_v01/validation.jsonl
   - split: test
     path: data/reasoning_v01/test.jsonl
+- config_name: chart_hard_v01
+  data_files:
+  - split: train
+    path: data/chart_hard_v01/train.jsonl
+  - split: validation
+    path: data/chart_hard_v01/validation.jsonl
+  - split: test
+    path: data/chart_hard_v01/test.jsonl
 ---
 
 # TR-DataAnalystBench
@@ -85,7 +93,7 @@ Many models are fluent in Turkish yet still fail at numerical reasoning, table
 understanding, and chart interpretation. TR-DataAnalystBench isolates those
 abilities with verifiable gold answers and a transparent scoring contract.
 
-## The suite (1,256 examples, six tiers)
+## The suite (1,436 examples, seven tiers)
 
 | Tier | Examples | Tasks | What it targets |
 |---|---:|---:|---|
@@ -95,6 +103,7 @@ abilities with verifiable gold answers and a transparent scoring contract.
 | `chart_read_v01` | 240 | 5 | **Genuine chart reading**: label-free charts (no printed values); read which year is max/min, compare years, count above a level, estimate a value, read the trend |
 | `real_anon_v01` | 108 | 7 | **Contamination-controlled real data**: real series with the country/years removed and per-series rescaling, so it measures table reading rather than recall |
 | `reasoning_v01` | 180 | 6 | **Hard multi-step reasoning**: CAGR, fastest-growth year, longest increase streak, conditional average, share of total, ratio between two series |
+| `chart_hard_v01` | 180 | 6 | **Discriminative chart reading**: cluttered two-series, 12-year, off-gridline label-free charts; tight ±5% value reading, closest-pair comparisons, cross-series scanning — designed to challenge frontier vision models |
 
 Splits are table-disjoint (the questions sharing a table/chart never cross a
 split boundary).
@@ -161,7 +170,8 @@ the scoring pipeline.
 | Noisy baseline | synthetic_v02 | ~66% | abstention ~45% (catches hallucination) |
 | "Simple-%" error | reasoning_v01 | ~83% | a model that confuses CAGR with simple % change loses exactly the CAGR items |
 | ChatGPT (manual, 12-item sample) | real_pilot | ~92% | by-hand run; perfect on numeric & abstention, missed one borderline trend |
-| ChatGPT (manual, bulk, 18-item) | reasoning_v01 test | ~100% | every well-formed item correct (incl. CAGR); even flagged a malformed question, which led to a gold fix — frontier models are strong at numeric reasoning, so discrimination should come from chart reading and traps |
+| ChatGPT (manual, bulk, 18-item) | reasoning_v01 test | ~100% | every well-formed item correct (incl. CAGR); even flagged a malformed question, which led to a gold fix — frontier models are strong at numeric reasoning |
+| GPT-4o / Gemini / Claude (manual, 16-item) | chart_read probe | 100% / 100% / 100% | all three tied — simple, round-valued label-free charts are not discriminative; this finding motivated `chart_hard_v01` (cluttered, off-gridline) |
 
 The ChatGPT number is a small, manually collected illustration, not a full
 leaderboard entry. The repository includes a free **manual evaluation kit**

@@ -35,3 +35,6 @@ jobs:
 
       - name: Validate reasoning_v01
         run: python scripts/24_validate_reasoning_v01.py
+
+      - name: Validate chart_hard_v01
+        run: python scripts/29_validate_chart_hard_v01.py

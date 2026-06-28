@@ -30,6 +30,7 @@ TIERS = {
     "chart_read_v01": PROJECT_ROOT / "data" / "processed" / "chart_read_v01.jsonl",
     "real_anon_v01": PROJECT_ROOT / "data" / "processed" / "real_anon_v01.jsonl",
     "reasoning_v01": PROJECT_ROOT / "data" / "processed" / "reasoning_v01.jsonl",
+    "chart_hard_v01": PROJECT_ROOT / "data" / "processed" / "chart_hard_v01.jsonl",
 }
 
 CHART_DIRS = {
@@ -38,6 +39,7 @@ CHART_DIRS = {
     "real_pilot": PROJECT_ROOT / "charts" / "real_pilot",
     "chart_read_v01": PROJECT_ROOT / "charts" / "chart_read_v01",
     "real_anon_v01": PROJECT_ROOT / "charts" / "real_anon_v01",
+    "chart_hard_v01": PROJECT_ROOT / "charts" / "chart_hard_v01",
 }
 
 SPLITS = ["train", "validation", "test"]

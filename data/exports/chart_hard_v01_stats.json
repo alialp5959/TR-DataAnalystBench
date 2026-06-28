@@ -1,0 +1,20 @@
+{
+  "dataset_version": "chart_hard_v01",
+  "total_examples": 180,
+  "all_chart_only_label_free": true,
+  "series_per_chart": 2,
+  "years_per_chart": 12,
+  "question_type_distribution": {
+    "value_estimate": 30,
+    "second_highest_year": 30,
+    "count_above": 30,
+    "closest_compare": 30,
+    "cross_closest_year": 30,
+    "trend_summary": 30
+  },
+  "split_distribution": {
+    "train": 144,
+    "validation": 18,
+    "test": 18
+  }
+}
